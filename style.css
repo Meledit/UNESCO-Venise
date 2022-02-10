@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: Dyno;
-    src: url(Dyno_Regular.ttf);
+    src: url(Polices/Dyno_Regular.ttf);
     font-family: Cicle;
-    src: url(Cicle_Fina.ttf)
+    src: url(Polices/Cicle_Fina.ttf)
 }
 
 :root {
