@@ -1,0 +1,358 @@
+/* variables */
+
+@font-face {
+    font-family: Dyno;
+    src: url(Dyno_Regular.ttf);
+    font-family: Cicle;
+    src: url(Cicle_Fina.ttf)
+}
+
+:root {
+    --clr-principale: #ea5b0c;
+    --clr-appoint: #b94402;
+    --clr-secondaire: #f8b03e;
+    --clr-fond-principale: #333333;
+    --clr-fond-secondaire: #505050;
+    --clr-footer: rgb(26, 26, 26);
+}
+
+::selection {
+    background: var(--clr-principale);
+}
+
+/* Layout */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: Cicle;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-appoint);
+}
+
+header {
+    position:fixed;
+    top: 0;
+    display: flex;
+    z-index: 2;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: var(--clr-fond-secondaire);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+h1 {
+    color: #fff;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+iframe{
+    width: 60vw;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+header > a{
+    width: 18vw
+}
+
+nav {
+    position:fixed;
+    left: 0;
+    width: 0;
+    height: 80%;
+    overflow: hidden;
+    padding: 6em 0em 6em 0em;
+    background: var(--clr-fond-principale);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgb(15, 15, 15);
+}
+
+nav > ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+    z-index:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: var(--clr-footer);
+    color:white;
+    font-size:1em;
+    padding:1em
+}
+
+/*  */
+
+.article {
+    color: #fff;
+    width: 100%;
+    margin-right: 1em;
+}
+
+.image-article {
+    width: 50%;
+    margin-right: 1em;
+    margin-top: 1em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.logo {
+    width: 10%;
+    min-width: 100px;
+}
+
+.bg1{
+    padding-top: 4em;
+}
+
+.fleche{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    overflow: hidden;
+}
+
+.fleche > img {
+    width: 10vh;
+    height: auto;
+    margin-top: 10vh;
+}
+
+.TexteNav {
+    margin-top: 0.5em;
+    font-size:80%
+}
+
+.BoutonNav{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    width: 15vh;
+    height: 15vh;
+    border-radius: 5px;
+    background: var(--clr-fond-secondaire)
+}
+
+.BoutonNav:hover{
+    color: var(--clr-secondaire);
+}
+
+.BoutonNav:active{
+    background: white;
+}
+
+.fleche:hover > nav {
+    width: fit-content;
+}
+
+.fleche:hover {
+    width: 0;
+}
+
+.BoutonNav:hover > .picto{
+    max-width: 75%; background-size: 100%; background-image: url('Images/SpriteJ.png');
+    transition: 0.5s ease;
+}
+
+.bg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 1em;
+    background: var(--clr-fond-principale);
+}
+ 
+.IMGparallax {
+    /* Image utilisée */
+    background: url('Images/Fond2.jpg');
+    /* Hauteur */
+    height: 75%; 
+    /* Permet de créer l'effet parallaxe lors du scroll*/
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 75%;
+    height: 5vh;
+    margin: 1em 0em 1em 0;
+    padding-left: 1em;
+    background: var(--clr-principale);
+    opacity: 0.;
+    color:#fff;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #222;
+    font-family:Dyno
+}
+
+.zone-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    margin-right: 5vw;
+    margin-bottom: 3em;
+}
+
+/* Images Pictogrammes */
+
+.ZonePicto{
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 0 5vw 0 0;
+    width: 70%;
+}
+
+.TextePicto {
+    margin-top: 0.5em;
+}
+
+.BoutonPicto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background: var(--clr-fond-secondaire)
+}
+
+.BoutonPicto:hover{
+    color: var(--clr-secondaire);
+}
+
+.BoutonPicto:active{
+    background: white;
+}
+
+.BoutonPicto:hover > .picto{
+    max-width: 75%; background-size: 100%; background-image: url('Images/SpriteJ.png');
+    transition: 0.5s ease;
+}
+
+.picto{ 
+    max-width: 50%; background-size: 100%; background-image: url('Images/SpriteB.png'); 
+}
+ 
+.livre { background-position: 0 0%; background-size: 100%; }
+.masque { background-position: 0 33.333333%; background-size: 100%; }
+.news { background-position: 0 66.666667%; background-size: 100%; }
+.ticket { background-position: 0 100%; background-size: 100%; }
+
+@media (max-width: 1000px) {
+    .ZonePicto{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 10vw 0 0;
+        width: 50%;
+    }
+
+    .BoutonPicto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        margin: 0.5em 0.5em 0.5em 0.5em;
+        width: 20vw;
+        height: 20vw;
+        background: var(--clr-fond-secondaire);
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 600px){
+    footer div{
+        font-size:0.75em
+    }
+}
+
+.ColonneFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.ColonneFooter2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.TitreMembre{
+    margin-bottom: 10px;
+}
+
+.LogoFacebook{
+    width: 55px;
+    height: auto
+}
+
+.zone-image{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 65%;
+    margin-right: 5vw;
+    margin-bottom: 3em;
+    color:white;
+    font-style: italic;
+}
+
+.zone-image > img{
+    border: 2px solid var(--clr-appoint);
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    margin-right:1em
+}
+
+.presentation {
+    height: 100%;
+    background: var(--clr-footer);
+    padding: 1em 1em;
+}
