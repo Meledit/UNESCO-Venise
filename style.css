@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: aliceblue;
+    color: #fff;
 }
 
 @font-face {
@@ -20,6 +20,36 @@
     --clr-fond-secondaire: #505050;
     --clr-illegale: #9F9F9F;
     --clr-footer: rgb(26, 26, 26);
+}
+
+*::-webkit-scrollbar {
+    display: block;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-button {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #00000000;
+}
+
+*::-webkit-scrollbar-track-piece {
+    background-color: #00000000;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #00000040;
+    border-radius: 24px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #00000065;
+}
+
+body {
+    overflow: overlay;
 }
 
 body, html {
@@ -45,12 +75,13 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 5px 5px 30px #0000003a;
 }
 
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgb(66, 60, 66);
+    background-color: rgb(53, 47, 53);
     mix-blend-mode: overlay;
 }
 
@@ -67,11 +98,15 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     position: absolute;
     right: 0;
     bottom: 0;
     margin: 0px 10vh 10vh 0px;
+}
+
+header > a {
+    height: 100%;   
 }
 
 .logo {
@@ -129,18 +164,14 @@ a {
     background-color: var(--clr-illegale);
 }
 
-.button:hover > a {
-    color: rgb(255,255,255);
-}
-
 .button:active {
     background-color: #fff;
 }
 
 .bg {
     width: 100%;
-    height: 75vh;
-    background-color: var(--clr-fond-principale);
+    height: 50vh;
+    background-color: var(--clr-fond-secondaire);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -149,7 +180,7 @@ a {
 
 .bg article {
     width: 50%;
-    margin: 0px 5vw 0px 0px;
+    margin: 0px 5vh 5vh 0px;
     font-size: 1.5em;
 }
 
@@ -173,37 +204,136 @@ a {
 .news { background-position: 0 66.666667%; background-size: 100%; }
 .ticket { background-position: 0 100%; background-size: 100%; }
 
+.IMGparallax {
+    background: url(images/Fond5.jpg);
+    /* Hauteur */
+    height: 75vh; 
+    /* Permet de créer l'effet parallaxe lors du scroll*/
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* FOOOOOOOOOOTER */
+footer {
+    background-color: var(--clr-fond-principale);
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    border: 1px solid red;
+    height: 50vh;
+}
+
+.footer-top {
+    border: 1px solid red;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-top {
+    border: 1px solid red;
+    text-align: center;
+    width: 45%;
+    max-width: 300px;
+}
+
+.content-top > h3 {
+    font-size: 1.25em;
+}
+
+.content-top > p {
+    font-size: 0.75em;
+}
+
+.footer-center {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    border: 1px solid red;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-center > img {
+    height: 100%;
+}
+
+.footer-bottom {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    height: 20%;
+}
+
+.footer-bottom > .mentions {
+    border: 1px solid red;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.25em;
+    height: 100%;
+}
+
+.footer-bottom > .logos {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logos > img {
+    border: 1px solid red;
+    height: 100%;
+}
+
 
 @media (min-height: 900px) {
 
     .text h2 {
-        font-size: 7em;
+        font-size: 8em;
     }
     
     .text h3 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .text {
         max-width: none;
     }
 
+    .container {   
+        margin: 0px 30vh 10vh 0px;
+        border: 1px solid red;
+    }
+
+    .buttons {
+        max-width: none;
+        width: 50%;
+        border: 1px solid red;
+    }
 }
 
 @media (max-width: 800px) {
     .container {
         margin-top: 0;
-        margin: 0px 0vh 10vh 0px;
+        margin: 0px 5vw 10vh 5vw;
     }
 
     .bg {
         height: 50vh;
-        background-color: var(--clr-fond-principale);
     }
 
     .bg article {
         width: 75%;
-        margin: 0px 5vw 0px 0px;
         font-size: 1.5em;
     }
     
@@ -217,7 +347,6 @@ a {
 
     .bg {
         height: 50vh;
-        background-color: var(--clr-fond-principale);
     }
 
     .bg article {
@@ -274,22 +403,5 @@ a {
     .text h3 {
         font-size: 1.25em;
     }
-
-
-}
-.IMGparallax {
-    background: url(images/Fond2.jpg);
-    /* Hauteur */
-    height: 75vh; 
-    /* Permet de créer l'effet parallaxe lors du scroll*/
-    background-attachment: fixed;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-
-footer {
-    background-color: var(--clr-footer);
-
-}
