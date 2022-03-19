@@ -9,7 +9,7 @@
     font-family: Dyno;
     src: url(Polices/Dyno_Regular.ttf);
     font-family: Cicle;
-    src: url(Polices/Cicle_Fina.ttf)
+    src: url(Polices/Cicle_Fina.ttf);
 }
 
 :root {
@@ -20,6 +20,10 @@
     --clr-fond-secondaire: #505050;
     --clr-illegale: #9F9F9F;
     --clr-footer: rgb(26, 26, 26);
+}
+
+::selection {
+    background-color: #ea5a0c7c;
 }
 
 *::-webkit-scrollbar {
@@ -48,6 +52,32 @@
     background-color: #00000065;
 }
 
+.jump {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    width: 8vh;
+    aspect-ratio: 1;
+    background-color: #ea5a0c8f;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px #0000003a;
+    z-index: 10;
+}
+
+.jump:hover {
+    background-color: #ea5a0cc5;
+}
+
+.jump:active {
+    background-color: #ea5a0c8f;
+}
+
+/*----------------------- Hero de la page -----------------------*/
+
 body {
     overflow: overlay;
 }
@@ -57,16 +87,35 @@ body, html {
     font-family: Cicle;
 }
 
+
+/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 10px 5px 10px;
     width: 100vw;
-    height: 12vh;
+    height: 10vh;
     position: fixed;
     z-index: 1;
+    background-color: rgb(228, 108, 49);
+    opacity:0.75;
 }
+
+a {
+    text-decoration: none;
+}
+
+header > a {
+    height: 100%;   
+}
+
+.logo {
+    height: 100%;
+}
+
+/* Video */
 
 .showcase video {
     position: absolute;
@@ -78,21 +127,29 @@ header {
     box-shadow: 5px 5px 30px #0000003a;
 }
 
+.showcase .imgBg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgb(53, 47, 53);
-    mix-blend-mode: overlay;
-}
-
-a {
-    text-decoration: none;
+    background: rgb(30,30,33);
+    background: radial-gradient(circle, rgba(84, 84, 87, 0.076) 0%, rgba(43, 43, 44, 0.651) 50%, rgba(44, 43, 43, 0.897) 100%);
+    mix-blend-mode: multiply;
 }
 
 .showcase {
     height: 100vh;
     width: 100%;
 }
+
+/* Titre */
 
 .container {   
     display: flex;
@@ -105,14 +162,6 @@ a {
     margin: 0px 10vh 10vh 0px;
 }
 
-header > a {
-    height: 100%;   
-}
-
-.logo {
-    height: 100%;
-}
-
 .text {
     display: flex;
     flex-direction: column;
@@ -122,13 +171,15 @@ header > a {
     margin-left: 20px;
 }
 
-.text h2 {
+.text h1 {
     font-size: 5em;
 }
 
-.text h3 {
+.text h2 {
     font-size: 2em;
 }
+
+/* Boutons */
 
 .buttons {
     display: flex;
@@ -168,25 +219,30 @@ header > a {
     background-color: #fff;
 }
 
-.bg {
-    width: 100%;
-    height: 50vh;
-    background-color: var(--clr-fond-secondaire);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-end;
+.button:hover > a > .picto{
+    background-image: url('Images/SpriteB.png');
 }
 
-.bg article {
-    width: 50%;
-    margin: 0px 5vh 5vh 0px;
-    font-size: 1.5em;
+/* Sprites */
+
+.livre { 
+    background-position: 0 0%;
+    background-size: 100%; 
 }
 
-.titre-section {
-    font-size: 2em;
-    margin: 5vh 0px;
+.masque { 
+    background-position: 0 34.333333%; 
+    background-size: 100%; 
+}
+
+.news { 
+    background-position: 0 66.666667%; 
+    background-size: 100%; 
+}
+
+.ticket { 
+    background-position: 0 100%; 
+    background-size: 100%; 
 }
 
 .picto { 
@@ -195,19 +251,66 @@ header > a {
     background-image: url('Images/SpriteB.png'); 
 }
 
-.button:hover > a > .picto{
-    background-image: url('Images/SpriteB.png');
+/* -------------------- Bandeau de contenu ----------------------- */
+
+.bg {
+    width: 100%;
+    background-color: var(--clr-fond-secondaire);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10vh 5vw 10vh 5vw;
 }
 
-.livre { background-position: 0 0%; background-size: 100%; }
-.masque { background-position: 0 34.333333%; background-size: 100%; }
-.news { background-position: 0 66.666667%; background-size: 100%; }
-.ticket { background-position: 0 100%; background-size: 100%; }
+.gauche {
+    align-items: flex-start;
+}
+
+.droite {
+    align-items: flex-end;
+}
+
+.bg article {
+    width: 50%;
+    font-size: 1.5em;
+}
+
+article > h3 {
+    font-size: 2em;
+    margin: 0px 0px 5vh 0px;
+}
+
+/* carte interactive */
+
+.carte {
+    border: 1px solid #fff;
+    box-shadow: 0px 7px 10px #242323b4;
+    height: 400px;
+    width: 700px;
+    margin: 0px 0px 20vh 0px;
+}
+
+.zoneCarte {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Le images parallax */
+
+.IMG1 {
+    background: url(images/Fond5.jpg);
+}
+
+/* l'effet parallax */
+/* /!\ les classes IMG doivent être misent avant la classe IMGparallax */
 
 .IMGparallax {
-    background: url(images/Fond5.jpg);
     /* Hauteur */
-    height: 75vh; 
+    height: 150vh; 
     /* Permet de créer l'effet parallaxe lors du scroll*/
     background-attachment: fixed;
     background-position:center;
@@ -215,112 +318,47 @@ header > a {
     background-size: cover;
 }
 
+/* ------------------------- Footer ----------------------------*/
 
-/* FOOOOOOOOOOTER */
 footer {
-    background-color: var(--clr-fond-principale);
+    background: var(--clr-fond-principale);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0px 10vh 0px;
 }
 
-.bottom {
+.section-footer {
+    width: 30%;
+    height: fit-content;
+    max-width: 300px;
+    margin: 0px 2vw 0px 2vh;
+    padding: 1vh 1vw 1vh 1vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    border: 1px solid red;
-    height: 50vh;
-}
-
-.footer-top {
-    border: 1px solid red;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.content-top {
-    border: 1px solid red;
-    text-align: center;
-    width: 45%;
-    max-width: 300px;
-}
-
-.content-top > h3 {
-    font-size: 1.25em;
-}
-
-.content-top > p {
-    font-size: 0.75em;
-}
-
-.footer-center {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
-}
-
-.footer-center > img {
-    height: 100%;
-}
-
-.footer-bottom {
     border: 1px solid red;
+}
+
+.img-footer {
+    height: 5vw;
+    min-height: 50px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 60%;
-    height: 20%;
 }
 
-.footer-bottom > .mentions {
-    border: 1px solid red;
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 1.25em;
+.img-footer > img {
     height: 100%;
 }
 
-.footer-bottom > .logos {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.section-footer > h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
 }
 
-.logos > img {
-    border: 1px solid red;
-    height: 100%;
-}
-
-
-@media (min-height: 900px) {
-
-    .text h2 {
-        font-size: 8em;
-    }
-    
-    .text h3 {
-        font-size: 3em;
-    }
-
-    .text {
-        max-width: none;
-    }
-
-    .container {   
-        margin: 0px 30vh 10vh 0px;
-        border: 1px solid red;
-    }
-
-    .buttons {
-        max-width: none;
-        width: 50%;
-        border: 1px solid red;
-    }
-}
+/* -------------------- Media queries --------------------------*/
 
 @media (max-width: 800px) {
     .container {
@@ -328,16 +366,12 @@ footer {
         margin: 0px 5vw 10vh 5vw;
     }
 
-    .bg {
-        height: 50vh;
-    }
-
     .bg article {
-        width: 75%;
+        width: 100%;
         font-size: 1.5em;
     }
     
-    .titre-section {
+    article > h3 {
         font-size: 1.75em;
     }
 
@@ -345,27 +379,21 @@ footer {
 
 @media (max-width: 490px) {
 
-    .bg {
-        height: 50vh;
-    }
-
     .bg article {
-        width: 75%;
-        margin: 0px 5vw 0px 0px;
-        font-size: 1em;
+        width: 100%;
+        margin: 0px 0px 5vh 5vw;
+        font-size: 1.25em;
     }
     
-    .titre-section {
-        font-size: 1.5em;
+    article > h3 {
+        font-size: 1.75em;
     }
 
     .container {   
-        display: flex;
-        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        position: absolute;
-        margin: 0px 0px 5vh 0px;
+        width: 90%;
+        margin: 0px 5% 13vh 5%;
     }
 
     .button {
@@ -396,12 +424,51 @@ footer {
         margin-left: 20px;
     }
     
-    .text h2 {
+    .text h1 {
         font-size: 4em;
     }
     
     .text h3 {
         font-size: 1.25em;
+    }
+}
+
+@media (max-width: 550px) {
+
+    footer {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh 0px 5vh 0px;
+    }
+
+    .section-footer {
+        width: 90%;
+        max-width: 300px;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.1em;
+    }
+    
+    .img-footer {
+        width: 75%;
+        max-width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .img-footer > img {
+        height: 100%;
+    }
+    
+    .section-footer > h3 {
+        
+        font-size: 1.5em;
+        margin-bottom: 0.75em;
     }
 }
 
