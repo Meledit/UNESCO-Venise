@@ -18,7 +18,7 @@
     --clr-secondaire: #f8b03e;
     --clr-fond-principale: #333333;
     --clr-fond-secondaire: #505050;
-    --clr-illegale: #9F9F9F;
+    --clr-gris-clair: #9F9F9F;
     --clr-footer: rgb(26, 26, 26);
 }
 
@@ -87,7 +87,6 @@ body, html {
     font-family: Cicle;
 }
 
-
 /* Header */
 
 header {
@@ -99,8 +98,6 @@ header {
     height: 10vh;
     position: fixed;
     z-index: 1;
-    background-color: rgb(228, 108, 49);
-    opacity:0.75;
 }
 
 a {
@@ -109,6 +106,38 @@ a {
 
 header > a {
     height: 100%;   
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0vw;
+    background-color: var(--clr-fond-principale);
+    overflow: hidden;
+}
+
+#burger[type="radio"]:checked ~ .navbar {
+    width: fit-content;
+}
+
+#burger[type="radio"]:not(:checked) ~ .navbar {
+    width: 0vw;
+}
+
+#burgerClose[type="radio"]:checked ~ .navbar {
+    width: 0vw;
+}
+
+#burgerClose[type="radio"]:not(:checked) ~ .navbar {
+    width: fit-content;
+}
+
+#burgerClose {
+    position: relative;
+    top: 4vh;
+    left: 10px;
 }
 
 .logo {
@@ -198,8 +227,25 @@ header > a {
     display:flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
-    box-shadow: 5px 5px 30px rgb(19, 19, 19);
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px rgba(27, 26, 26, 0.685);
+}
+
+.navbar > ul {
+    margin-top: 10vh;
+}
+
+ul > li > .button {
+    margin: 20px;
+    width: 100px;
+    aspect-ratio: 1;
+    background: var(--clr-fond-secondaire);
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0px 5px 20px rgba(27, 26, 26, 0.685);
 }
 
 .button > a {
@@ -212,7 +258,7 @@ header > a {
 }
 
 .button:hover {
-    background-color: var(--clr-illegale);
+    background-color: var(--clr-gris-clair);
 }
 
 .button:active {
@@ -299,7 +345,7 @@ article > h3 {
     align-items: center;
 }
 
-/* Le images parallax */
+/* Les images parallax */
 
 .IMG1 {
     background: url(images/Fond5.jpg);
@@ -471,4 +517,3 @@ footer {
         margin-bottom: 0.75em;
     }
 }
-
