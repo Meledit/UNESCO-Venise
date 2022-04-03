@@ -357,7 +357,7 @@ article > h3 {
 
 .IMGparallax {
     /* Hauteur */
-    height: 150vh; 
+    height: 100vh; 
     /* Permet de créer l'effet parallaxe lors du scroll*/
     background-attachment: fixed;
     background-position:center;
@@ -520,6 +520,21 @@ footer {
 
 }
 
+
+/*--------- Mosaique ---------*/
+.bgGallery {
+    width: 100%;
+    background-color: var(--clr-fond-secondaire);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5vh 2vw 5vh 2vw;
+}
+
+.milieu{
+    align-items:center;
+}
+
 *,
 *:before,
 *:after {
@@ -531,9 +546,9 @@ footer {
 
 
 .wrapper {
-    max-width: 80vw;
-    padding: 2rem;
-    margin: 0 auto;
+    max-width: 85vw;
+    padding: 1rem;
+    margin: 0 ;
     max-height:90vh;
 }
 
@@ -601,7 +616,7 @@ footer {
     align-items: center;
     justify-content: center;
 
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
@@ -620,6 +635,7 @@ footer {
 .gallery__overlay span {
     position: relative;
     line-height: 3rem;
+    text-align: center;
 }
 
 .gallery__overlay span:before,
@@ -628,7 +644,7 @@ footer {
     position: absolute;
     height: 2px;
     width: 0;
-    background: #fff;
+    background: var(--clr-secondaire); /* Couleur des lignes */
     transition: width .3s ease-out .2s;
 }
 
@@ -661,7 +677,7 @@ footer {
 
 .gallery__link:hover .gallery__image {
     transform: scale(1.2);
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
 @media screen and (max-width: 60rem) {
@@ -711,19 +727,16 @@ footer {
 
 @media screen and (max-width: 35rem) {
     .gallery {
-        display: block;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .25rem;
     }
 
     .gallery__item {
-        margin: .5rem;
-    }
-
-    .gallery__link {
-        height: 80vw;
+        margin: .2rem;
     }
 
     .gallery__overlay {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
 
