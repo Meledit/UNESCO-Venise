@@ -303,9 +303,20 @@ ul > li > .button {
     width: 100%;
     background-color: var(--clr-fond-secondaire);
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding: 10vh 5vw 10vh 5vw;
+}
+
+.bg > img {
+    width: 550px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.363);
+}
+
+.bg > article > h2 {
+    margin-bottom: 20px;
 }
 
 .gauche {
@@ -317,8 +328,9 @@ ul > li > .button {
 }
 
 .bg article {
-    width: 50%;
+    width: 45%;
     font-size: 1.5em;
+    margin-bottom: 40px;
 }
 
 article > h3 {
@@ -406,40 +418,39 @@ footer {
 
 /* -------------------- Media queries --------------------------*/
 
-@media (max-width: 800px) {
-    .container {
-        margin-top: 0;
-        margin: 0px 5vw 10vh 5vw;
+@media (max-width: 400px) {
+    .text h1 {
+        font-size: 4em;
     }
-
-    .bg article {
-        width: 100%;
+    
+    .text h2 {
         font-size: 1.5em;
     }
-    
-    article > h3 {
-        font-size: 1.75em;
-    }
 
+    .bg > article {
+        margin: 10px;
+        font-size: 1.25em;
+    }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 1200px) {
 
     .bg article {
         width: 100%;
-        margin: 0px 0px 5vh 5vw;
-        font-size: 1.25em;
     }
-    
-    article > h3 {
-        font-size: 1.75em;
+
+    .bg article {
+        width: 100%;
+    }
+
+    .bg img {
+        width: 100%;
     }
 
     .container {   
         justify-content: space-between;
-        align-items: center;
         width: 90%;
-        margin: 0px 5% 13vh 5%;
+        margin: 0px 5vw 10vh 5vw;
     }
 
     .button {
@@ -469,14 +480,7 @@ footer {
         margin-right: 20px;
         margin-left: 20px;
     }
-    
-    .text h1 {
-        font-size: 4em;
-    }
-    
-    .text h3 {
-        font-size: 1.25em;
-    }
+
 }
 
 @media (max-width: 550px) {

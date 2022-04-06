@@ -385,7 +385,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .img-footer {
@@ -548,8 +547,7 @@ footer {
 .wrapper {
     max-width: 85vw;
     padding: 1rem;
-    margin: 0 ;
-    max-height:90vh;
+    margin: 0;
 }
 
 /* Gallery */
