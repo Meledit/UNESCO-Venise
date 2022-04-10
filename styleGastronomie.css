@@ -1,4 +1,5 @@
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -304,9 +305,11 @@ ul > li > .button {
     width: 100%;
     background-color: var(--clr-fond-secondaire);
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding: 10vh 5vw 10vh 5vw;
+    border:1px solid lime;
 }
 
 .gauche {
@@ -318,13 +321,62 @@ ul > li > .button {
 }
 
 .bg article {
-    width: 50%;
+    width: 48%;
     font-size: 1.5em;
+    margin-bottom: 40px;
+    /*flex-grow: 1;*/
+    border:1px solid pink
+}
+
+.bg > article > h2 {
+    margin-bottom: 20px;
 }
 
 article > h3 {
     font-size: 2em;
     margin: 0px 0px 5vh 0px;
+}
+
+.bg > img {
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.363);
+    border: 1px solid lime
+}
+
+.bg > .ZoneImg {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    width: 50%;
+    height:100%;
+    border-radius: 5px;
+    /*flex-grow: 1;*/
+    
+    border: 1px solid pink
+}
+
+
+
+.ImgEtLegende{
+    width:49%;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+    border: 1px solid blue
+}
+
+.ImgEtLegende img{
+    width:auto;
+    height:auto,
+}
+
+.ImgEtLegende p{
+    color:var(--clr-secondaire);
+    font-style:italic;
+    align-self: center;
 }
 
 /* carte interactive */
@@ -423,11 +475,25 @@ footer {
 
 }
 
-@media (max-width: 490px) {
+@media (max-width:1200px){
+    .bg article {
+        width: 100%;
+    }
+
+    .bg img {
+        width: 100%;
+    }
+
+    .bg .ZoneImg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
 
     .bg article {
         width: 100%;
-        margin: 0px 0px 5vh 5vw;
+        margin: 10px;
         font-size: 1.25em;
     }
     
@@ -737,5 +803,3 @@ footer {
         font-size: 1.25rem;
     }
 }
-
-
