@@ -347,110 +347,46 @@ ul > li > .button {
 }
 /* Event 1 */
 
-.event1 {
-    width: 100%;
+.bg > article > h2 {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    box-shadow: 1px 1px rgb(255, 255, 255);
+}
+
+.bg > article > .txt1 > .savoirplus {
+    display: none;
+}
+
+
+.bg > article > .boutonSP {
     background-color: var(--clr-fond-secondaire);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10vh 5vw 10vh 5vw;
-}
-
-.event1 > article > .img1 {
-    float:left;
-
-    width: 425px;
-    height:250px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.363); 
-}
-
-.event1 > article {
-    width: 65%;
-    text-align: right;
-    font-size: 1.5em;
-}
-
-.event1 > article > h2 {
-    text-align: right;
-    color: #000000;
-    box-shadow: 1px 1px 1px rgb(255, 255, 255);
-}
-
-.event1 > article > .txt1 > .savoirplus {
-display: none;
-}
-
-
-.event1 > article > .boutonSP {
-    padding: 10px 20px;
-    background-color: var(--clr-fond-secondaire);
-    color: rgb(0, 0, 0);
     border: none;
     outline: none;
-    font-size: 25px;
+    color: var(--clr-secondaire);
     cursor: pointer;
   }
 
-  .event1 article .txt1.SP .savoirplus{
-      display: inline;
-  }
+.bg article .txt1.SP .savoirplus {
+    display: inline;
+}
 
 /* Deuxième event */
 
-.event2 {
-    width: 100%;
+.bg > article > .txt2 > .savoirplus2 {
+    display: none;
+}
+    
+.bg > article > .boutonSP2 {
     background-color: var(--clr-fond-secondaire);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10vh 5vw 10vh 5vw;
+    border: none;
+    outline: none;
+    color: var(--clr-secondaire);
+    cursor: pointer;
 }
-
-.event2 > article > .img1 {
-    float: right;
-    width: 400px;
-    height: 250px;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.363); 
-}
-
-.event2 > article {
-    width: 65%;
-    text-align: left;
-    font-size: 1.5em;
-    margin-bottom: 40px;
-    margin-left: 600px;
-    margin-right: 100px;
-}
-
-.event2 > article > h2 {
-    text-align: right;
-    color: #000000;
-    margin-left: 0px;
-    margin-right: 410px;
-    box-shadow: 1px 1px 1px rgb(255, 255, 255);
-}
-
-.event2 > article > .txt2 > .savoirplus2 {
-    display:none;
-    }
     
-    .event2 > article > .boutonSP2 {
-        padding: 10px 20px;
-        background-color: var(--clr-fond-secondaire);
-        color: rgb(0, 0, 0);
-        border: none;
-        outline: none;
-        font-size: 25px;
-        cursor: pointer;
-      }
-    
-      .event2 article .txt2.SP2 .savoirplus2{
-          display: inline;
-      }
+.bg > article > .txt2.SP2 > .savoirplus2 {
+    display: inline;
+}
 
 /* Quatrième event */
 

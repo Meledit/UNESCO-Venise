@@ -311,12 +311,15 @@ ul > li > .button {
 
 .bg > img {
     width: 550px;
+    margin-bottom: 30px;
     border-radius: 5px;
     box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.363);
 }
 
-.bg > article > h2 {
-    margin-bottom: 20px;
+.bg > article > h3 {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    box-shadow: 1px 1px rgb(255, 255, 255);
 }
 
 .gauche {
@@ -330,7 +333,6 @@ ul > li > .button {
 .bg article {
     width: 45%;
     font-size: 1.5em;
-    margin-bottom: 40px;
 }
 
 article > h3 {
