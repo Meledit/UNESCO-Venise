@@ -118,6 +118,47 @@ header > a {
     overflow: hidden;
 }
 
+header > label {
+    height: 100%;
+}
+
+header > label > img {
+    height: 100%;
+}
+
+.burgerSquare > label {
+    height: 100%;
+}
+
+.burgerSquare > label > img {
+    height: 100%;
+}
+
+#burger {
+    display: none;
+}
+
+#burgerClose {
+    display: none;
+}
+
+.zoneBurger {
+    padding: 5px 10px 5px 20px;
+    height: 10vh;
+    aspect-ratio: 1;
+}
+
+.zoneBurger > label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.zoneBurger > label > img {
+    height: 72%;
+}
+
 #burger[type="radio"]:checked ~ .navbar {
     width: fit-content;
 }
@@ -467,7 +508,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 0.5em;
     }
 
     .text {
