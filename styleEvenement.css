@@ -401,14 +401,6 @@ ul > li > .button {
     padding: 10vh 5vw 10vh 5vw;
 }
 
-.IMGparallax > .event4 > article > .img1 {
-    float: right;
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(29, 28, 28, 0.363); 
-}
-
 .IMGparallax > .event4 > article {
     width: 65%;
     text-align: left;
