@@ -348,6 +348,7 @@ ul > li > .button {
     align-items: center;
     justify-content: space-between;
     padding: 10vh 5vw 10vh 5vw;
+    border: 1px solid red;
 }
 
 .bg > img {
@@ -371,9 +372,10 @@ ul > li > .button {
     align-items: flex-end;
 }
 
-.bg article {
+.bg > article {
     width: 45%;
     font-size: 1.5em;
+    border: 1px solid blue;
 }
 
 article > h3 {
