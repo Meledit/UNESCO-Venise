@@ -397,7 +397,7 @@ article {
 .image-et-legende > img {
     margin: 5px 5px 15px 5px;
     border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.505);
+    box-shadow: 0px 5px 10px rgba(56, 57, 74, 0.505);
     width: auto;
     height: auto;
 }
@@ -483,14 +483,28 @@ article {
 /* l'effet parallax */
 /* /!\ les classes IMG doivent être misent avant la classe IMGparallax */
 
-.IMGparallax {
-    /* Hauteur */
-    height: 150vh; 
+.IMGparallax { 
     /* Permet de créer l'effet parallaxe lors du scroll*/
     background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.IMG-geante {
+    height: 150vh;
+}
+
+.IMG-grande {
+    height: 100vh;
+}
+
+.IMG-normale {
+    height: 75vh;
+}
+
+.IMG-petite {
+    height: 50vh;
 }
 
 /* ------------------------- Footer ----------------------------*/
