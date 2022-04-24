@@ -6,14 +6,18 @@
 }
 
 /*--------- Mosaique ---------*/
+.IMG2 {
+    background: url(images/Gastronomie/restaurant.jpg);
+}
 
 .bgGallery {
     width: 100%;
     background-color: var(--clr-fond-secondaire);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 5vh 2vw 5vh 2vw;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5vh 5vw 5vh 5vw;    
 }
 
 .milieu{
@@ -40,6 +44,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 12.5rem);
     gap: .5rem;
+    margin-top: 20px;
     
 }
 

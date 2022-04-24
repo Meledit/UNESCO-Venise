@@ -397,9 +397,12 @@ article {
 .image-et-legende > img {
     margin: 5px 5px 15px 5px;
     border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(56, 57, 74, 0.505);
-    width: auto;
-    height: auto;
+    box-shadow: 0px 5px 10px rgba(10, 10, 10, 0.505);
+    width:auto;
+    height:auto;
+    aspect-ratio:16/12;
+    object-fit:cover;
+    object-position:center;
 }
 
 .image-et-legende > p {
