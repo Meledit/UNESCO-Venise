@@ -20,6 +20,7 @@
     --clr-fond-secondaire: #505050;
     --clr-gris-clair: #9F9F9F;
     --clr-footer: rgb(26, 26, 26);
+    accent-color: var(--clr-principale);
 }
 
 ::selection {
@@ -247,10 +248,12 @@ header > label > img {
 
 .text h1 {
     font-size: 5em;
+    user-select: none;
 }
 
 .text h2 {
     font-size: 2em;
+    user-select: none;
 }
 
 /* Boutons */
@@ -390,6 +393,7 @@ ul > li > .button {
 
 article {
     font-size: 1.5em;
+    text-indent: 40px; 
     display: flex;
     flex-direction: column;
 }
