@@ -10,6 +10,10 @@
     background: url(images/Gastronomie/restaurant.jpg);
 }
 
+.IMG3{
+    background:url(images/Gastronomie/Fond.jpg)
+}
+
 .bgGallery {
     width: 100%;
     background-color: var(--clr-fond-secondaire);
