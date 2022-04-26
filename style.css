@@ -256,6 +256,14 @@ header > label > img {
     user-select: none;
 }
 
+span {
+    text-decoration: underline;
+}
+
+.bg > .zone-article > article > p {
+    margin-bottom: 10px;
+}
+
 /* Boutons */
 
 .buttons {
@@ -360,6 +368,15 @@ ul > li > .button {
     width: 45%;
 }
 
+.zone-article-centrer {
+    width: 45%;
+}
+
+.bg > .zone-article-centrer > article {
+    text-align: center;
+    text-indent: 0px;
+}
+
 .zone-article > h2 {
     width: fit-content;
     font-size: 2em;
@@ -393,7 +410,7 @@ ul > li > .button {
 
 article {
     font-size: 1.5em;
-    text-indent: 40px; 
+    text-indent: 30px; 
     display: flex;
     flex-direction: column;
 }
@@ -487,6 +504,10 @@ article {
     background: url(images/Fond5.jpg);
 }
 
+.inondation {
+    background: url(images/ImagesVeniseEnDanger/bgtroll.jpg);
+}
+
 /* l'effet parallax */
 /* /!\ les classes IMG doivent être misent avant la classe IMGparallax */
 
@@ -512,6 +533,10 @@ article {
 
 .IMG-petite {
     height: 50vh;
+}
+
+.IMG-microscopique {
+    height: 25vh;
 }
 
 /* ------------------------- Footer ----------------------------*/
