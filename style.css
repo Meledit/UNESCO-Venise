@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -103,6 +104,7 @@ header {
 
 a {
     text-decoration: none;
+    color: var(--clr-secondaire);
 }
 
 header > a {
