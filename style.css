@@ -104,7 +104,6 @@ header {
 
 a {
     text-decoration: none;
-    color: var(--clr-secondaire);
 }
 
 header > a {
@@ -258,9 +257,6 @@ header > label > img {
     user-select: none;
 }
 
-span {
-    text-decoration: underline;
-}
 
 .bg > .zone-article > article > p {
     margin-bottom: 10px;
@@ -506,9 +502,6 @@ article {
     background: url(images/Fond5.jpg);
 }
 
-.inondation {
-    background: url(images/ImagesVeniseEnDanger/bgtroll.jpg);
-}
 
 /* l'effet parallax */
 /* /!\ les classes IMG doivent être misent avant la classe IMGparallax */
@@ -720,6 +713,14 @@ footer {
         align-items: center;
         justify-content: baseline;
         width: 90%;
+    }
+
+    .image-avant {
+        flex-direction: column-reverse;
+    }
+
+    .image-apres {
+        flex-direction: column;
     }
 
     .image-et-legende {
