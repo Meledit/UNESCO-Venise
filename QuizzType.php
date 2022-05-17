@@ -184,7 +184,7 @@
                             } else {
                                 echo "<label for='reponse1-3'>Reponse 1</label>";
                             }
-                        ?>     
+                        ?>
                     </div>
 
                     <div>
