@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    color: var(--clr-secondaire);
+}
+
 .valider {
     width: 150px;
     aspect-ratio: 3/1;

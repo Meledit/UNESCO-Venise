@@ -7,12 +7,13 @@
 
 /*--------- Mosaique ---------*/
 .IMG2 {
-    background: url(images/Gastronomie/restaurant.jpg);
+    background: url(Images/Gastronomie/Fond3.jpg);
 }
 
 .IMG3{
-    background:url(images/Gastronomie/Fond.jpg)
+    background:url(Images/Gastronomie/restaurant.jpg)
 }
+
 
 .bgGallery {
     width: 100%;
