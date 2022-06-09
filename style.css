@@ -473,6 +473,12 @@ article > iframe { /* carte */
     margin-top: 10px;
 }
 
+.bg > article > .texte-sans-titre {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .bg > .article > .zone-texte > p {
     font-size: 1.5em;
     margin-bottom: 15px;
