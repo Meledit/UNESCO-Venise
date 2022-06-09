@@ -654,16 +654,16 @@ article > iframe { /* carte */
     margin-top: 5px;
 }
 
-#savoirPlus[type="radio"] ~ div {
+#savoirPlus[type="radio"] ~ p {
     display: flex;
     flex-direction: column;
 }
 
-#savoirPlus[type="radio"]:checked ~ div {
+#savoirPlus[type="radio"]:checked ~ p {
     height: fit-content;
 }
 
-#savoirPlus[type="radio"]:not(:checked) ~ div {
+#savoirPlus[type="radio"]:not(:checked) ~ p {
     height: 0px;
     overflow: hidden;
 }
