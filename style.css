@@ -70,16 +70,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-transform: uppercase;
     position: fixed;
     right: 20px;
     bottom: 10px;
     width: 8vh;
     aspect-ratio: 1;
-    background-color: #ea5a0c8f;
+    background-color: var(--clr-principale);
     border-radius: 50%;
     box-shadow: 2px 2px 20px #0000003a;
     z-index: 10;
+}
+
+.jump > img {
+    width: 100%;
+    aspect-ratio: 1;
 }
 
 .jump:hover {
