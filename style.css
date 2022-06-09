@@ -499,9 +499,17 @@ article > iframe { /* carte */
     margin-right: 20px;
 }
 
-.bg > .article > .zone-images > img {
-    object-fit: cover;
+.bg > .article > .zone-images > .image-et-legende {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
     width: 45%;
+}
+
+.bg > .article > .zone-images > .image-et-legende > img {
+    object-fit: cover;
+    width: 100%;
     aspect-ratio: 4/3;
     border: 1px solid white;
     border-radius: 4px;
@@ -513,9 +521,13 @@ article > iframe { /* carte */
     align-items: center;
 }
 
-.bg > .article > .deux-images > img{
-    aspect-ratio: 2;
+.bg > .article > .deux-images > .image-et-legende {
     width: 90%;
+}
+
+.bg > .article > .deux-images > .image-et-legende > img {
+    aspect-ratio: 2;
+    width: 100%;
 }
 
 /* Le saviez-vous */
@@ -696,46 +708,6 @@ article > iframe { /* carte */
     height: 25vh;
 }
 
-/* ------------------------- Footer ----------------------------*/
-/*
-footer {
-    background: var(--clr-fond-principale);
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding: 5vh 0px 10vh 0px;
-}
-
-.section-footer {
-    width: 30%;
-    height: fit-content;
-    max-width: 300px;
-    margin: 0px 2vw 0px 2vh;
-    padding: 1vh 1vw 1vh 1vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid red;
-}
-
-.img-footer {
-    height: 5vw;
-    min-height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.img-footer > img {
-    height: 100%;
-}
-
-.section-footer > h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.75em;
-}*/
-
 /* Animations */
 
 @keyframes hover-voir {
@@ -847,6 +819,7 @@ footer {
     .bg > .image-avant {
         flex-direction: column-reverse;
     }
+
     .bg > .image-apres {
         flex-direction: column;
     }
@@ -861,7 +834,11 @@ footer {
         flex-direction: row;
     }
 
-    .bg > .article > .deux-images > img{
+    .bg > .article > .deux-images > .image-et-legende {
+        width: 100%;
+    }
+
+    .bg > .article > .deux-images > .image-et-legende > img {
         aspect-ratio: 2;
         width: 100%;
     }
@@ -878,7 +855,13 @@ footer {
         gap: 10px;
     }
 
-    .bg > .article > .zone-images > img {
+    .bg > .article > .zone-images > .image-et-legende > img {
+        max-width: none;
+        width: 100%;
+        aspect-ratio: 2;
+    }
+
+    .bg > .article > .zone-images > .image-et-legende {
         max-width: none;
         width: 100%;
         aspect-ratio: 2;
