@@ -455,7 +455,7 @@ article > iframe { /* carte */
     display: flex;
     align-items: center;
     width: 90%;
-    gap: 100px;
+    gap: 30px;
 }
 
 .bg > .article > .zone-texte {
@@ -512,6 +512,47 @@ article > iframe { /* carte */
 .bg > .article > .deux-images > img{
     aspect-ratio: 2;
     width: 90%;
+}
+
+/* Le saviez-vous */
+
+.zone-saviez-vous {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saviez-vous {
+    width: 60%;
+    max-width: 400px;
+    box-shadow: 0px 2px 4px rgba(34, 33, 33, 0.256);
+}
+
+.saviez-vous > .titre {
+    font-size: 1.5em;
+    padding: 5px 10px;
+    background-color: rgb(192, 102, 42);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.saviez-vous > .titre > img {
+    width: 55px;
+    aspect-ratio: 1;
+}
+
+.saviez-vous > p {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    text-indent: 20px;
+    padding: 10px;
+    background-color:#4b4b4b;
+    min-height: 75px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 /* widgets (les liens sur la page d'accueil) */
@@ -774,12 +815,16 @@ footer {
         max-width: none;
         aspect-ratio: 2;
     }
+
+    .saviez-vous {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1200px) {
     .bg > .article {
         flex-direction: column-reverse;
-        gap: 5px;
+        gap: 30px;
     }
 
     .bg > .article > .zone-texte {
