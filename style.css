@@ -642,28 +642,27 @@ article > iframe { /* carte */
 
 #savoirPlus[type="radio"] + label {
     cursor: pointer;
-    color: var(--clr-secondaire);
-    font-size: 0.75em;
-    margin-top: 5px;
+    color: var(--clr-principale);
+    text-indent: 0px;
 }
 
 #savoirMoins[type="radio"] + label {
     cursor: pointer;
-    color: var(--clr-secondaire);
-    font-size: 0.75em;
-    margin-top: 5px;
+    color: var(--clr-principale);
+    text-indent: 0px;
 }
 
-#savoirPlus[type="radio"] ~ p {
+#savoirPlus[type="radio"] ~ span {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
 }
 
-#savoirPlus[type="radio"]:checked ~ p {
+#savoirPlus[type="radio"]:checked ~ span {
     height: fit-content;
 }
 
-#savoirPlus[type="radio"]:not(:checked) ~ p {
+#savoirPlus[type="radio"]:not(:checked) ~ span {
     height: 0px;
     overflow: hidden;
 }
