@@ -34,6 +34,7 @@
 
 ::selection {
     background-color: #ea5a0c7c;
+    color:white;
 }
 
 /* Scrollbar */
@@ -575,7 +576,7 @@ article > iframe { /* carte */
 .saviez-vous > p {
     display: flex;
     align-items: center;
-    font-size: 1em;
+    font-size: 1.1em;
     padding: 10px;
     background-color:#666565;
     min-height: 75px;

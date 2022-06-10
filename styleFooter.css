@@ -1,5 +1,32 @@
+:root {
+  --clr-principale: #ea5b0c;
+  --clr-appoint: #b94402;
+  --clr-secondaire: #f8b03e;
+  --clr-fond-principale: #333333;
+  --clr-fond-secondaire: #505050;
+  --clr-gris-clair: #9F9F9F;
+  --clr-footer: rgb(26, 26, 26);
+  accent-color: var(--clr-principale);
+}
+
+@font-face {
+  font-family: Dyno;
+  src: url(Polices/Dyno_Regular.ttf);
+  font-family: Cicle;
+  src: url(Polices/Cicle_Fina.ttf);
+}
+
+*{
+  font-family: Dyno;
+}
+
+::selection {
+  background-color: #ea5a0c7c;
+  color:white;
+}
+
 .site-footer {
-  background-color: #26272b;
+  background-color: var(--clr-footer);
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -23,7 +50,7 @@
   color: #737373;
 }
 .site-footer a:hover {
-  color: #3366cc;
+  color: var(--clr-appoint);
   text-decoration: none;
 }
 .footer-links {
@@ -39,7 +66,7 @@
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: #3366cc;
+  color: var(--clr-appoint);
   text-decoration: none;
 }
 .footer-links.inline li {
@@ -74,11 +101,19 @@
     text-align: center;
   }
 }
+
 .social-icons {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
 }
+
+img {
+  width:60%;
+  align-self: center;
+}
+
+.fa{}
 .social-icons li {
   display: inline-block;
   margin-bottom: 4px;
