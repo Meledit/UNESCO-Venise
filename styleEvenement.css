@@ -27,7 +27,6 @@
 /* Bandeau Evenemment */
 /* texte sommaire */
 .texttb {
-    
     width: 100%;
     background-color: var(--clr-fond-secondaire);
     display: flex;

@@ -12,9 +12,9 @@
 
 @font-face {
     font-family: Dyno;
-    src: url(Polices/Dyno_Regular.ttf);
+    src: url(polices/Dyno_Regular.ttf);
     font-family: Cicle;
-    src: url(Polices/Cicle_Fina.ttf);
+    src: url(polices/Cicle_Fina.ttf);
 }
 
 /* Variables */
@@ -515,7 +515,7 @@ article > iframe { /* carte */
     flex-direction: column;
     align-items: center;
     width: 50%;
-    max-width: 350px;
+    max-width: 500px;
     margin-left: 20px;
     margin-right: 20px;
     gap: 3px;

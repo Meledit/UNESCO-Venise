@@ -6,86 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleGastronomie.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
     <title>Venise Gastronomie</title>
 </head>
     <body>
-        <a href="#" class="jump">
-            <img src="images/btt.png" alt="">
-        </a>
+        <?php
+        include("header.php");
 
+        // Préparation des textes traduits
+
+        $venise = array("Venise démasquée","Unmasking Venice");
+        $sousTitre = array("Une ville aux milles et une saveurs","A city of a thousand and one flavours");
+        $saviezvous=array("Le saviez-vous ?","Did you know ?");
+        $bienvenue = array("Bienvenue sur la page gastronomie&nbsp;!","Welcome to the gastronomy page&nbsp;!");
+        $bienvenueTexte = array("Ici vous retrouverez des informations concernant la gastronomie variée de Venise. Si vous souhaitez accéder à une partie précise de sa gastronomie, 
+        cliquer sur une image de la mosaique qui la concerne.", "Here you will be able to find information about the varied gastronomy of Venice. If you wish to access a specific part of its gastronomy 
+        click on the picture of the mosaic that concerns it.");
+
+        $poisson = array("Les poissons", "Fishes");
+        $dessert =array("Les desserts", "Desserts");
+        $viande = array("Les viandes","Meats");
+        $streetFood=array("La StreetFood", "StreetFood");
+        $boisson=array("Les Cocktails & Boissons","Cocktails & Drinks");
+        $plat=array("Les Plats & Accompagnements","Dishes And Accompaniments");
+
+        $poisson1=array("Venise possède une riche culture culinaire, sa gastronomie est grandement influencée par sa proximité à la mer, 
+        avec beaucoup de plats à base de crustacés ou de poissons. A base de poissons, on note aussi le Pesce Al Forno, 
+        du poisson, souvent bar ou dorade royale cuit au four, servie avec des tomates ou des pommes de terre. ","Venice has a rich culinary culture, its gastronomy is greatly influenced by its proximity to the sea, with many dishes based on shellfish or fish. Fish-based dishes include Pesce Al Forno, fish, 
+        often sea bass or sea bream baked in the oven, served with tomatoes or potatoes.");
+        $poisson2=array("Parmi les différents crustacés utilisées, il y a notamment les poulpes et seiches qui sont des éléments récurrents de la 
+        gastronomie vénitienne, comme par exemple dans les seppia nero, des seiches cuisinées dans une sauce à base d’encre 
+        noire qui peuvent être accompagnée de risotto ou de pâtes, elles aussi à l’encre de seiche. Il y aussi les Fritto Misto, 
+        littéralement “Friture Mixte” parmi lesquels se trouvent les fritures de calamars, d’anchois, de crevettes et bien d’autres.
+        La seiche est aussi parfois farcie à base de tomates, d'oignons et quelquefois de lardons ou de parmesan.","Among the various crustaceans used, 
+        octopus and cuttlefish are recurrent elements of Venetian gastronomy, as for example in seppia nero, cuttlefish cooked in a black ink sauce which can be accompanied by risotto or pasta, also with cuttlefish ink.  There is also Fritto Misto, literally \"Mixed Frying\", which includes fried squid, anchovies, shrimps and many others.
+        Cuttlefish is also sometimes stuffed with tomatoes, onions and sometimes lardons or parmesan.");
+
+        $viande1=array("Les plats vénitiens ne se limitent pas aux poissons et crustacés, la viande y occupe aussi une place importante, on peut notamment 
+        penser au carpaccio composé de fines tranches de bœuf cru assaisonné de citron, d'huile d’olive et parfois de parmesan. Le carpaccio
+         peut également être parfois accompagné de pignons de pins ou de feuilles de roquettes. Le carpaccio a été inventé par Giuseppe Cipriani
+          en 1950 pour une de ses clientes, Amalia Nani Mocenigo, à qui son médecin avait recommandé de manger de la viande crue.","Venetian dishes are 
+          not limited to fish and shellfish, meat also occupies an important place, such as carpaccio made of thin slices of raw beef seasoned with lemon, olive oil and occasionally parmesan. 
+          Carpaccio can also be served with pine nuts or roquette leaves. Carpaccio was invented by Giuseppe Cipriani in 1950 for one of his clients, Amalia Nani Mocenigo, who was advised by her doctor to eat raw meat.");
+        $viande2=array("Il y a aussi le Fegato alla Veneziana, littéralement le foie à la vénitienne, du foie de veau accompagné d’oignons caramélisés, cette recette 
+        remonte aux anciens Romains qui avaient l’habitude de cuisiner le foie, cependant la figue de la recette romaine a été remplacé par des oignons 
+        bien plus présents dans la lagune vénitienne. Le Fegato alla Veneziana est souvent accompagné de polenta.","There is also Fegato alla Veneziana, literally liver in the venetian 
+        style, calf's liver accompanied by caramelized onions, this recipe dates back to the ancient Romans who used to cook liver, however the fig of the Roman recipe has been replaced by 
+        onions which are much more present in the Venetian lagoon. Fegato alla Veneziana is often accompanied by polenta.");
+        $viande3=array("Le nom du Carpaccio rend hommage à <a href=\"PageOeuvre.php#Carpaccio\">Vittore Carpaccio</a>, un célèbre peintre vénitien du XV ème siècle, 
+        connu pour ses peintures aux nuances d’un rouge vif.","The name Carpaccio is a tribute to <a href=\"PageOeuvre.php#Carpaccio\">Vittore Carpaccio</a>, a famous Venetian painter of the 15th century, known for his bright red paintings");
+        
+        
+        
+        ?>
         <section class="showcase">
-            <header>
-                    <input type="radio" id="burger" name="burger">
-                    <label for="burger"><img src="images/menu.png" alt=""></label>
-                    <div class="navbar">
-                        <div class="burgerSquare">
-                            <div class="zoneBurger">
-                                <input type="radio" id="burgerClose" name="burger">
-                                <label for="burgerClose"><img src="images/close.png" alt=""></label>    
-                            </div>
-                        </div>
-                        <ul>
-                            <li>
-                                <h3>Histoire</h3>
-                                <a href="">Histoire</a>
-                            </li>
-                            <li>
-                                <h3>Culture</h3>
-                                <a href="">Gastronomie</a>
-                                <a href="">Architecture</a>
-                                <a href="">Événement</a>
-                                <a href="">Oeuvres</a>
-                            </li>
-                            <li>
-                                <h3>Séjours</h3>
-                                <a href="">Séjour</a>
-                            </li>
-                            <li>
-                                <h3>Quiz</h3>
-                                <a href="">Nos quiz</a>
-                            </li>
-                            <li>
-                                <h3>Langues</h3>
-                                <div class="drapeaux">
-                                    <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                    <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                    <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                    <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>    
-                </div>
-                <a href="index.html"><img src="images/eye-mask.png" alt="Logo Gustave eiffel" class="logo"></a>
-            </header>
-   
-
-
+            
             <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
             <div class="overlay"></div>
     
             <div class="container">
                 <div class="text">
-                    <h1>Venise démasquée</h1>
-                    <h2>Une ville aux milles et une saveurs</h2>
+                    <?php
+                    echo "<h1>$venise[$lang]</h1>";
+                    echo "<h2>$sousTitre[$lang]</h2>";
+                    ?>                    
+            </div>
         </section>
 
 
         <div class="bgGallery milieu">
             <div class="bg noir">
                 <article>
-                    <h3>Bienvenue sur la page gastronomie&nbsp;!</h3>
-                    <p>
-                        Ici vous retrouverez des informations 
-                        concernant la gastronomie variée de Venise.
-                        Si vous souhaitez accéder à une partie 
-                        précise de sa gastronomie, cliquer sur une 
-                        image de la mosaique qui la concerne.
-                    </p>
+                    <?php
+                    echo "<h3>$bienvenue[$lang]</h3>";
+                    echo "<p> $bienvenueTexte[$lang]</p>"
+                    ?>
+                    
                 </article>
             </div>
 
@@ -95,7 +91,7 @@
                         <a href="#Poissons" class="gallery__link">
                             <img src="Images/Gastronomie/Fritto_misto3(pas libre).jpg" class="gallery__image" />
                             <div class="gallery__overlay">
-                                <span>Poissons</span>
+                                <?= "<span>$poisson[$lang]</span>" ?>
                             </div>
                         </a>
                     </div>
@@ -103,7 +99,7 @@
                         <a href="#Viandes" class="gallery__link">
                             <img src="Images/Gastronomie/Carpaccio2.jpg" class="gallery__image" />
                             <div class="gallery__overlay">
-                                <span>Viandes</span>
+                                <?= "<span>$viande[$lang]</span>"?>
                             </div>
                         </a>
                     </div>
@@ -111,7 +107,7 @@
                         <a href="#Desserts" class="gallery__link">
                             <img src="Images/Gastronomie/Tiramisu2.jpg" class="gallery__image" />
                             <div class="gallery__overlay">
-                                <span>Desserts</span>
+                                <?= "<span>$dessert[$lang]</span>" ?>
                             </div>
                         </a>
                     </div>
@@ -119,7 +115,7 @@
                         <a href="#Cocktails" class="gallery__link">
                             <img src="Images/Gastronomie/Spritz2.jpg" class="gallery__image" />
                             <div class="gallery__overlay">
-                                <span>Cocktails & Boissons</span>
+                                <?= "<span>$boisson[$lang]</span>" ?>
                             </div>
                         </a>
                     </div>
@@ -127,7 +123,7 @@
                         <a href="#Accompagnements" class="gallery__link">
                             <img src="Images/Gastronomie/Bigoli-in-Salsa.jpg" class="gallery__image" />
                             <div class="gallery__overlay">
-                                <span>Plats et Accompagnements</span>
+                                <?= "<span>$plat[$lang]</span>" ?>
                             </div>
                         </a>
                     </div>
@@ -135,7 +131,7 @@
                         <a href="#StreetFood" class="gallery__link">
                             <img src="Images/Gastronomie/Arancini1.jpg" class="gallery__image" />
                             <div class="gallery__overlay">
-                                <span>Street Food</span>
+                                <?= "<span> $streetFood[$lang] </span>"?>
                             </div>
                         </a>
                     </div>
@@ -159,19 +155,11 @@
                     </div>
                 </div> 
                 <div class="zone-texte bordure-texte">
-                    <h3>Les poissons</h3>
-                    <p>
-                        Venise possède une riche culture culinaire, sa gastronomie est grandement influencée par sa proximité à la mer, 
-                        avec beaucoup de plats à base de crustacés ou de poissons. A base de poissons, on note aussi le Pesce Al Forno, 
-                        du poisson, souvent bar ou dorade royale cuit au four, servie avec des tomates ou des pommes de terre. 
-                    </p>
-                    <p>
-                        Parmi les différents crustacés utilisées, il y a notamment les poulpes et seiches qui sont des éléments récurrents de la 
-                        gastronomie vénitienne, comme par exemple dans les seppia nero, des seiches cuisinées dans une sauce à base d’encre 
-                        noire qui peuvent être accompagnée de risotto ou de pâtes, elles aussi à l’encre de seiche. Il y aussi les Fritto Misto, 
-                        littéralement “Friture Mixte” parmi lesquels se trouvent les fritures de calamars, d’anchois, de crevettes et bien d’autres.
-                        La seiche est aussi parfois farcie à base de tomates, d'oignons et quelquefois de lardons ou de parmesan.
-                    </p>
+                    <?php
+                        echo "<h3>$poisson[$lang]</h3>";
+                        echo "<p>$poisson1[$lang]</p>";
+                        echo "<p>$poisson2[$lang]</p>";
+                    ?>
                 </div>
             </div>
         </div>
@@ -179,29 +167,20 @@
         <div class="bg gris" id="Viandes">
             <div class="article image-apres">
                 <div class="zone-texte bordure-texte">
-                    <h3>Les viandes</h3>
-                    <p>
-                        Les plats vénitiens ne se limitent pas aux poissons et crustacés, la viande y occupe aussi une place importante, on peut notamment 
-                        penser au carpaccio composé de fines tranches de bœuf cru assaisonné de citron, d'huile d’olive et parfois de parmesan. Le carpaccio
-                         peut également être parfois accompagné de pignons de pins ou de feuilles de roquettes. Le carpaccio a été inventé par Giuseppe Cipriani
-                          en 1950 pour une de ses clientes, Amalia Nani Mocenigo, à qui son médecin avait recommandé de manger de la viande crue. 
-                    </p>   
-                    <p>  
-                          Il y a aussi le Fegato alla Veneziana, littéralement le foie à la vénitienne, du foie de veau accompagné d’oignons caramélisés, cette recette 
-                          remonte aux anciens Romains qui avaient l’habitude de cuisiner le foie, cependant la figue de la recette romaine a été remplacé par des oignons 
-                          bien plus présents dans la lagune vénitienne. Le Fegato alla Veneziana est souvent accompagné de polenta.
-                    </p>
+                    <?php
+                        echo "<h3>$viande[$lang]</h3>";
+                        echo "<p>$viande1[$lang]</p>";
+                        echo "<p>$viande2[$lang]</p>";
+                    ?>
 
                     <div class="zone-saviez-vous">
                         <div class="saviez-vous">
                             <div class="titre">
-                                <img src="images/DonnolaManger.png" alt="">
-                                <h3>Le saviez vous ?</h3>
+                                <img src="Images/DonnolaManger.png" alt="">
+                                <?= "<h3>$saviezvous[$lang]</h3>"?>
                             </div>
                             <p>
-                                Le nom du Carpaccio rend hommage à Vittore Carpaccio, un célèbre peintre vénitien du XV ème siècle, 
-                                connu pour ses peintures aux nuances d’un rouge vif.
-
+                                <?=" $viande3[$lang] "?>
                             </p>
                         </div>
                     </div>     
@@ -242,6 +221,9 @@
                     </div>
                 </div> 
                 <div class="zone-texte bordure-texte">
+                    <?php 
+
+                    ?>
                     <h3>Les Plats et Accompagnements</h3>
                     <p>
                         Afin d’accompagner ses spécialités, ou pour être dégustés seuls, Venise regorge d’accompagnement 
@@ -346,12 +328,13 @@
                         forme de S. Quand Venise était une grande puissance maritime, les baicoli aussi appelés “les biscuits de bateau” accompagnaient 
                         les marins durant leurs longs voyages. Ces baicoli étaient aussi appréciés par les aristocrates vénitiens. Dans les rues de Venise, 
                         il est également possible d’acheter des brioches con gelato, littéralement des brioches dans lesquelles on met de la glace.
+
                     </p>
                     
                     <div class="zone-saviez-vous">
                         <div class="saviez-vous">
                             <div class="titre">
-                                <img src="images/DonnolaManger.png" alt="">
+                                <img src="Images/DonnolaManger.png" alt="">
                                 <h3>Le saviez vous ?</h3>
                             </div>
                             <p>
