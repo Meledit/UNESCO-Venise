@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    
+    <title>Venise</title>
 </head>
 <body>
     <?php 
+        // Gestion de la traduction
         session_start();
         
         if (isset($_GET['lang'])){
@@ -24,14 +22,11 @@
         }else{
             $lang = $_SESSION['lang'];
         }
-
-        
-
         if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') 
             $url = "https"; 
         else
             $url = "http"; 
-            
+
         // Ajoutez // à l'URL.
         $url .= "://"; 
             
@@ -39,70 +34,80 @@
         $url .= $_SERVER['HTTP_HOST']; 
             
         // Ajouter l'emplacement de la ressource demandée à l'URL
-        $url .= $_SERVER['PHP_SELF']
-            
-        // Afficher l'URL
-        //echo $url; 
+        $url .= $_SERVER['PHP_SELF'];
+
+        // Preparation des textes affichés
+
+        $culture=array("Culture","Culture");
+        $gastronomie=array("Gastronomie","Gastronomy");
+        $histoire=array("Histoire","History");
+        $sejours=array("Séjours","Stays");
+        $langues=array("Langues","Languages");
+        $architecture=array("Architecture","Architecture");
+        $quizz=array("Quizz","Quiz");
+        $quizz2=array("Nos quizz","Our quizzes");
+        $evenement=array("Événements","Events");
+        $oeuvres=array("Oeuvres et Personnalités","Arts and Personalities");
+        
     ?>
 
 
     <a href="#" class="jump"></a>
-            <header>
-    
-                    <input type="radio" id="burger" name="burger" checked>
-                    <label for="burger"><img src="images/menu.png" alt=""></label>
-                    <div class="navbar">
+        <header>
+            <input type="radio" id="burger" name="burger">
+            <label for="burger"><img src="Images/menu.png" alt=""></label>
+                <div class="navbar">
                     <div class="burgerSquare">
                         <div class="zoneBurger">
                             <input type="radio" id="burgerClose" name="burger">
-                            <label for="burgerClose"><img src="images/close.png" alt=""></label>    
+                            <label for="burgerClose"><img src="Images/close.png" alt=""></label>    
                         </div>
                     </div>
                     <ul>
                         <li>
-                            <div class="button">
-                                <a href="PageType.html">
-                                    <img class="picto livre" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                    Histoire    
-                                </a>
-                            </div>
+                            <?php
+                                echo "<h3>$histoire[$lang]</h3>";
+                                echo "<a href=\"PageHistoire.php\">$histoire[$lang]</a>";
+                            ?>
+                            
+                            
                         </li>
                         <li>
-                            <div class="button">
-                                <a href="PageGastronomieTest.html">
-                                    <img class="picto masque" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                    Culture    
-                                </a>
-                            </div>
+                            <?php
+                                echo "<h3>$culture[$lang]</h3>";
+                                echo "<a href=\"PageGastronomie.php\">$gastronomie[$lang]</a>";
+                            ?>                           
+                            
+                            <?= "<a href=\"\">$architecture[$lang]</a>" ?>
+                            <?= "<a href=\"\">$evenement[$lang]</a>" ?>
+                            <?= "<a href=\"\">$oeuvres[$lang]</a>"?>
                         </li>
                         <li>
-                            <div class="button">
-                                <a href="PageType.html">
-                                    <img class="picto news" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                    Actualités    
-                                </a>
-                            </div>
+                            <?php
+                                echo "<h3>$sejours[$lang]</h3>";
+                                echo "<a href=\"\">$sejours[$lang]</a>";
+                            ?>
                         </li>
                         <li>
-                            <div class="button">
-                                <a href="PageType.html">
-                                    <img class="picto ticket" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                    Séjours    
-                                </a>
+                            <?= "<h3>$quizz[$lang]</h3>" ?>
+                            <?= "<a href=\"\">$quizz2[$lang]</a>" ?>
+                        </li>
+                        <li>
+                            <?php
+                            echo "<h3>$langues[$lang]</h3>";
+                            ?>
+                            
+                            <div class="drapeaux">
+                                <?php
+                                    echo "<a href=\"$url?lang=0\"><img src=\"Images/drapeau0.png\" alt=\"\"></a>";
+                                    echo "<a href=\"$url?lang=1\"><img src=\"Images/drapeau1.png\" alt=\"\"></a>";
+                                ?>
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div>    
             </div>
-            <a href="https://www.univ-gustave-eiffel.fr/"><img src="images/logo-gustave-eiffel.png" alt="Logo Gustave eiffel" class="logo"></a>
-            <?php
-                echo $url; 
-                echo "<a href=\"accueil.php\"> Acc </a>";
-                echo $lang;
-                echo $_SESSION['lang'];
-                echo "<a href=\"$url?lang=0\"> FR </a>";
-                echo "<a href=\"$url?lang=1\"> EN </a>";
-            ?>
+            <a href="index.php"><img src="Images/eye-mask.png" alt="Logo du site" class="logo"></a>
         </header>
 
 
