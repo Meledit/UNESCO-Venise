@@ -470,7 +470,7 @@ article > iframe { /* carte */
 .bordure-texte {
     background-color: #4b4b4b;
     box-shadow: 10px 10px 5px #0000003a;
-    padding: 15px 15px 15px 15px;
+    padding: 20px 40px;
 }
 
 .bg > .article > .zone-texte > h3 {
