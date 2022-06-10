@@ -447,10 +447,9 @@ article > h2 { /* Le titre orange */
 }
 
 article > iframe { /* carte */
-    max-width: 600px; 
-    width: 70%;
+    aspect-ratio: 2;
+    width: 100%;
     min-width: 200px;
-    aspect-ratio: 10/8;
     border: 2px solid white;
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -618,13 +617,13 @@ article > iframe { /* carte */
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 125px;
     height: 40px;
     border: 2px solid white;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     align-self: center;
     border-radius: 50px;
     margin-top: 40px;
+    padding: 0px 20px;
     font-size: 1.25em;
     font-weight: bold;
 }
@@ -898,7 +897,7 @@ article > iframe { /* carte */
     }
 
     .bg > .article > .zone-texte > h3 {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
     
     .bg > .article > .zone-texte > p {
