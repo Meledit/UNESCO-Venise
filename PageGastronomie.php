@@ -183,7 +183,7 @@
                                 <?=" $viande3[$lang] "?>
                             </p>
                         </div>
-                    </div>     
+                    </div>
                 </div>
                 <div class="zone-images deux-images">
                     <div class="image-et-legende">

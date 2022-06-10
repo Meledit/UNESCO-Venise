@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.zone-personne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+.zone-personne > img {
+    border: 2px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 2;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.zone-personne > h3 {
+    font-size: 5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.zone-personne > p {
+    font-size: 1.5em;
+    text-indent: 30px;
+    width: 100%;
+}
+
