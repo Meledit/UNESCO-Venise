@@ -500,16 +500,24 @@ article > iframe { /* carte */
     gap: 5px;
 }
 
-.bg > .article > img {
+.bg > .article > .image-et-legende {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
     max-width: 350px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 3px;
+}
+
+.bg > .article > .image-et-legende > img {
     object-fit: cover;
+    width: 100%;
     aspect-ratio: 4/3;
     border: 1px solid white;
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .bg > .article > .zone-images > .image-et-legende {
@@ -797,12 +805,6 @@ article > iframe { /* carte */
         flex-direction: column-reverse;
     }
 
-    .bg > .article > img {
-        width: 100%;
-        max-width: none;
-        aspect-ratio: 2;
-    }
-
     .saviez-vous {
         width: 100%;
     }
@@ -835,7 +837,12 @@ article > iframe { /* carte */
         flex-direction: column;
     }
     
-    .bg > .article > img {
+    .bg > .article > .image-et-legende {
+        width: 100%;
+        max-width: none;
+    }
+
+    .bg > .article > .image-et-legende > img {
         width: 100%;
         max-width: none;
         aspect-ratio: 2;
@@ -856,6 +863,10 @@ article > iframe { /* carte */
 }
 
 @media (max-width: 500px) {
+    .bg > .article {
+        width: 100%;
+    }
+
     .bg > .article > .zone-images {
         width: 100%;
         max-width: none;
@@ -877,19 +888,17 @@ article > iframe { /* carte */
         width: 100%;
         aspect-ratio: 2;
     }
-    
-    .bg > .article > img {
-        width: 100%;
-        max-width: none;
-        aspect-ratio: 2;
-    }
 
     .bg > .article > .zone-texte > h3 {
-        font-size: 2em;
+        font-size: 1.75em;
     }
     
     .bg > .article > .zone-texte > p {
-        font-size: 1.25em;
+        font-size: 1em;
+    }
+
+    .bordure-texte {
+        padding: 20px 25px;
     }
 
 }
