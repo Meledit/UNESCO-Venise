@@ -14,6 +14,87 @@
 
     <?php 
         include ("header.php");
+
+        // Préparation des textes traduits 
+
+        $venise = array("Venise en action,","Venice in action,");
+        $sousTitre = array("La ville de la fête","The party city");
+        $saviezvous=array("Le saviez-vous ?","Did you know ?");
+        $bienvenue = array("Bienvenue sur la page Evenemment&nbsp;!","Welcome to the Events page&nbsp;!");
+        $bienvenueTexte = array("Venise est une ville très vivante et propose de nombreux évènements tout au long de l'année","Venice is a very lively city and offers many events throughout the year");
+        $enSavoirPlus = array("En savoir plus","Read more");
+        $enSavoirMoins = array("Moins","Less");
+
+        $janvierMars = array("Janvier / Mars : Le Carnaval de Venise","January / March: The Venice Carnival");
+        $mai = array("Mai : La Vogalonga de Venise","May: The Venice Vogalonga");
+        $juinNovembre = array("Juin / Novembre : Biennales internationales d’art de Venise","June / November: Venice International Art Biennials");
+        $juillet = array("Juillet : Fête du Rédempteur de Venise","July: Festival of the Redeemer of Venice");
+        $aout = array("Août : Festival internationale du film de Venise","August: Venice International Film Festival");
+        $septembre = array("Septembre : Régate historique de Venise","September: Historic Venice Regatta");
+        $octobre = array("Octobre : Venice marathon","October: Venice marathon");
+        $novembre = array("Novembre : Fête de la Madonna della Salute","November: Feast of the Madonna della Salute");
+
+        $janvierMars1 = array("La Tradition du Carnaval à Venise remontant au Moyen Age, 'il Carnevale di Venezia'.
+        Dès le Xe siècle, le peuple profitait un maximum des derniers jours précédant les mortifications du
+        carême en se divertissant et en savourant les plaisirs et les joies de la vie.","The tradition of Carnival in Venice dates back to the Middle Ages, 'il Carnevale di Venezia'. 
+        As early as the 10th century, the people made the most of the last days before the mortifications of Lent by entertaining themselves and enjoying the pleasures and joys of life.
+        Lent by entertaining themselves and enjoying the pleasures and joys of life.");
+        $janvierMars2 = array("Il commence dix jours avant le mercredi des Cendres et se poursuit jusqu'au mardi gras.
+        Connu pour ses costumes et ses masques, il attire des foules considérables.","It begins ten days before Ash Wednesday and continues until Shrove Tuesday.
+        Known for its costumes and masks, it attracts huge crowds.");
+        $janvierMars3 = array("Le carnaval de Venise transforme la ville en une émeute spectaculaire d’apparat, de couleurs, despectacles musicaux, de feux d’artifice et de bals vénitiens glamour.Si vous voulez profiter au mieux de l’atmosphère exotique de Venise, le carnaval est le moment
+        idéal.","The Venice Carnival transforms the city into a spectacular riot of pageantry, colour, musical performances, fireworks and glamorous Venetian balls.
+        musical performances, fireworks and glamorous Venetian balls.
+        If you want to make the most of the exotic atmosphere of Venice, Carnival is the perfect time to
+        the perfect time.");
+        $janvierMars4 = array("Le carnaval de Venise, ces mascarades, spectacles, musique, jeux et couleurs.","                    The Venice carnival, its masquerades, shows, music, games and colours.");
+        $janvierMarsSaviezVous = array("Les masques vénitiens ont été utilisés pour dissimuler l'identité de personnes impliquées dans des activités manifestement illégales.
+        Apparus à Venise, ces masques distinctifs étaient faits de papier mâché et somptueusement décorés de fourrures, de tissus, de bijoux et de plumes.","Venetian masks were used to conceal the identity of people involved in blatantly illegal activities.
+        Originating in Venice, these distinctive masks were made of papier-mâché and lavishly decorated with furs, fabrics, jewellery and feathers.");
+        $janvierMarsLegende = array("Masques Vénitiens","Venetian masks");
+
+        $mai1 = array("La Vogalonga est une régate comme forme de protestation contre le mouvement ondulatoire qui menacede détruire la ville lagunaire.
+        En effet, cet événement fait depuis longtemps partie des grands rendez-vous de Venise, une manifestation qui attire des rameurs du
+        monde entier et qui est caractérisée par le respect de l’environnement et de l’écosystème conjointement à la tradition.
+        L’histoire de la Vogalonga débute dans les années 1970  lorsqu’un groupe d’amis se rassemble lors
+        d’une régate sur mascarete (type d’embarcation vénitienne).
+        Et c’est précisément après ce premier rendez-vous qu’est née l’idée d’organiser, chaque année,
+        une importante régate non compétitive entièrement dédiée à la vogue à la vénitienne, l’une des
+        traditions les plus solides de Venise.","The Vogalonga is a regatta as a form of protest against the wave movement that threatens to destroy the lagoon city.
+        to destroy the lagoon city.
+        Indeed, this event has long been one of Venice's great appointments, an
+        event that attracts rowers from all over the
+        from all over the world and is characterised by respect for the environment and the ecosystem
+        together with tradition.
+        The story of the Vogalonga began in the 1970s when a group of friends got together for a regatta on a mascot.
+        a regatta on a mascarete
+        (a type of Venetian boat).
+        And it was precisely after this first meeting that the idea was born to organise, every year
+        an important non-competitive regatta entirely dedicated to the Venetian vogue, one of the most
+        one of Venice's strongest traditions.");
+        $mai2 = array("Le but de la Vogalonga depuis le début est de sensibiliser la population sur la dangerosité des
+        barques à moteur pour le mouvement ondulatoire de la ville,
+        ainsi que sur la dégradation qui en découle. Dès le début, il est établi que le départ de la
+        Vogalonga aura précisément lieu dans le bassin de Saint-Marc,
+        l’un des points névralgiques du trafic vénitien. La Vogalonga traverse ensuite les lieux les
+        plus suggestifs de Venise et de sa lagune,
+        dont les îles de Murano et de Burano. La longueur totale du parcours de la Vogalonga est
+        d’environ 30 km, parcourus uniquement avec des bateaux à rames.
+        Les spectateurs peuvent profiter d’un spectacle de bateaux de tout type défilant dans un silence
+        religieux à l’intérieur d’une ville sans pollution acoustique,
+        tout du moins à cette occasion.","The aim of the Vogalonga since the beginning has been to make the population aware of the danger of motor boats for the undulatory movement of the city.
+        motorboats for the undulatory movement of the city,
+        and the degradation that results from it. From the beginning, it was established that the start of the
+        Vogalonga would take place in the Basin of San Marco,
+        one of the nerve centres of Venetian traffic. The Vogalonga then passes through the most
+        of Venice and its lagoon,
+        including the islands of Murano and Burano. The total length of the Vogalonga route is approximately
+        The total length of the Vogalonga is about 30 km, which is only covered by rowing boats.
+        Spectators can enjoy a spectacle of boats of all types parading in religious silence inside a
+        religious silence in a city without noise pollution,
+        at least on this occasion.");
+        $maiLegende = array("Vogalonga de Venise","Venice Vogalonga");
+
     ?>
 
     <section class="showcase">
@@ -29,7 +110,8 @@
 
     <div class="bg gris">
         <article>
-            <h3>Venise est une ville très vivante et propose de nombreux évenemments tout au long de l'année</h3>
+            <h3>Bienvenue sur la page Evenemment !</h3>
+            <p>Venise est une ville très vivante et propose de nombreux évènements tout au long de l'année</p>
         </article>
     </div>
 
@@ -79,11 +161,26 @@
                 <p>
                     Le carnaval de Venise, ces mascarades, spectacles, musique, jeux et couleurs.
                 </p>
+
+                <div class="zone-saviez-vous">
+                        <div class="saviez-vous">
+                            <div class="titre">
+                                <img src="Images/DonnolaManger.png" alt="">
+                                <h3>Le saviez-vous ?</h3>
+                            </div>
+                            <p>
+                            Les masques vénitiens ont été utilisés pour dissimuler l'identité de personnes impliquées dans des activités manifestement illégales.
+                            Apparus à Venise, ces masques distinctifs étaient faits de papier mâché et somptueusement décorés de fourrures, de tissus, de bijoux et de plumes.
+                            </p>
+                        </div>
+                    </div>
+                
             </div>
             <div class="image-et-legende">
                 <img src="Images/ImagesEvenement/masqueAvecRose.jpg" alt="">
                 <p> Masques Vénitiens</p>
             </div>
+           </div>
         </div>
     </div>
 
@@ -155,6 +252,20 @@
                     <br><br>
                     Le carnaval de Venise, ces mascarades, spectacles, musique, jeux et couleurs.
                 </p>
+
+                <div class="zone-saviez-vous">
+                        <div class="saviez-vous">
+                            <div class="titre">
+                                <img src="Images/DonnolaManger.png" alt="">
+                                <h3>Le saviez-vous ?</h3>
+                            </div>
+                            <p>
+                                La Biennale de Venise est l'une  des plus anciennes expositions artistiques en Europe, en effet elle fut crée en 
+                                en 1893 et se tint pour la première fois en 1895 en tant que « Exposition Internationale d'Art de la Cité de Venise »
+                            </p>
+                        </div>
+                    </div>
+                
             </div>
             <div class="image-et-legende">
                 <img src="Images/ImagesEvenement/biennal.jpg" alt="">
@@ -231,6 +342,20 @@
                     d’arrivée à la célèbre « machine », une estrade flottante à fort impact visuel qui est montée devant
                     le palais de Ca’ Foscari.
                 </p>
+
+                <div class="zone-saviez-vous">
+                        <div class="saviez-vous">
+                            <div class="titre">
+                                <img src="Images/DonnolaManger.png" alt="">
+                                <h3>Le saviez-vous ?</h3>
+                            </div>
+                            <p>
+                            La régate historique de Venise se déroule depuis le Bassin de Saint Marc, emprunte le Grand Canal, passe sous le pont de l’Accademia, 
+                            remonte presque jusqu’à la gare, et revient jusqu’au devant de la Ca Foscari.
+                            </p>
+                        </div>
+                    </div>
+                
             </div>
         </div>
     </div>
