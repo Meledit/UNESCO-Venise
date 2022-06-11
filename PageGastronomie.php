@@ -138,7 +138,6 @@
                 echo "<h3>$bienvenue[$lang]</h3>";
                 echo "<p> $bienvenueTexte[$lang]</p>"
                 ?>
-
             </article>
         </div>
 
