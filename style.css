@@ -517,6 +517,7 @@ article > iframe { /* carte */
 }
 
 .bg > .article > .image-et-legende {
+    font-size:1.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -543,6 +544,7 @@ article > iframe { /* carte */
     align-items: center;
     gap: 3px;
     width: 45%;
+    font-size:1.25em;
 }
 
 .bg > .article > .zone-images > .image-et-legende > img {
@@ -561,6 +563,7 @@ article > iframe { /* carte */
 
 .bg > .article > .deux-images > .image-et-legende {
     width: 90%;
+    font-size:1.25em;
 }
 
 .bg > .article > .deux-images > .image-et-legende > img {

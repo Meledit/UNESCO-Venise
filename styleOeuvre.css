@@ -1,18 +1,64 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+/*
+.menu{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width:100%
 }
 
-/*--------- Mosaique ---------*/
-.IMG2 {
-    background: url(Images/Gastronomie/Fond3.jpg);
+.widget-menu {
+    width: 30%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 
-.IMG3{
-    background:url(Images/Gastronomie/restaurant.jpg)
+.widget-menu > .zone-menu {
+    display: flex;
+    width: 100%;
+    gap: 10px;
 }
+
+.widget-menu > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 2px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    align-self: center;
+    border-radius: 50px;
+    padding: 0px 20px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.widget-menu > a:hover {
+    animation: hover-voir 0.7s ease-out forwards;
+}
+
+.widget-menu > .zone-menu > img {
+    object-fit: cover;
+    width: 20%;
+    max-width: 225px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    border: 2px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.widget-menu > .zone-menu > .resume-menu > h3 {
+    font-size: 2.1em;
+    margin-bottom: 10px;
+}
+
+.widget-menu > .zone-menu > .resume-menu > p {
+    font-size: 1.5em;
+    text-indent: 30px;
+} */
+
 
 
 .bgGallery {
@@ -45,53 +91,73 @@
 
 /* Gallery */
 .gallery {
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 12.5rem);
-    gap: .5rem;
+    grid-template-columns: repeat(4, 18vw);
+    grid-template-rows: repeat(4, 14vw);
+    gap: 0.75rem;
     margin-top: 20px;
     
 }
 
 /* Gallery Layout */
+
 .gallery__item{
     border:2px solid rgb(255, 255, 255);
 }
 
 .gallery__item--1 {
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 2;
     grid-row: 1 / span 1;
-      
+     
 }
 
 .gallery__item--2 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-      
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+     
 }
 
 .gallery__item--3 {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-      
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+     
 }
 
 .gallery__item--4 {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 3;
-      
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+     
 }
 
 .gallery__item--5 {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
-      
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+     
 }
 
 .gallery__item--6 {
-    grid-column: 3 / span 1;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+     
+}
+
+.gallery__item--7 {
+    grid-column: 1 / span 1;
     grid-row: 4 / span 1;
-      
+     
+}
+
+.gallery__item--8 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+     
+}
+
+.gallery__item--9 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 2;
+     
 }
 
 /* Gallery Link */
@@ -186,7 +252,8 @@
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 11em);
+        grid-template-rows: repeat(5, 11em);
     }
 
     /* Gallery Layout */
@@ -194,30 +261,45 @@
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
-
+    
     .gallery__item--2 {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
     }
-
+    
     .gallery__item--3 {
         grid-column: 2 / span 1;
-        grid-row: 1 / span 2;
+        grid-row: 2/ span 1;
     }
-
+    
     .gallery__item--4 {
         grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+    }
+    
+    .gallery__item--5 {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .gallery__item--6 {
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 1;
+    }
+    
+    .gallery__item--7 {
+        grid-column: 3 / span 1;
+        grid-row: 5 / span 1;
+    }
+    
+    .gallery__item--8 {
+        grid-column: 2 / span 2;
         grid-row: 3 / span 2;
     }
-
-    .gallery__item--5 {
-        grid-column: 2 / span 1;
-        grid-row: 3 / span 1;
-    }
-
-    .gallery__item--6 {
-        grid-column: 2 / span 1;
-        grid-row: 4 / span 1;
+    
+    .gallery__item--9 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
     }
 
     .gallery__overlay {
@@ -227,12 +309,14 @@
 
 @media screen and (max-width: 35rem) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: .25rem;
+        grid-template-columns: repeat(3, 6.5em);
+        grid-template-rows: repeat(5, 6.5em);
+        gap: .2rem;
     }
 
     .gallery__item {
-        margin: .2rem;
+        margin: .1rem;
+        border:1px solid rgb(255, 255, 255);
     }
 
     .gallery__overlay {

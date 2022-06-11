@@ -310,24 +310,25 @@
 
     <div class="IMGparallax IMG3 IMG-petite"></div>
 
-    <div class="bg gris" id="StreetFood">
-        <div class="article image-avant">
-            <div class="zone-images quatre-images">
-                <div class="image-et-legende">
-                    <img src="Images/Gastronomie/Arancini1.jpg" alt="image d'Arancini">
-                    <p> Arancini</p>
-                </div>
-                <div class="image-et-legende">
-                    <img src="Images/Gastronomie/Piadina1(Ekaterina Fedulyeva).jpg" alt="image de Piadina">
-                    <p> Piadina</p>
-                </div>
-                <div class="image-et-legende">
-                    <img src="Images/Gastronomie/Lampredotto3(FrancescoVignali).jpg" alt="image de Lampredotto">
-                    <p> Lampredotto</p>
-                </div>
-                <div class="image-et-legende">
-                    <img src="Images/Gastronomie/Olive1.jpg" alt="image d'Olive All'Ascolana">
-                    <p> Olive all'Ascolana</p>
+        <div class="bg gris" id="StreetFood">
+            <div class="article image-avant">
+                <div class="zone-images">
+                    <div class="image-et-legende">
+                        <img src="Images/Gastronomie/Arancini1.jpg" alt="image d'Arancini">
+                        <p> Arancini</p>
+                    </div>
+                    <div class="image-et-legende">
+                        <img src="Images/Gastronomie/Piadina1(Ekaterina Fedulyeva).jpg" alt="image de Piadina">
+                        <p> Piadina</p>
+                    </div>
+                    <div class="image-et-legende">
+                        <img src="Images/Gastronomie/Lampredotto3(FrancescoVignali).jpg" alt="image de Lampredotto">
+                        <p> Lampredotto</p>
+                    </div>
+                    <div class="image-et-legende">
+                        <img src="Images/Gastronomie/Olive1.jpg" alt="image d'Olive All'Ascolana">
+                        <p> Olive all'Ascolana</p>
+                    </div>
                 </div>
             </div>
             <div class="zone-texte bordure-texte">
