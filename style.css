@@ -319,6 +319,7 @@ header > label > img {
 .text h1 {
     font-size: 5em;
     user-select: none;
+    margin: 0;
 }
 
 .text h2 {
