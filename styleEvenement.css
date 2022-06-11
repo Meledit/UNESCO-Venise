@@ -52,3 +52,94 @@
     text-decoration: underline;
     
 }
+
+.groupe-de-mois  {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: rgb(255, 255, 255) 3px solid;
+    padding-top: 15px;
+}
+
+
+.bg-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5vh 0px 7vh 0px;
+}
+
+.menu-mois {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width : 100% ;
+    justify-content: space-around;
+}
+
+
+.menu-mois > .groupe-de-mois > .etiquette > a {
+    float: left;
+    border-radius: 6px;
+    z-index: 1;
+    order: 1;
+    display: flex;
+    cursor: pointer;
+    transition: background ease 0.2s;
+    border: 1px solid #000000;
+    padding: 25px;
+    font-size: 25px;
+    line-height: 2;
+    font-weight: 550;
+    background: #c3692a;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #ffffff;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: scale(-1);
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.menu-mois > .groupe-de-mois > .etiquette > a::after {
+    background: rgb(255, 255, 255);
+    width: 8px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    margin-bottom: -30px;
+    border-radius: 3px;
+}
+
+@media (max-width: 750px) {
+
+    .menu-mois {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 480px;
+    }
+
+    .groupe-de-mois {
+        width: 100%;
+        justify-content: space-evenly;
+        padding-top: 8px;
+    }
+
+    .menu-mois > .groupe-de-mois > .etiquette > a {
+        margin: 10px;
+        padding: 6px;
+        font-size: 17px;
+    }
+    
+}

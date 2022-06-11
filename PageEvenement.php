@@ -11,63 +11,12 @@
 </head>
 
 <body>
-    <a href="#" class="jump"></a>
+
+    <?php 
+        include ("header.php");
+    ?>
 
     <section class="showcase">
-        <header>
-
-            <input type="radio" id="burger" name="burger">
-            <label for="burger"><img src="Images/menu.png" alt=""></label>
-            <div class="navbar">
-                <div class="burgerSquare">
-                    <div class="zoneBurger">
-                        <input type="radio" id="burgerClose" name="burger">
-                        <label for="burgerClose"><img src="Images/close.png" alt=""></label>
-                    </div>
-                </div>
-                <ul>
-                    <li>
-                        <div class="button">
-                            <a href="PageType.html">
-                                <img class="picto livre" alt=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                Histoire
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button">
-                            <a href="PageGastronomieTest.html">
-                                <img class="picto masque" alt=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                Culture
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button">
-                            <a href="PageType.html">
-                                <img class="picto news" alt=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                Actualités
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="button">
-                            <a href="PageType.html">
-                                <img class="picto ticket" alt=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                                Séjours
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            <a href="https://www.univ-gustave-eiffel.fr/"><img src="images/logo-gustave-eiffel.png"
-                    alt="Logo Gustave eiffel" class="logo"></a>
-        </header>
 
         <img src="Images/ImagesEvenement/FondEvenement.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
@@ -78,27 +27,33 @@
                 <h2>La ville de la fête</h2>
     </section>
 
-    <div class="prgintro">
+    <div class="bg gris">
         <article>
-            <p>Venise est une ville très vivante et propose de nombreux évenemments tout au long de l'année</p>
+            <h3>Venise est une ville très vivante et propose de nombreux évenemments tout au long de l'année</h3>
         </article>
     </div>
 
-    <div class="texttb">
-        <p>
-            <ul>
+    <div class="bg-menu noir">
 
-                <li><a href="#JanvierMars">Janvier/Mars</a><br> </li>
-                <li><a href="#Mai">Mai</a><br> </li>
-                <li><a href="#Juin">Juin</a><br> </li>
-                <li><a href="#Juillet">Juillet</a><br> </li>
-                <li><a href="#Aout">Août</a><br> </li>
-                <li><a href="#Septembre">Septembre</a><br>
-                <li><a href="#Octobre">Octobre</a><br>
-                <li><a href="#Novembre">Novembre</a>
+        
+    <div class="menu-mois">
 
-            </ul>
-        </p>
+        <div class="groupe-de-mois">
+            <div class="etiquette"><a href="#JanvierMars">Janvier / Mars</a></div>
+            <div class="etiquette"><a href="#Mai">Mai</a></div>
+            <div class="etiquette"><a href="#Juin">Juin</a></div>
+            <div class="etiquette"><a href="#Juillet">Juillet</a></div>
+        </div>
+
+        <div class="groupe-de-mois">
+            <div class="etiquette"><a href="#Aout">Aout</a></div>
+            <div class="etiquette"><a href="#Septembre">Septembre</a></div>
+            <div class="etiquette"><a href="#Octobre">Octobre</a></div>
+            <div class="etiquette"><a href="#Novembre">Novembre</a></div>
+            <!-- <div style="clear:both"></div> -->
+    </div>
+        
+    </div>
     </div>
 
 
@@ -150,7 +105,7 @@
                     monde entier et qui est caractérisée par le respect de l’environnement et de l’écosystème
                     conjointement à la tradition.
                     <br><br>
-                    L’histoire de la Vogalonga débute dans les années 1970 lorsqu’un groupe d’amis se rassemble lors
+                    L’histoire de la Vogalonga débute dans les années 1970  lorsqu’un groupe d’amis se rassemble lors
                     d’une régate sur mascarete
                     (type d’embarcation vénitienne).
                     <br><br>
@@ -325,6 +280,10 @@
             </div>
         </div>
     </div>
+
+    <?php 
+        include ("footer.php");
+    ?>
 
 </body>
 
