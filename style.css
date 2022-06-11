@@ -415,7 +415,7 @@ header > label > img {
 }
 
 .noir {
-    background-color: var(--clr-fond-secondaire);
+    background-color: var(--clr-fond-secondaire); 
 }
 
 .centre {
