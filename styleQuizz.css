@@ -51,9 +51,10 @@
 
 .question > img {
     object-fit: cover;
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 4px;
     aspect-ratio: 1;
+    max-width:300px;
 }
 
 .score {

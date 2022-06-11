@@ -283,16 +283,19 @@ header > label > img {
     height: 100%;
     background: rgba(30, 30, 33, 0.41);
     mix-blend-mode: multiply;
+    border: 1 px solid purple;
 }
 
 .showcase {
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    border:2px solid orange;
 }
 
 /* Titre */
 
 .container {   
+    font-family: Cicle;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -304,6 +307,7 @@ header > label > img {
 }
 
 .text {
+    font-family: Cicle;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -443,7 +447,7 @@ article > h2 { /* Le titre orange */
     padding-bottom: 5px;
     width: 100vw;
     text-align: center;
-    background-color: #c3692a;
+    background-color: #e27d35;
 }
 
 article > iframe { /* carte */
@@ -527,6 +531,7 @@ article > iframe { /* carte */
     border: 1px solid white;
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 10px;
 }
 
 .bg > .article > .zone-images > .image-et-legende {
