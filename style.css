@@ -527,6 +527,7 @@ article > iframe { /* carte */
     border: 1px solid white;
     border-radius: 4px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 10px;
 }
 
 .bg > .article > .zone-images > .image-et-legende {
