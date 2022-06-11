@@ -52,7 +52,9 @@
     ?>
 
 
-    <a href="#" class="jump"></a>
+        <a href="#" class="jump">
+            <img src="Images/btt.png" alt="">
+        </a>
         <header>
             <input type="radio" id="burger" name="burger">
             <label for="burger"><img src="Images/menu.png" alt=""></label>

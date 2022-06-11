@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,26 +12,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
     <title> Venise </title>
 </head>
+
 <body>
     <?php
-        include("header.php");
+    include("header.php");
 
-        $titre=["<h1>Venise démasquée</h1>
+    $titre = ["<h1>Venise démasquée</h1>
             <h2>La ville du lion ailé vous révèle tous ses secrets</h2>
-        ","<h1>Venice unsmasked</h1>
+        ", "<h1>Venice unsmasked</h1>
         <h2>The Winged Lion's city show you all her secrets</h2>"];
     ?>
-    
+
 
     <section class="showcase">
-        
-    <video src="videos/backscreen.mov" muted loop autoplay></video>
+
+        <video src="videos/backscreen.mov" muted loop autoplay></video>
         <div class="overlay"></div>
 
         <div class="container">
             <div class="text">
                 <?php
-                    echo $titre[$lang];
+                echo $titre[$lang];
                 ?>
             </div>
 
@@ -38,25 +40,25 @@
                 <div class="button">
                     <a href="PageType.html">
                         <img class="picto livre" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                        Histoire    
+                        Histoire
                     </a>
                 </div>
                 <div class="button">
                     <a href="PageGastronomieTest.html">
                         <img class="picto masque" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                        Culture    
+                        Culture
                     </a>
                 </div>
                 <div class="button">
                     <a href="PageType.html">
                         <img class="picto news" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                        Actualités    
+                        Actualités
                     </a>
                 </div>
                 <div class="button">
                     <a href="PageType.html">
                         <img class="picto ticket" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                        Séjours    
+                        Séjours
                     </a>
                 </div>
             </div>
@@ -80,7 +82,7 @@
         </div>
     </div>
 
-        
+
 
     <footer>
         <div class="section-footer">
@@ -105,4 +107,5 @@
         </div>
     </footer>
 </body>
+
 </html>
