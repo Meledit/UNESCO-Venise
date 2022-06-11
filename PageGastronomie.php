@@ -56,8 +56,63 @@
         $viande3=array("Le nom du Carpaccio rend hommage à <a href=\"PageOeuvre.php#Carpaccio\">Vittore Carpaccio</a>, un célèbre peintre vénitien du XV ème siècle, 
         connu pour ses peintures aux nuances d’un rouge vif.","The name Carpaccio is a tribute to <a href=\"PageOeuvre.php#Carpaccio\">Vittore Carpaccio</a>, a famous Venetian painter of the 15th century, known for his bright red paintings");
         
+        $plat1=array("Afin d’accompagner ses spécialités, ou pour être dégustés seuls, Venise regorge d’accompagnement 
+        à base de pâtes ou de riz. Comme par exemple, les Bigoli in salsa, des gros spaghettis au blé complet, 
+        spécialité de la Vénétie, région d’Italie où se trouve Venise, qui sont accompagnées d’une sauce à base 
+        d’anchois et d’oignons. À base de pâtes, on trouve aussi les spaghettis con vongole, des palourdes 
+        sautéees au vin blanc, avec de l’ail. ","To accompany its specialities, or to be eaten on their own, Venice has 
+        plenty of pasta or rice-based accompaniments. For example, Bigoli in salsa, a large whole-wheat spaghetti speciality from the Veneto region of Italy, 
+        where Venice is located, is served with a sauce made from anchovies and onions. Other pasta-based 
+        dishes include spaghetti con vongole, clams sautéed in white wine with garlic.");
+
+        $plat2=array("À Venise on trouve aussi des accompagnements à base de riz, 
+        comme le risotto qui est décliné que ce soit avec des fruits de mer, des champignons ou de la viande. 
+        Ou encore le risi e bisi, du riz mijoté avec de petits pois, des oignons et des lardons. On y trouve 
+        également la polenta, une préparation à base de semoule de maïs."," In Venice there are also rice-based accompaniments, such as risotto, which can be served with seafood, mushrooms or meat. Or risi e bisi, 
+        rice simmered with peas, onions and bacon. There is also polenta, a cornmeal-based preparation.
+        ");
+
+        $boisson1 = array("Parmi les spécialités vénitienne, on peut aussi évoquer certaines boissons, dont le Spritz, un cocktail 
+        composé d’eau pétillante, de prosecco (un vin blanc effervescent italien) et  d’Aperol (un apéritif), 
+        qui peut être accompagné d’une rondelle de citron ou d’orange. Le spritz tire son origine du XIXème siècle, 
+        lorsque les autrichiens dominaient la Vénétie.","Venetian specialities include drinks such as the Spritz, a cocktail made of sparkling water, 
+        prosecco (an Italian sparkling white wine) and Aperol (an aperitif), which can be served with a slice of lemon or orange. The spritz has its origin in the 19th century, 
+        when the Austrians controlled the Veneto region.");
+        $boisson2 =array("Ou encore le Bellini, un cocktail à base de prosecco et de nectar de pêches blanches inventé par Giuseppe Cipriani, qui a également inventé le carpaccio. Venise possède 
+        aussi plusieurs vins italiens et liqueurs dont le Maraschino à base de cerises.","Or the Bellini, a cocktail made with prosecco and white peach nectar created by Giuseppe Cipriani, who also 
+        created the carpaccio. Venice also has a variety of Italian wines and liqueurs, including the Maraschino made from cherries.");
         
+        $streetFood1=array("À Venise, la gastronomie se vit aussi dans la rue, au plus près de la lagune. En effet, la Street Food occupe une place
+        importante, et passe par des spécialités très différentes  les unes des autres. On peut notamment citer les Arancini, 
+        des petites boules de riz contenant de la sauce tomate, de la viande et des petits pois, qui sont ensuite panées et frites.
+        Pour continuer dans les spécialités frites, il y a les Fritto Misto vues précédemment dans la partie Poissons, ou encore 
+        aussi les olives all'ascolana, des olives généreuses, farcies avec de la viande qu’on fait frire.","In Venice, gastronomy is also experienced in the street, 
+        close to the lagoon. Street food is very important, with specialities that are very different from each other. These include Arancini, small balls of rice with 
+        tomato sauce, meat and peas, which are then breaded and fried. To continue with the fried specialities, there are the Fritto Misto seen previously in the Fish section, 
+        or also the olives all'ascolana, which are generous olives stuffed with meat that are fried.");
+        $streetFood2=array("La Street Food à Venise ne se limite pas aux aliments frits, il y a aussi des spécialités plus proches des burgers et sandwichs que l’on connaît
+        bien. Comme par exemple, le Lampredotto, un sandwich à la caillette (une partie de l’estomac du boeuf) cuit à l’eau 
+        avec des oignons, de la tomate et du persil, qu’on taille ensuite en petit morceau. Le lampredotto est considéré comme 
+        un plat pauvre, dû au faible coût de la viande utilisée. On peut aussi penser aux Piadina, des pains sans levure, qu’on
+        vient replier et garnir. Les piadina étant aussi considéré comme un élément fort de la cuisine des pauvres, ceux ci 
+        n’ayant pas assez pour faire lever du pain.","Street food in Venice is not limited to fried food, there are also specialities more like the usual burgers and sandwiches. 
+        For example, the Lampredotto, a sandwich made of abomasum (part of the beef stomach) cooked in water with onions, tomato and parsley, which is then cut into small pieces.
+         Lampredotto is considered a poor dish, due to the low cost of the meat used. One can also think of Piadina, breads without yeast, which are folded and garnished. Piadina 
+         are also considered a strong element of the poor people's cooking, as they do not have enough to make bread rise.");
         
+        $dessert1=array("Venise présente aussi plusieurs spécialités sucrées, dont la plus célèbre est sûrement le tiramisu. Le tiramisu, composé de plusieurs couches successives 
+        de biscuit et de crème au mascarpone, est le dessert préféré à Venise, cependant la Vénétie n’est pas la seule région à revendiquer l’origine du tiramisu.","Venice also 
+        has several sweet specialities, the most famous of which is surely tiramisu. Tiramisu, made of several layers of biscuit and mascarpone cream, is the most popular dessert 
+        in Venice, but the Veneto is not the only region to claim the origin of tiramisu.");
+        $dessert2=array("L’île de Burano, à Venise possède ses propres biscuits, les Bussolà, des petits biscuits secs en 
+        forme de S. Quand Venise était une grande puissance maritime, les baicoli aussi appelés \"les biscuits de bateau\" accompagnaient 
+        les marins durant leurs longs voyages. Ces baicoli étaient aussi appréciés par les aristocrates vénitiens. Dans les rues de Venise, 
+        il est également possible d’acheter des brioches con gelato, littéralement des brioches dans lesquelles on met de la glace.","The island of Burano, in Venice, 
+        has its own biscuits, the Bussolà, small dry biscuits in the shape of an S. When Venice was a great maritime power, the baicoli, also called \"ship's biscuits\", 
+        used to accompany sailors on their long journeys. These baicoli were also appreciated by the Venetian aristocrats. In the streets of Venice it is also possible to buy 
+        brioches con gelato, literally brioches with ice cream inside.");
+        $dessert3=array("Le tiramisu porte d’ailleurs bien son nom, en effet, ce dernier signifie littéralement \"Tire-moi vers le haut\",
+        \"Remonte-moi le moral\" en italien.","Tiramisu is aptly named, as it literally means \"pull me up\", \"cheer me up\" in Italian.");
         ?>
         <section class="showcase">
             
@@ -222,22 +277,10 @@
                 </div> 
                 <div class="zone-texte bordure-texte">
                     <?php 
-
+                        echo "<h3>$plat[$lang]</h3>";
+                        echo "<p>$plat1[$lang]</p>";
+                        echo "<p>$plat2[$lang]</p>";
                     ?>
-                    <h3>Les Plats et Accompagnements</h3>
-                    <p>
-                        Afin d’accompagner ses spécialités, ou pour être dégustés seuls, Venise regorge d’accompagnement 
-                        à base de pâtes ou de riz. Comme par exemple, les Bigoli in salsa, des gros spaghettis au blé complet, 
-                        spécialité de la Vénétie, région d’Italie où se trouve Venise, qui sont accompagnées d’une sauce à base 
-                        d’anchois et d’oignons. À base de pâtes, on trouve aussi les spaghettis con vongole, des palourdes 
-                        sautéees au vin blanc, avec de l’ail. 
-                    </p>
-                    <p>
-                        À Venise on trouve aussi des accompagnements à base de riz, 
-                        comme le risotto qui est décliné que ce soit avec des fruits de mer, des champignons ou de la viande. 
-                        Ou encore le risi e bisi, du riz mijoté avec de petits pois, des oignons et des lardons. On y trouve 
-                        également la polenta, une préparation à base de semoule de maïs.   
-                    </p>
                 </div>
             </div>
         </div>
@@ -245,18 +288,11 @@
         <div class="bg gris" id="Cocktails">
             <div class="article image-apres">
                 <div class="zone-texte  bordure-texte">
-                    <h3>Les boissons et cocktails</h3>
-                    <p>
-                        Parmi les spécialités vénitienne, on peut aussi évoquer certaines boissons, dont le Spritz, un cocktail 
-                        composé d’eau pétillante, de prosecco (un vin blanc effervescent italien) et  d’Aperol (un apéritif), 
-                        qui peut être accompagné d’une rondelle de citron ou d’orange. Le spritz tire son origine du XIXème siècle, 
-                        lorsque les autrichiens dominaient la Vénétie.
-                    </p>
-                    <p>
-                        Ou encore le Bellini, un cocktail à base de prosecco et de 
-                        nectar de pêches blanches inventé par Giuseppe Cipriani, qui a également inventé le carpaccio. Venise possède 
-                        aussi plusieurs vins italiens et liqueurs dont le Maraschino à base de cerises.
-                    </p>
+                    <?php
+                        echo "<h3>$boisson[$lang]</h3>";
+                        echo "<p>$boisson1[$lang] </p>";
+                        echo "<p>$boisson2[$lang] </p>";
+                    ?>
                 </div>
                 <div class="zone-images deux-images">
                     <div class="image-et-legende">
@@ -294,22 +330,11 @@
                     </div>
                 </div>
                 <div class="zone-texte bordure-texte">
-                    <h3>La Street-Food</h3>
-                    <p>
-                        À Venise, la gastronomie se vit aussi dans la rue, au plus près de la lagune. En effet, la Street Food occupe une place
-                         importante, et passe par des spécialités très différentes  les unes des autres. On peut notamment citer les Arancini, 
-                         des petites boules de riz contenant de la sauce tomate, de la viande et des petits pois, qui sont ensuite panées et frites.
-                        Pour continuer dans les spécialités frites, il y a les Fritto Misto vues précédemment dans la partie Poissons, ou encore 
-                        aussi les olives all'ascolana, des olives généreuses, farcies avec de la viande qu’on fait frire. 
-                    </p>
-                    <p>
-                        La Street Food à Venise ne se limite pas aux aliments frits, il y a aussi des spécialités plus proches des burgers et sandwichs que l’on connaît
-                        bien. Comme par exemple, le Lampredotto, un sandwich à la caillette (une partie de l’estomac du boeuf) cuit à l’eau 
-                         avec des oignons, de la tomate et du persil, qu’on taille ensuite en petit morceau. Le lampredotto est considéré comme 
-                        un plat pauvre, dû au faible coût de la viande utilisée. On peut aussi penser aux Piadina, des pains sans levure, qu’on
-                         vient replier et garnir. Les piadina étant aussi considéré comme un élément fort de la cuisine des pauvres, ceux ci 
-                         n’ayant pas assez pour faire lever du pain.
-                    </p>
+                    <?php
+                        echo "<h3>$streetFood[$lang]</h3>";
+                        echo "<p>$streetFood1[$lang]</p>";
+                        echo "<p>$streetFood2[$lang]</p>";
+                    ?>
                 </div>
             </div>
         </div>
@@ -317,30 +342,19 @@
         <div class="bg gris" id="Desserts">
             <div class="article image-apres">
                 <div class="zone-texte bordure-texte">
-                    <h3>Les Desserts</h3>
-                    <p>
-                        Venise présente aussi plusieurs spécialités sucrées, dont la plus célèbre est sûrement le tiramisu. Le tiramisu, composé de plusieurs 
-                        couches successives de biscuit et de crème au mascarpone, est le dessert préféré à Venise, cependant la Vénétie n’est pas la seule région 
-                        à revendiquer l’origine du tiramisu. 
-                    </p>
-                    <p>
-                        L’île de Burano, à Venise possède ses propres biscuits, les Bussolà, des petits biscuits secs en 
-                        forme de S. Quand Venise était une grande puissance maritime, les baicoli aussi appelés “les biscuits de bateau” accompagnaient 
-                        les marins durant leurs longs voyages. Ces baicoli étaient aussi appréciés par les aristocrates vénitiens. Dans les rues de Venise, 
-                        il est également possible d’acheter des brioches con gelato, littéralement des brioches dans lesquelles on met de la glace.
-
-                    </p>
-                    
+                    <?php
+                        echo "<h3>$dessert[$lang]</h3>";
+                        echo "<p>$dessert1[$lang]</p>";
+                        echo "<p>$dessert2[$lang]</p>";
+                    ?>                    
                     <div class="zone-saviez-vous">
                         <div class="saviez-vous">
                             <div class="titre">
                                 <img src="Images/DonnolaManger.png" alt="">
-                                <h3>Le saviez vous ?</h3>
+                                <?= "<h3>$saviezvous[$lang]</h3>"?>
                             </div>
-                            <p>
-                                Le tiramisu porte d’ailleurs bien son nom, en effet, ce dernier signifie littéralement “Tire-moi vers le haut”,
-                                ”Remonte-moi le moral” en italien.
-                            </p>
+                            <?= "<p>$dessert3[$lang]</p>"?>
+                            
                         </div>
                     </div>  
                 </div>
@@ -357,4 +371,9 @@
             </div>
         </div>
     </body>
+    <?php
+            include("footer.php");
+        ?>
+
+    
 </html>
