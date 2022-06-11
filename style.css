@@ -150,7 +150,8 @@ header > label > img {
     width: 0vw;
     background-color: var(--clr-fond-principale);
     overflow: hidden;
-}
+    z-index: 100;
+} 
 
 .navbar > ul {
     display: flex;
@@ -421,6 +422,7 @@ header > label > img {
 .centre {
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 article {
