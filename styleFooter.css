@@ -11,14 +11,11 @@
 
 @font-face {
   font-family: Dyno;
-  src: url(Polices/Dyno_Regular.ttf);
+  src: url(polices/Dyno_Regular.ttf);
   font-family: Cicle;
-  src: url(Polices/Cicle_Fina.ttf);
+  src: url(polices/Cicle_Fina.ttf);
 }
 
-*{
-  font-family: Dyno;
-}
 
 ::selection {
   background-color: #ea5a0c7c;
@@ -27,6 +24,7 @@
 
 .site-footer {
   background-color: var(--clr-footer);
+  font-family: Dyno;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -108,7 +106,7 @@
   list-style: none;
 }
 
-img {
+.img-footer {
   width:60%;
   align-self: center;
 }
