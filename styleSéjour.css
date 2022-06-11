@@ -50,7 +50,7 @@ body {
 }
 
 .timeline .swiper-container {
-  height: 75vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   border-top: 0px solid white;
