@@ -65,8 +65,8 @@
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"><img class="img-footer" src="Images/facebook.png"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"><img class="img-footer" src="Images/logoTwitter.png"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100075325530865"><i class="fa fa-facebook"><img class="img-footer" src="Images/facebook.png"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/VeniseDemasquee?s=20&t=SDNtG42mdJ1FZtjYTw_ixQ"><i class="fa fa-twitter"><img class="img-footer" src="Images/logoTwitter.png"></i></a></li>
             <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><img class="img-footer" src="Images/logoInsta.png"></i></a></li>
           </ul>
         </div>
