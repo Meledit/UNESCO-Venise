@@ -116,7 +116,7 @@ header {
     width: 100vw;
     height: 10vh;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
 }
 
 a {
@@ -501,7 +501,7 @@ article > iframe { /* carte */
     text-align: center;
 }
 
-.bg > .article > .zone-texte > p {
+.bg > .article > .zone-texte  p {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-indent: 30px;
