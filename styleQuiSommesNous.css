@@ -36,4 +36,84 @@
     text-indent: 30px;
     width: 100%;
 }
+.voir{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.zone-widget{
+    width:50%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.zone-widget > a > .logo-widget{
+    margin-top:40px;
+    width:60px;
+    height:60px;
+    aspect-ratio: 1;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color:transparent;
+    border-radius:50%;
+    border: 2px solid white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 15px 15px;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+
+a:hover > .github{
+    background-color: #622C8F;
+}
+
+a:hover > .linkedin{
+    background-color:#0A66C2;
+
+}
+
+
+
+.zone-widget > a > .logo-widget>img{
+    width:40px;
+    height:40px;
+    aspect-ratio:1;
+    object-fit:cover;
+    object-position:center;
+    
+}
+
+@media (max-width: 900px) {
+    .zone-widget{
+        width:80%;
+    }
+}
+
+@media (max-width: 600px) {
+    .zone-widget{
+        width:90%;
+    }
+
+    .zone-widget > a > .logo-widget{
+        width:40px;
+        height:40px;
+    }
+
+    .zone-widget > a > .logo-widget>img{
+        width:20px;
+        height:20px;
+    }
+
+    .widget > a {
+        padding: 0px 0px;
+    }
+}
 
