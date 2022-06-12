@@ -601,7 +601,7 @@
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Tiramisu3.jpg" alt="">
+                    <img src="Images/Gastronomie/Tiramisu4.jpg" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
