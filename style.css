@@ -486,7 +486,7 @@ article > iframe { /* carte */
 .bordure-texte {
     background-color: #4b4b4b;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 20px 40px;
+    padding: 40px 40px;
 }
 
 .bg > .article > .zone-texte > h3 {
