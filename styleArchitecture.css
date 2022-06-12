@@ -57,8 +57,200 @@
 .fond {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #313131;;
+    border:red 3px solid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.fond > p {
+    color: white;
+    font-size: 1.5em;
+    margin: 15px 5% 15px 5%
+}
+
+.fond > h3 {
+    font-size: 4em;
+    color: white;
+}
+
+.fond > .article {
+    display: flex;
+    align-items: center;
     width: 90%;
-    height: 800px;
+    gap: 30px;
+    border: orange 2px solid;
+}
+
+.fond > .article a {
+    font-style: italic;
+    color: rgb(220, 220, 220);
+}
+
+.fond > .article a:hover {
+    transition: 0.5s;
+    color: var(--clr-principale);
+}
+
+.fond > .article > .zone-texte {
+    width: 65%;
+}
+
+.fond > .article > .zone-texte > h3 {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+.fond > .article > .zone-texte > p {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-indent: 30px;
+}
+
+.fond > .article > .zone-images {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.fond > .article > .image-et-legende {
+    font-size:1.25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 3px;
+}
+
+.fond > .article > .image-et-legende > img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-bottom: 10px;
+}
+
+.fond > .article > .zone-images > .image-et-legende {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 45%;
+    font-size:1.25em;
+}
+
+.fond > .article > .zone-images > .image-et-legende > img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.fond > .article > .deux-images {
+    flex-direction: column;
+    align-items: center;
+}
+
+.fond > .article > .deux-images > .image-et-legende {
+    width: 90%;
+    font-size:1.25em;
+}
+
+.fond > .article > .deux-images > .image-et-legende > img {
+    aspect-ratio: 2;
+    width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+    .fond > .article {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .fond > .article > .zone-texte {
+        width: 100%;
+    }
+
+    .fond > .article > .zone-images {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .fond > .article > .image-et-legende {
+        width: 100%;
+        max-width: none;
+    }
+
+    .fond > .article > .image-et-legende > img {
+        width: 100%;
+        max-width: none;
+        aspect-ratio: 2;
+    }
+
+    .fond > .article > .deux-images {
+        flex-direction: row;
+    }
+
+    .fond > .article > .deux-images > .image-et-legende {
+        width: 100%;
+    }
+
+    .fond > .article > .deux-images > .image-et-legende > img {
+        aspect-ratio: 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .fond > .article {
+        width: 100%;
+    }
+
+    .fond > .article > .zone-images {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .fond > .article > .zone-images > .image-et-legende > img {
+        max-width: none;
+        width: 100%;
+        aspect-ratio: 2;
+    }
+
+    .fond > .article > .zone-images > .image-et-legende {
+        max-width: none;
+        width: 100%;
+        aspect-ratio: 2;
+    }
+
+    .fond > .article > .zone-texte > h3 {
+        font-size: 1.5em;
+    }
     
+    .fond > .article > .zone-texte > p {
+        font-size: 1em;
+    }
 }
