@@ -471,6 +471,7 @@ article > iframe { /* carte */
 .bg > .article a {
     font-style: italic;
     color: rgb(220, 220, 220);
+    cursor: pointer;
 }
 
 .bg > .article a:hover {
@@ -910,7 +911,7 @@ article > iframe { /* carte */
         font-size: 1.5em;
     }
     
-    .bg > .article > .zone-texte > p {
+    .bg > .article > .zone-texte  p {
         font-size: 1em;
     }
 

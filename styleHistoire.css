@@ -198,6 +198,8 @@
 
     .timeline-carousel .slick-active .media-wrapper {
         opacity: 1 !important;
+        border: 2px solid white;
+        border-radius: 5px;
     }
 
     .slick-dots {
@@ -266,4 +268,25 @@
         font-size: 28px;
         margin-right: 8px;
         color: #fff;
+    }
+
+    .image {
+        background-size: cover;
+        background-position: bottom center;
+    }
+
+    .image1 {
+        background: url(Images/alessandrou.JPG);
+    }
+
+    .image2 {
+        background: url(Images/alessandrou.JPG);
+    }
+
+    .image3 {
+        background: url(Images/alessandrou.JPG);
+    }
+
+    .image4 {
+        background: url(Images/alessandrou.JPG);
     }
