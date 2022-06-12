@@ -9,16 +9,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
 </head>
   <!-- Site footer -->
+  <?php
+    $aPropos = array("A Propos","About");
+    $presentation = array("Nous sommes heureux de vous présenter ce site autour de Venise et sa lagune. Il s’agit d’un projet étudiant en partenariat avec 
+    le forum Unesco. Nous sommes un groupe d’étudiants en première année de BUT informatique à l’IUT Marne la vallée de Champs sur Marne.","We are pleased 
+    to present this site about Venice and its lagoon. It is a student project in partnership with the Unesco forum. We are a group of students in the first 
+    year of our computer science degree at the IUT Marne la vallée in Champs sur Marne.");
+    $partenaires = array("Nos partenaires","Our partners");
+    $plusInfo = array("Plus d'informations","More information");
+    $quiSommesNous = array("Qui sommes nous ?","Who are we?");
+    $mentionsLegales = array("Mentions légales","Legal information");
+    $credits = array("Crédits","Credits");
+  ?>
+
   <footer class="site-footer">
     <div class="containerBoot">
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <h6>A Propos</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <?php 
+            echo "<h6>$aPropos[$lang]</h6>";
+            echo "<p class=\"text-justify\">$presentation[$lang]</p>";
+          ?>
+          
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Nos partenaires</h6>
+          <?= "<h6>$partenaires[$lang]</h6>" ?>
           <ul class="footer-links">
             <li><a href="http://scanfcode.com/category/c-language/">Unesco</a></li>
             <li><a href="http://scanfcode.com/category/front-end-development/">UGE</a></li>
@@ -26,11 +42,15 @@
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Plus d'informations</h6>
+          <?="<h6>$plusInfo[$lang]</h6>"?>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">Qui sommes nous ?</a></li>
-            <li><a href="http://scanfcode.com/contact/">Mentions légales</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Crédits</a></li>
+            <?php
+              echo "<li><a href=\"PageQuiSommesNous.php\">$quiSommesNous[$lang]</a></li>";
+              echo "<li><a href=\"http://scanfcode.com/contact/\">$mentionsLegales[$lang]</a></li>";
+              echo "<li><a href=\"http://scanfcode.com/contribute-at-scanfcode/\">$credits[$lang]</a></li>";
+            
+            
+            ?>
           </ul>
         </div>
       </div>
@@ -45,8 +65,8 @@
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"><img class="img-footer" src="Images/facebook.png"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"><img class="img-footer" src="Images/logoTwitter.png"></i></a></li>
+            <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100075325530865"><i class="fa fa-facebook"><img class="img-footer" src="Images/facebook.png"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/VeniseDemasquee?s=20&t=SDNtG42mdJ1FZtjYTw_ixQ"><i class="fa fa-twitter"><img class="img-footer" src="Images/logoTwitter.png"></i></a></li>
             <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><img class="img-footer" src="Images/logoInsta.png"></i></a></li>
           </ul>
         </div>
