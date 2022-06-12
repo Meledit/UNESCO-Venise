@@ -329,7 +329,7 @@
     </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
-    <script src="./script.js"></script>
+    <script src="./scriptSejour.js"></script>
 
 </body>
 
