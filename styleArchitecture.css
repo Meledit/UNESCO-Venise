@@ -58,7 +58,6 @@
     display: flex;
     flex-direction: column;
     background-color: #313131;;
-    border:red 3px solid;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -66,13 +65,15 @@
 
 .fond > p {
     color: white;
-    font-size: 1.5em;
-    margin: 15px 5% 15px 5%
+    font-size: 1.7em;
+    margin: 15px 5% 30px 5%
 }
 
 .fond > h3 {
     font-size: 4em;
-    color: white;
+    color: #f7af3e;
+    margin-top: 3%;
+    margin-bottom: 1%;
 }
 
 .fond > .article {
@@ -80,7 +81,7 @@
     align-items: center;
     width: 90%;
     gap: 30px;
-    border: orange 2px solid;
+    margin-bottom: 10vh;
 }
 
 .fond > .article a {
