@@ -22,7 +22,7 @@
     $saviezvous = array("Le saviez-vous ?", "Did you know ?");
     $bienvenue = array("Bienvenue sur la page gastronomie&nbsp;!", "Welcome to the gastronomy page&nbsp;!");
     $bienvenueTexte = array("Ici vous retrouverez des informations concernant la gastronomie variée de Venise. Si vous souhaitez accéder à une partie précise de sa gastronomie, 
-        cliquer sur une image de la mosaique qui la concerne.", "Here you will be able to find information about the varied gastronomy of Venice. If you wish to access a specific part of its gastronomy 
+        cliquer sur l'image de la mosaique qui la concerne.", "Here you will be able to find information about the varied gastronomy of Venice. If you wish to access a specific part of its gastronomy 
         click on the picture of the mosaic that concerns it.");
 
     $poisson = array("Les poissons", "Fishes");
@@ -131,15 +131,13 @@
     </section>
 
 
-    <div class="bgGallery milieu">
-        <div class="bg noir">
-            <article>
-                <?php
-                echo "<h3>$bienvenue[$lang]</h3>";
-                echo "<p> $bienvenueTexte[$lang]</p>"
-                ?>
-            </article>
-        </div>
+    <div class="bgGallery milieu noir">
+        <article>
+            <?php
+            echo "<h3>$bienvenue[$lang]</h3>";
+            echo "<p> $bienvenueTexte[$lang]</p>"
+            ?>
+        </article>
 
         <div class="wrapper">
             <div class="gallery">

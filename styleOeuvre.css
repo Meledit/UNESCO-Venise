@@ -1,65 +1,10 @@
-/*
-.menu{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width:100%
+.IMG {
+    background: url(Images/Oeuvre/LaMortDeLaVierge.jpg);
 }
 
-.widget-menu {
-    width: 30%;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 40px;
+.IMG2 {
+    background: url(Images/Oeuvre/MiracleDelPonte.jpg);
 }
-
-.widget-menu > .zone-menu {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-}
-
-.widget-menu > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    border: 2px solid white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    align-self: center;
-    border-radius: 50px;
-    padding: 0px 20px;
-    font-size: 1.25em;
-    font-weight: bold;
-}
-
-.widget-menu > a:hover {
-    animation: hover-voir 0.7s ease-out forwards;
-}
-
-.widget-menu > .zone-menu > img {
-    object-fit: cover;
-    width: 20%;
-    max-width: 225px;
-    aspect-ratio: 1;
-    border-radius: 4px;
-    border: 2px solid white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-}
-
-.widget-menu > .zone-menu > .resume-menu > h3 {
-    font-size: 2.1em;
-    margin-bottom: 10px;
-}
-
-.widget-menu > .zone-menu > .resume-menu > p {
-    font-size: 1.5em;
-    text-indent: 30px;
-} */
-
-
 
 .bgGallery {
     width: 100%;
@@ -93,8 +38,8 @@
 .gallery {
     width:100%;
     display: grid;
-    grid-template-columns: repeat(4, 18vw);
-    grid-template-rows: repeat(4, 14vw);
+    grid-template-columns: repeat(4, 17vw);
+    grid-template-rows: repeat(4, 13vw);
     gap: 0.75rem;
     margin-top: 20px;
     
@@ -309,13 +254,13 @@
 
 @media screen and (max-width: 35rem) {
     .gallery {
-        grid-template-columns: repeat(3, 6.5em);
-        grid-template-rows: repeat(5, 6.5em);
-        gap: .2rem;
+        grid-template-columns: repeat(3, 5.5em);
+        grid-template-rows: repeat(5, 5.5em);
+        gap: .15rem;
     }
 
     .gallery__item {
-        margin: .1rem;
+        margin: .05rem;
         border:1px solid rgb(255, 255, 255);
     }
 
