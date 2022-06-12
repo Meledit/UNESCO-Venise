@@ -9,57 +9,10 @@
     <title>Quizz random</title>
 </head>
 <body>
-    <a href="#" class="jump">
-        <img src="images/btt.png" alt="">
-    </a>
+<?php
+    include("header.php");
+    ?>
     <section class="showcase">
-        <header>
-                <input type="radio" id="burger" name="burger">
-                <label for="burger"><img src="images/menu.png" alt=""></label>
-                <div class="navbar">
-                    <div class="burgerSquare">
-                        <div class="zoneBurger">
-                            <input type="radio" id="burgerClose" name="burger">
-                            <label for="burgerClose"><img src="images/close.png" alt=""></label>    
-                        </div>
-                    </div>
-                    <ul>
-                        <li>
-                            <h3>Histoire</h3>
-                            <a href="">Histoire</a>
-                        </li>
-                        <li>
-                            <h3>Culture</h3>
-                            <a href="">Gastronomie</a>
-                            <a href="">Architecture</a>
-                            <a href="">Événement</a>
-                            <a href="">Oeuvres</a>
-                        </li>
-                        <li>
-                            <h3>Séjours</h3>
-                            <a href="">Séjour</a>
-                        </li>
-                        <li>
-                            <h3>Quiz</h3>
-                            <a href="">Nos quiz</a>
-                        </li>
-                        <li>
-                            <h3>Langues</h3>
-                            <div class="drapeaux">
-                                <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                                <a href=""><img src="images/Fond1.jpg" alt=""></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-            <a href="index.html"><img src="images/eye-mask.png" alt="Logo Gustave eiffel" class="logo"></a>
-        </header>
-
-
-
         <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
@@ -249,57 +202,64 @@
                 </div>
             </div>
         </div>
-
+        <?php
+        $fini = array("J'ai fini !", "I'm done !");
+        ?>
         <div class="bg gris">
-            <input type="submit" value="J'ai fini !" class="valider">
+            <?= "<input type=\"submit\" value=\"$fini[$lang]\" class=\"valider\"> " ?>
 
-            <?php 
-                if (isset($_GET["question1"]) && isset($_GET["question2"])) { 
-                    $points = 0;
-                    $size = count($_GET);
-                    foreach ($_GET as $value) {
-                        $points += $value;
-                    }
-
-                    if ($points >= ($size * 0.75)) {
-                        echo
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Bravo ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";
-
-                    } else if ($points >= ($size * 0.5) && $points < ($size * 0.75)) {
-                        echo 
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Bien ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";
-
-                    } else if ($points >= ($size * 0.25) && $points < ($size * 0.5)) {
-                        echo 
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Peu mieux faire ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";
-
-                    } else {
-                        echo 
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Dommage ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";  
-                    }
+            <?php
+            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                $points = 0;
+                $size = count($_POST);
+                foreach ($_POST as $value) {
+                    $points += $value;
                 }
+
+                $score1 = array("Bravo ! Votre score est de ...", "Well done! Your score is ...");
+                $score2 = array("Bien ! Votre score est de ...", "Good! Your score is ...");
+                $score3 = array("Peut mieux faire ! Votre score est de ...", "You can do better ! Your score is ...");
+                $score4 = array("Dommage ! Votre score est de ...", "Too bad! Your score is ...");
+                if ($points >= ($size * 0.75)) {
+
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                            <h3>$score1[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                } else if ($points >= ($size * 0.5) && $points < ($size * 0.75)) {
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                        <h3>$score2[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                } else if ($points >= ($size * 0.25) && $points < ($size * 0.5)) {
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                        <h3>$score3[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                } else {
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                        <h3>$score4[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                }
+            }
             ?>
         </div>
     </form>
+    <?php
+    include("footer.php");
+    ?>
 </body>
 </html>

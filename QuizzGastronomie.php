@@ -788,7 +788,7 @@
 
                 $score1 = array("Bravo ! Votre score est de ...", "Well done! Your score is ...");
                 $score2 = array("Bien ! Votre score est de ...", "Good! Your score is ...");
-                $score3 = array("Peu mieux faire ! Votre score est de ...", "You can do better ! Your score is ...");
+                $score3 = array("Peut mieux faire ! Votre score est de ...", "You can do better ! Your score is ...");
                 $score4 = array("Dommage ! Votre score est de ...", "Too bad! Your score is ...");
                 if ($points >= ($size * 0.75)) {
 
