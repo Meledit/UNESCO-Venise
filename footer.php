@@ -9,16 +9,32 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
 </head>
   <!-- Site footer -->
+  <?php
+    $aPropos = array("A Propos","About");
+    $presentation = array("Nous sommes heureux de vous présenter ce site autour de Venise et sa lagune. Il s’agit d’un projet étudiant en partenariat avec 
+    le forum Unesco. Nous sommes un groupe d’étudiants en première année de BUT informatique à l’IUT Marne la vallée de Champs sur Marne.","We are pleased 
+    to present this site about Venice and its lagoon. It is a student project in partnership with the Unesco forum. We are a group of students in the first 
+    year of our computer science degree at the IUT Marne la vallée in Champs sur Marne.");
+    $partenaires = array("Nos partenaires","Our partners");
+    $plusInfo = array("Plus d'informations","More information");
+    $quiSommesNous = array("Qui sommes nous ?","Who are we?");
+    $mentionsLegales = array("Mentions légales","Legal information");
+    $credits = array("Crédits","Credits");
+  ?>
+
   <footer class="site-footer">
     <div class="containerBoot">
       <div class="row">
         <div class="col-sm-12 col-md-6">
-          <h6>A Propos</h6>
-          <p class="text-justify">Nous sommes heureux de vous présenter ce site autour de Venise et sa lagune. Il s’agit d’un projet étudiant en partenariat avec le forum Unesco. Nous sommes un groupe d’étudiants en première année de BUT informatique à l’IUT Marne la vallée de Champs sur Marne.</p>
+          <?php 
+            echo "<h6>$aPropos[$lang]</h6>";
+            echo "<p class=\"text-justify\">$presentation[$lang]</p>";
+          ?>
+          
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Nos partenaires</h6>
+          <?= "<h6>$partenaires[$lang]</h6>" ?>
           <ul class="footer-links">
             <li><a href="http://scanfcode.com/category/c-language/">Unesco</a></li>
             <li><a href="http://scanfcode.com/category/front-end-development/">UGE</a></li>
@@ -26,11 +42,15 @@
         </div>
 
         <div class="col-xs-6 col-md-3">
-          <h6>Plus d'informations</h6>
+          <?="<h6>$plusInfo[$lang]</h6>"?>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">Qui sommes nous ?</a></li>
-            <li><a href="http://scanfcode.com/contact/">Mentions légales</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Crédits</a></li>
+            <?php
+              echo "<li><a href=\"PageQuiSommesNous.php\">$quiSommesNous[$lang]</a></li>";
+              echo "<li><a href=\"http://scanfcode.com/contact/\">$mentionsLegales[$lang]</a></li>";
+              echo "<li><a href=\"http://scanfcode.com/contribute-at-scanfcode/\">$credits[$lang]</a></li>";
+            
+            
+            ?>
           </ul>
         </div>
       </div>
