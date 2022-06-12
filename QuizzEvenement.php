@@ -143,7 +143,7 @@
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/ImagesEvenement/quizz-BiennalesVenise.jpg" alt="">
+                    <img src="Images/ImagesEvenement/quizz-BiennalesVenise.png" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
