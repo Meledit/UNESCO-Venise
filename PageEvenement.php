@@ -17,7 +17,7 @@
 
         // Préparation des textes traduits 
 
-        $venise = array("Venise en action,","Venice in action,");
+        $venise = array("Venise en action","Venice in action");
         $sousTitre = array("La ville de la fête","The party city");
         $saviezvous =array("Le saviez-vous ?","Did you know ?");
         $bienvenue = array("Bienvenue sur la page Evenemment&nbsp;!","Welcome to the Events page&nbsp;!");
