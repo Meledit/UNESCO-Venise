@@ -1,19 +1,10 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #fff;
+.IMG {
+    background: url(Images/Oeuvre/LaMortDeLaVierge.jpg);
 }
 
-/*--------- Mosaique ---------*/
 .IMG2 {
-    background: url(Images/Gastronomie/Fond3.jpg);
+    background: url(Images/Oeuvre/MiracleDelPonte.jpg);
 }
-
-.IMG3{
-    background:url(Images/Gastronomie/restaurant.jpg)
-}
-
 
 .bgGallery {
     width: 100%;
@@ -45,53 +36,73 @@
 
 /* Gallery */
 .gallery {
+    width:100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 12.5rem);
-    gap: .5rem;
+    grid-template-columns: repeat(4, 17vw);
+    grid-template-rows: repeat(4, 13vw);
+    gap: 0.75rem;
     margin-top: 20px;
     
 }
 
 /* Gallery Layout */
+
 .gallery__item{
     border:2px solid rgb(255, 255, 255);
 }
 
 .gallery__item--1 {
-    grid-column: 1 / span 1;
+    grid-column: 1 / span 2;
     grid-row: 1 / span 1;
-      
+     
 }
 
 .gallery__item--2 {
-    grid-column: 1 / span 1;
-    grid-row: 2 / span 1;
-      
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+     
 }
 
 .gallery__item--3 {
-    grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
-      
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+     
 }
 
 .gallery__item--4 {
-    grid-column: 3 / span 1;
-    grid-row: 1 / span 3;
-      
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+     
 }
 
 .gallery__item--5 {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
-      
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+     
 }
 
 .gallery__item--6 {
-    grid-column: 3 / span 1;
+    grid-column: 3 / span 2;
+    grid-row: 2 / span 1;
+     
+}
+
+.gallery__item--7 {
+    grid-column: 1 / span 1;
     grid-row: 4 / span 1;
-      
+     
+}
+
+.gallery__item--8 {
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+     
+}
+
+.gallery__item--9 {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 2;
+     
 }
 
 /* Gallery Link */
@@ -186,7 +197,8 @@
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 11em);
+        grid-template-rows: repeat(5, 11em);
     }
 
     /* Gallery Layout */
@@ -194,30 +206,45 @@
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
     }
-
+    
     .gallery__item--2 {
-        grid-column: 1 / span 1;
-        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+        grid-row: 1 / span 1;
     }
-
+    
     .gallery__item--3 {
         grid-column: 2 / span 1;
-        grid-row: 1 / span 2;
+        grid-row: 2/ span 1;
     }
-
+    
     .gallery__item--4 {
         grid-column: 1 / span 1;
+        grid-row: 2 / span 2;
+    }
+    
+    .gallery__item--5 {
+        grid-column: 1 / span 1;
+        grid-row: 4 / span 1;
+    }
+    
+    .gallery__item--6 {
+        grid-column: 1 / span 2;
+        grid-row: 5 / span 1;
+    }
+    
+    .gallery__item--7 {
+        grid-column: 3 / span 1;
+        grid-row: 5 / span 1;
+    }
+    
+    .gallery__item--8 {
+        grid-column: 2 / span 2;
         grid-row: 3 / span 2;
     }
-
-    .gallery__item--5 {
-        grid-column: 2 / span 1;
-        grid-row: 3 / span 1;
-    }
-
-    .gallery__item--6 {
-        grid-column: 2 / span 1;
-        grid-row: 4 / span 1;
+    
+    .gallery__item--9 {
+        grid-column: 3 / span 1;
+        grid-row: 1 / span 2;
     }
 
     .gallery__overlay {
@@ -227,13 +254,14 @@
 
 @media screen and (max-width: 35rem) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        gap: .25rem;
-        border:1px solid white;
+        grid-template-columns: repeat(3, 5.5em);
+        grid-template-rows: repeat(5, 5.5em);
+        gap: .15rem;
     }
 
     .gallery__item {
-        margin: .2rem;
+        margin: .05rem;
+        border:1px solid rgb(255, 255, 255);
     }
 
     .gallery__overlay {

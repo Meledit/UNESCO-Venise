@@ -150,7 +150,8 @@ header > label > img {
     width: 0vw;
     background-color: var(--clr-fond-principale);
     overflow: hidden;
-}
+    z-index: 100;
+} 
 
 .navbar > ul {
     display: flex;
@@ -289,7 +290,6 @@ header > label > img {
 .showcase {
     height: 100%;
     width: 100%;
-    border:2px solid orange;
 }
 
 /* Titre */
@@ -421,6 +421,7 @@ header > label > img {
 .centre {
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 article {
@@ -484,7 +485,7 @@ article > iframe { /* carte */
 .bordure-texte {
     background-color: #4b4b4b;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    padding: 20px 40px;
+    padding: 40px 40px;
 }
 
 .bg > .article > .zone-texte > h3 {
@@ -515,6 +516,7 @@ article > iframe { /* carte */
 }
 
 .bg > .article > .image-et-legende {
+    font-size:1.25em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -541,6 +543,7 @@ article > iframe { /* carte */
     align-items: center;
     gap: 3px;
     width: 45%;
+    font-size:1.25em;
 }
 
 .bg > .article > .zone-images > .image-et-legende > img {
@@ -559,6 +562,7 @@ article > iframe { /* carte */
 
 .bg > .article > .deux-images > .image-et-legende {
     width: 90%;
+    font-size:1.25em;
 }
 
 .bg > .article > .deux-images > .image-et-legende > img {
