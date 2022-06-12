@@ -17,7 +17,7 @@
   include("header.php");
 
   $venise = array("Venise démasquée", "Unmasking Venice");
-  $sousTitre = array("Une ville remplie d'histoire", "a city full of history");
+  $sousTitre = array("Une ville remplie d'histoire", "A city full of history");
   $saviezvous = array("Le saviez-vous ?", "Did you know ?");
   $bienvenue = array("Explorez les lieux les plus cultes de la ville.", "Explore the most famous places in the city.");
   $bienvenueTexte = array("Venise est une ville ancienne avec une histoire riche et profonde.
@@ -29,7 +29,7 @@
   $Plus = array("En savoir plus", "More");
   $Moins = array("Moins", "Less");
 
-  $title = array("Parcours culte", "Famous course");
+  $title = array("Parcours des Incontournables", "The Must-See Route");
 
   $PontRialto = array("Pont de Rialto", "Ponte di Rialto");
   $PalaisDoges = array("Palais des Doges", "Palazzo Ducale");
@@ -40,10 +40,9 @@
   $Campanile = array("Campanile de Saint Marc", "Campanile di san Marco");
   $Burano = array("Burano", "Burano");
 
-  $premierjour = array("Premier jour", "First day");
-  $deuxiemejour = array("Deuxième jour", "Second day");
-  $troisiemejour = array("Troisième jour", "Third day");
-  $quatriemejour = array("Quatrième jour", "Fourth day");
+  $premierjour = array("- Premier jour -", "- First day -");
+  $deuxiemejour = array("- Deuxième jour -", "- Second day -");
+  $troisiemejour = array("- Troisième jour -", "- Third day -");
 
   $PontRialto1 = array(
     "Le Pont du Rialto, monument célèbre et un des ponts les plus anciens de Venise traversant le Grand
@@ -335,17 +334,17 @@
     <div class="timeline">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <?= "<div class=\"swiper-slide\" style=\"background-image: url(https://unsplash.it/1920/500?image=11)\" data-year=$PontRialto[$lang]>" ?>
+          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)" data-year="Ponte di Rialto">
           <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontRialto[$lang]</span>" ?>
-          <h4 class="timeline-title">- fghj -</h4>
+          <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
           <p class="timeline-text">
             <?= "$PontRialto1[$lang]" ?>
           </p>
         </div>
       </div>
-      <?= "<div class=\"swiper-slide\" style=\"background-image: url(https://unsplash.it/1920/500?image=12)\" data-year=$PalaisDoges[$lang]>" ?>
+      <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)" data-year="Palazzo Ducale">
       <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PalaisDoges[$lang]</span>" ?>
-      <h4 class="timeline-title">Our nice super title</h4>
+      <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
       <p class="timeline-text">
         <?= "$PalaisDoges1[$lang]" ?>
       </p>
@@ -354,9 +353,9 @@
       </p>
     </div>
   </div>
-  <?= "<div class=\"swiper-slide\" style=\"background-image: url(https://unsplash.it/1920/500?image=13)\" data-year=$BStMarc[$lang]>" ?>
+  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)" data-year="Basilica di San Marco">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$BStMarc[$lang]</span>" ?>
-  <h4 class="timeline-title">Our nice super title</h4>
+  <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
   <p class="timeline-text">
     <?= "$BStMarc1[$lang]" ?>
   </p>
@@ -365,25 +364,40 @@
   </p>
   </div>
   </div>
-  <?= "<div class=\"swiper-slide\" style=\"background-image: url(https://unsplash.it/1920/500?image=14)\" data-year=$placeStMarc[$lang]>" ?>
+  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14)" data-year="Piazza San Marco">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$placeStMarc[$lang]</span>" ?>
-  <h4 class="timeline-title">Our nice super title</h4>
+  <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
   <p class="timeline-text">
     <?= "$placeStMarc1[$lang]" ?>
   </p>
   </div>
   </div>
-  <?= "<div class=\"swiper-slide\" style=\"background-image: url(https://unsplash.it/1920/500?image=15)\" data-year=$PontSoupirs[$lang]>" ?>
+  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Campanile di San Marco">
+  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Campanile[$lang]</span>" ?>
+      <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
+      <p class="timeline-text">
+        <?= "$Campanile1[$lang]" ?>
+        <input type="radio" id="savoirPlus" name="savoirPlusMai">
+        <?= "<label for=\"savoirPlus\">$Plus[$lang]</label>" ?>
+        <span>
+          <?= "$Campanile2[$lang]" ?>
+          <input type="radio" id="savoirMoins" name="savoirPlusMai">
+          <?= "<label for=\"savoirMoins\">$Moins[$lang]</label>" ?>
+        </span>
+      </p>
+    </div>
+  </div>
+  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15)" data-year="Ponte dei Sospiri">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontSoupirs[$lang]</span>" ?>
-  <h4 class="timeline-title">Our nice super title</h4>
+  <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
   <p class="timeline-text">
     <?= "$PontSoupirs1[$lang]" ?>
   </p>
   </div>
   </div>
-  <?= " <div class=\"swiper-slide\" style=\"background-image: url(https://unsplash.it/1920/500?image=16)\" data-year=$Murano[$lang]>" ?>
+  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Murano">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Murano[$lang]</span>" ?>
-  <h4 class="timeline-title">Our nice super title</h4>
+  <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
   <p class="timeline-text">
     <?= "$Murano1[$lang]" ?>
   </p>
@@ -392,24 +406,9 @@
   </p>
   </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Campanile de Saint Marc">
-    <div class="swiper-slide-content"><span class="timeline-lieu">Campanile de Saint Marc</span>
-      <h4 class="timeline-title">Our nice super title</h4>
-      <p class="timeline-text">
-        <?= "$Campanile1[$lang]" ?>
-        <input type="radio" id="savoirPlus" name="savoirPlusMai">
-        <?= "<label for=\"savoirPlus\">$plus[$lang]</label>" ?>
-        <span>
-          <?= "$Campanile[$lang]" ?>
-          <input type="radio" id="savoirMoins" name="savoirPlusMai">
-          <?= "<label for=\"savoirMoins\">$Moins[$lang]</label>" ?>
-        </span>
-      </p>
-    </div>
-  </div>
   <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Burano">
-    <div class="swiper-slide-content"><span class="timeline-lieu">Burano</span>
-      <h4 class="timeline-title">Our nice super title</h4>
+  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Burano[$lang]</span>" ?>
+      <h4 class="timeline-title"><?= "$troisiemejour[$lang]" ?></h4>
       <p class="timeline-text">
         <?= "$Burano1[$lang]" ?>
       </p>
