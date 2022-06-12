@@ -297,12 +297,14 @@
                 echo "<p>$mai4[$lang]</p>";
                 ?>
                     <input type="radio" id="savoirPlus" name="savoirPlusMai">
-                    <label for="savoirPlus">En savoir plus</label>
+                    <?= "<label for=\"savoirPlus\">$enSavoirPlus[$lang]</label>" ?>
+                    <span>
                     <?php
-                        echo "<span>$mai5[$lang]</span>";
+                        echo "$mai5[$lang]";
                     ?>
                         <input type="radio" id="savoirMoins" name="savoirPlusMai">
-                        <label for="savoirMoins">Moins</label>
+                        <?= "<label for=\"savoirMoins\">$enSavoirMoins[$lang]</label>" ?>
+                        </span>
             </div>
         </div>
     </div>
