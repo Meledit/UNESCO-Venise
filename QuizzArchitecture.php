@@ -8,47 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleQuizz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title> Quizz Evenement </title>
+    <title> Quizz Architecture </title>
 </head>
 
 <body>
     <?php
     include("header.php")
     ?>
-
     <section class="showcase">
-        <img src="Images/ImagesEvenement/FondEvenement.jpg" alt="" class="imgBg">
-            <div class="overlay"></div>
-                <div class="container">
-                    <div class="text">
-                    <h1>Venise en action</h1>
-                    <h2>La ville de la fête</h2>
+
+    <img src="Images/Architecture/Venise1Fond.jpg" alt="" class="imgBg">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <div class="text">
+            <h1>Venise</h1>
+            <h2>La ville aux diverses style</h2>
     </section>
 
     <form action="" method="POST">
 
     <div class="bg gris">
-        <article>
+            <article>
+                <h3>Venise est une ville regroupant des styles architecturaux de différentes époques</h3>
+            </article>
+        </div>
 
-        <h3>Bienvenue sur la page Evenemment&nbsp;!</h3>
-        <p>Venise est une ville très vivante et propose de nombreux évènements tout au long de l'année</p>
-
-        </article>
-    </div>
-
-    <div class="bg gris">
+        <div class="bg gris">
             <div class="zone-question">
                 <?php
-                $q1 = array("Combien de temps chaque année dure le Carnaval de Venise ?", "How long does the Venice Carnival last each year?");
-                $q1_1 = array("8 jours", "8 days");
-                $q1_2 = array("10 jours", "10 days");
-                $q1_3 = array("12 jours", "12 days");
-                $q1_4 = array("15 jours", "15 dayss");
+                $q1 = array("Quelle architecture n'est pas présente dans Venise ?", "What architecture is not present in Venice? ");
+                $q1_1 = array("L'architecture vénitienne veneto-byzantine", "Venetian veneto-byzantine architecture");
+                $q1_2 = array("Le style renaissance", "The renaissance style");
+                $q1_3 = array("L’architecture classique", "Classical architecture");
+                $q1_4 = array("Le style baroque", "The Baroque style");
                 echo "<h3>$q1[$lang]</h3>";
 
                 ?>
                 <div class="question bordure-texte">
-                    <img src="Images/ImagesEvenement/carnaval-Venise.jpeg" alt="">
+                    <img src="Images/Architecture/VeniseArchitecture.jpg" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <!-- name = questionX, id = questionX_numrep -->
@@ -74,13 +72,13 @@
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question1' id='question1_2' value='1'>
-                                <label for='question1_2' class='bonne'>$q1_2[$lang]</label>
+                                <input type='radio' name='question1' id='question1_2' value='0'>
+                                <label for='question1_2' class='mauvaise'>$q1_2[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question1' id='question1_2' value='1'>
+                                <input type='radio' name='question1' id='question1_2' value='0'>
                                 <label for='question1_2'>$q1_2[$lang]</label>
                                 ";
                             }
@@ -92,13 +90,13 @@
                             if (isset($_POST["question1"])  && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question1' id='question1_3' value='0'>
-                                <label for='question1_3' class='mauvaise'>$q1_3[$lang]</label>
+                                <input type='radio' name='question1' id='question1_3' value='1'>
+                                <label for='question1_3' class='bonne'>$q1_3[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question1' id='question1_3' value='0'>
+                                <input type='radio' name='question1' id='question1_3' value='1'>
                                 <label for='question1_3'>$q1_3[$lang]</label>
                                 ";
                             }
@@ -128,36 +126,37 @@
         </div>
 
 
+        
         <div class="bg gris">
             <div class="zone-question">
                 <?php
                 $q2 = array(
-                    "Quand s'est déroulé la première fête du Redentore ?",
-                    "When did the first Redentore party take place ?"
+                    "Combien de ponts Venise possède-t-elle ?",
+                    "How many bridges does Venice have ?"
                 );
-                $q2_1 = array("Le 12 Juillet 1578", "The 12 July 1578");
-                $q2_2 = array("Le 14 Juillet 1620", "The 14th July 1620");
-                $q2_3 = array("Le 30 Mars 1577", "The 30th March 1577");
-                $q2_4 = array("Le 21 Juillet 1577", "The 21st July 1577");
+                $q2_1 = array("455", "455");
+                $q2_2 = array("450", "450");
+                $q2_3 = array("325", "325");
+                $q2_4 = array("438", "438");
 
                 echo "<h3>$q2[$lang]</h3>";
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/ImagesEvenement/quizz-BiennalesVenise.png" alt="">
+                    <img src="Images/Architecture/PontsVenise.jpeg" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question2' id='question2_1' value='0' required>
-                                <label for='question2_1' class='mauvaise'>$q2_1[$lang]</label>
+                                <input type='radio' name='question2' id='question2_1' value='1' required>
+                                <label for='question2_1' class='bonne'>$q2_1[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question2' id='question2_1' value='0' required>
+                                <input type='radio' name='question2' id='question2_1' value='1' required>
                                 <label for='question2_1'>$q2_1[$lang]</label>
                                 ";
                             }
@@ -205,13 +204,13 @@
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question2' id='question2_4' value='1'>
-                                <label for='question2_4' class='bonne'>$q2_4[$lang]</label>
+                                <input type='radio' name='question2' id='question2_4' value='0'>
+                                <label for='question2_4' class='mauvaise'>$q2_4[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question2' id='question2_4' value='1'>
+                                <input type='radio' name='question2' id='question2_4' value='0'>
                                 <label for='question2_4'>$q2_4[$lang]</label>
                                 ";
                             }
@@ -222,36 +221,38 @@
             </div>
         </div>
 
+
+        
         <div class="bg gris">
             <div class="zone-question">
                 <?php
                 $q3 = array(
-                    "Qui est le créateur du festival internationale du film de Venise ?",
-                    "Who created the Venice International Film Festival?"
+                    "Citez un édifice de Venise utilisant l'architecture de la Renaissance ",
+                    "Name a building of Venice using Renaissance architecture "
                 );
-                $q3_1 = array("Giuseppe Volpi di Misurata", "Giuseppe Volpi di Misurata");
-                $q3_2 = array("Luciano de Feo", "Luciano de Feo");
-                $q3_3 = array("Guillermo del Toro", "Guillermo del Toro");
-                $q3_4 = array("Amedeo Nazzari", "Amedeo Nazzari");
+                $q3_1 = array("Ca' Pesaro", "Ca' Pesaro");
+                $q3_2 = array("Campanile de Saint-Marc", "Campanile di San Marco");
+                $q3_3 = array("Palais des Doges", "Palazzo Ducale");
+                $q3_4 = array("Palais Grimani", "Palazzo Grimani");
 
                 echo "<h3>$q3[$lang]</h3>";
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/ImagesEvenement/festival-filmVenise.jpg" alt="">
+                    <img src="Images/Architecture/SantaMariadeiMiracoli.jpg" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question3' id='question3_1' value='1' required>
-                                <label for='question3_1' class='bonne'>$q3_1[$lang]</label>
+                                <input type='radio' name='question3' id='question3_1' value='0' required>
+                                <label for='question3_1' class='mauvaise'>$q3_1[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question3' id='question3_1' value='1' required>
+                                <input type='radio' name='question3' id='question3_1' value='0' required>
                                 <label for='question3_1'>$q3_1[$lang]</label>
                                 ";
                             }
@@ -299,13 +300,13 @@
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question3' id='question3_4' value='0'>
-                                <label for='question3_4' class='mauvaise'>$q3_4[$lang]</label>
+                                <input type='radio' name='question3' id='question3_4' value='1'>
+                                <label for='question3_4' class='bonne'>$q3_4[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question3' id='question3_4' value='0'>
+                                <input type='radio' name='question3' id='question3_4' value='1'>
                                 <label for='question3_4'>$q3_4[$lang]</label>
                                 ";
                             }
@@ -316,24 +317,24 @@
             </div>
         </div>
 
-        
+                
         <div class="bg gris">
             <div class="zone-question">
                 <?php
                 $q4 = array(
-                    "Par quel lieu ne passe pas le Venice Marathon ? ",
-                    "Where does the Venice Marathon not go ?"
+                    "Quel est le pont le plus visité de Venise ?  ",
+                    "What is the most visited bridge in Venice ? "
                 );
-                $q4_1 = array("Piazza San Marco", "Piazza San Marco");
-                $q4_2 = array("Palais des Doges", "Palazzo Ducale");
-                $q4_3 = array("Riva Sette Martiri", "Riva Sette Martiri");
-                $q4_4 = array("Pont du Rialto ", "Ponte di Rialto");
+                $q4_1 = array("Le pont des soupirs", "Ponte dei sospiri");
+                $q4_2 = array("Le pont du Rialto", "Ponte di Rialto");
+                $q4_3 = array("Le pont de l'Académie", "Ponte dell'Accademia");
+                $q4_4 = array("Le pont de la Constitution", "Ponte della Costituzione");
 
                 echo "<h3>$q4[$lang]</h3>";
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/ImagesEvenement/Venise-marathon.png" alt="">
+                    <img src="Images/Architecture/DifferentsPontsVenise.jpeg" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
@@ -358,13 +359,13 @@
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question4' id='question4_2' value='0'>
-                                <label for='question4_2' class='mauvaise'>$q4_2[$lang]</label>
+                                <input type='radio' name='question4' id='question4_2' value='1'>
+                                <label for='question4_2' class='bonne'>$q4_2[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question4' id='question4_2' value='0'>
+                                <input type='radio' name='question4' id='question4_2' value='1'>
                                 <label for='question4_2'>$q4_2[$lang]</label>
                                 ";
                             }
@@ -394,13 +395,13 @@
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question4' id='question4_4' value='1'>
-                                <label for='question4_4' class='bonne'>$q4_4[$lang]</label>
+                                <input type='radio' name='question4' id='question4_4' value='0'>
+                                <label for='question4_4' class='mauvaise'>$q4_4[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question4' id='question4_4' value='1'>
+                                <input type='radio' name='question4' id='question4_4' value='0'>
                                 <label for='question4_4'>$q4_4[$lang]</label>
                                 ";
                             }
@@ -411,36 +412,36 @@
             </div>
         </div>
 
-        
+               
         <div class="bg gris">
             <div class="zone-question">
                 <?php
                 $q5 = array(
-                    "Quel est depuis le début le but de la Vogalonga de Venise ? ",
-                    "What has been the purpose of the Venice Vogalonga from the beginning ?"
+                    "En quelle année le Ca'D'oro à été construit ?",
+                    "In what year was Ca'D'oro built ?"
                 );
-                $q5_1 = array("Inviter les habitants à sortir plus de chez eux ", "Inviting people to get out of their homes more ");
-                $q5_2 = array("Avoir la plus belle embarcation ", "Have the most beautiful boat ");
-                $q5_3 = array("Sensibiliser la population sur la dangerosité des barques à moteur pour le mouvement ondulatoire de la ville", "Raise awareness of the danger of motorboats for the undulatory movement of the city");
+                $q5_1 = array("1412", "1412");
+                $q5_2 = array("1414 ", "1414");
+                $q5_3 = array("1420", "1420");
 
                 echo "<h3>$q5[$lang]</h3>";
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/ImagesEvenement/Vogalonga-Venise.jpg" alt="">
+                    <img src="Images/Architecture/Cadoro.jpg" alt="">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question5' id='question5_1' value='0'required>
-                                <label for='question5_1' class='mauvaise'>$q5_1[$lang]</label>
+                                <input type='radio' name='question5' id='question5_1' value='1'required>
+                                <label for='question5_1' class='bonne'>$q5_1[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question5' id='question5_1' value='0' required>
+                                <input type='radio' name='question5' id='question5_1' value='1' required>
                                 <label for='question5_1'>$q5_1[$lang]</label>
                                 ";
                             }
@@ -470,13 +471,13 @@
                             if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
                                 echo
                                 "
-                                <input type='radio' name='question5' id='question5_3' value='1'>
-                                <label for='question5_3' class='bonne'>$q5_3[$lang]</label>
+                                <input type='radio' name='question5' id='question5_3' value='0'>
+                                <label for='question5_3' class='mauvaise'>$q5_3[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question5' id='question5_3' value='1'>
+                                <input type='radio' name='question5' id='question5_3' value='0'>
                                 <label for='question5_3'>$q5_3[$lang]</label>
                                 ";
                             }
@@ -487,7 +488,7 @@
             </div>
         </div>
 
-
+        
         <div class="bg gris">
             <input type="submit" value="J'ai fini !" class="valider">
 
@@ -539,11 +540,14 @@
             ?>
         </div>
 
+
     </form>
 
-<?php
-    include("footer.php");
-    ?>
-</body>
+    <?php
+        include("footer.php");
+        ?>
+    </body>
 
-</html>
+    </html>
+
+    
