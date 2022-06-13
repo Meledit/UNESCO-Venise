@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
-    <link rel="stylesheet" href="styleSéjour.css">
+    <link rel="stylesheet" href="styleSejour.css">
     <link rel="stylesheet" href="style.css">
-
+    <title>Venise démasquée</title>
 </head>
 
 <body>
@@ -44,6 +44,13 @@
     $premierjour = array("- Premier jour -", "- First day -");
     $deuxiemejour = array("- Deuxième jour -", "- Second day -");
     $troisiemejour = array("- Troisième jour -", "- Third day -");
+
+    $carteTitre = array("Un peu perdu ?", "A bit lost ?");
+    $carteLegende = array("Légende de la carte", "Map legend");
+    $Marco = array("Marco le lion, pour les lieux uniques", "Marco the lion, for unique places");
+    $Donnola = array("Donnola la belette, pour les restaurants et hotels", "Donnola the weasel, for restaurants and hotels");
+    $Gufo = array("Gufo le hibou, pour les monuments historiques", "Gufo the owl, for historical monuments");
+    $Laguna = array("Laguna le poulpe, pour les lieux aquatiques", "Laguna the octopus, for watery places");
 
     $GrandCanal = array(
         "Artère maritime de Venise, c’est un endroit idéal pour se balader en gondole. Il est le
@@ -122,10 +129,10 @@
 
     $Dorsoduro = array(
         "Dorsoduro est le quartier universitaire de Venise, mais il a son
-    charme particulier du fait qu’il est reculé, il est parfaitement dans le style de la
-    ville actuelle et un très bon endroit pour visiter et voir le quotidien des habitants de
-    cette ville. Un endroit à visiter absolument si vous passez à côté lors de vos balades
-    romantiques.",
+        charme particulier du fait qu’il est reculé, il est parfaitement dans le style de la
+        ville actuelle et un très bon endroit pour visiter et voir le quotidien des habitants de
+        cette ville. Un endroit à visiter absolument si vous passez à côté lors de vos balades
+        romantiques.",
         "Dorsoduro is the university district of Venice, but it has its own particular charm because 
         it is secluded, perfectly in the style of the present city and a very good place to visit and see 
         the daily life of the inhabitants of this city. A place to visit if you pass by on your romantic walks."
@@ -133,15 +140,15 @@
 
     $PlaceStMarc = array(
         "La place Saint-Marc, du nom de l'évangéliste, protecteur chrétien de Venise, saint Marc
-    se situe au bord du Grand Canal et constitue le cœur de la ville de Venise. Cette place
-    fut dans le passé le centre politique, religieux et économique de la république de
-    venise.
-    Sa construction débute au IXe siècle et la place adopte sa taille et forme actuelle en
-    1177, mais ce n'est que 100 ans plus tard que cette place a été pavée.
-    La place St Marc est liée à l'histoire de la Basilique St Marc située en face et fait
-    partie d'une des places les plus belles à Venise souvent visitées. Napoléon Bonaparte la
-    définissait même comme étant « Le plus beau salon d'Europe ». Un endroit charmant et
-    très beau pour un rendez-vous dehors.",
+        se situe au bord du Grand Canal et constitue le cœur de la ville de Venise. Cette place
+        fut dans le passé le centre politique, religieux et économique de la république de
+        venise.
+        Sa construction débute au IXe siècle et la place adopte sa taille et forme actuelle en
+        1177, mais ce n'est que 100 ans plus tard que cette place a été pavée.
+        La place St Marc est liée à l'histoire de la Basilique St Marc située en face et fait
+        partie d'une des places les plus belles à Venise souvent visitées. Napoléon Bonaparte la
+        définissait même comme étant « Le plus beau salon d'Europe ». Un endroit charmant et
+        très beau pour un rendez-vous dehors.",
         "St Mark's Square, named after the evangelist and Christian patron of Venice, St Mark is 
         located on the banks of the Grand Canal and is the heart of the city of Venice. 
         This square was in the past the political, religious and economic centre of the republic of Venice. 
@@ -154,11 +161,11 @@
 
     $CampanileStMarc = array(
         "La tour campanile de St Marc est une tour abritant des cloches afin de les faire sonner
-    pour appeler les fidèles à l’heure de la prière. Située sur le côté de la place St Marc
-    et de la basilique St Marc, elle mesure 98,6 mètres de haut.
-    Cette tour offre une très belle vue de Venise et de la place St Marc de par sa hauteur
-    et est un très bon endroit pour se poser et contempler la ville et les îles de la lagune
-    grâce à sa vue disponible à 360 degrés.",
+        pour appeler les fidèles à l’heure de la prière. Située sur le côté de la place St Marc
+        et de la basilique St Marc, elle mesure 98,6 mètres de haut.
+        Cette tour offre une très belle vue de Venise et de la place St Marc de par sa hauteur
+        et est un très bon endroit pour se poser et contempler la ville et les îles de la lagune
+        grâce à sa vue disponible à 360 degrés.",
         "The campanile tower of St Mark's is a tower housing bells to ring them to call the 
         faithful at the hour of prayer. Located on the side of St Mark's Square and St Mark's Basilica, 
         it is 98.6 metres high. This tower offers a beautiful view of Venice and St Mark's square due to its height 
@@ -167,9 +174,9 @@
 
     $ElMagazen = array(
         "Vue sur les canaux et style traditionnel et chaleureux, ce restaurant est aussi une des
-    pépites de Venise, proposant des repas proche de l’apéro digestif parfait et les plats
-    de pâtes sont nombreux et variés mais tous intéressants. Un restaurant certes acculé
-    mais qui n’est pas attrape-touriste, à visiter avec votre partenaire.",
+        pépites de Venise, proposant des repas proche de l’apéro digestif parfait et les plats
+        de pâtes sont nombreux et variés mais tous intéressants. Un restaurant certes acculé
+        mais qui n’est pas attrape-touriste, à visiter avec votre partenaire.",
         "With a view of the canals and a warm, traditional style, this restaurant is also one of 
         the nuggets of Venice, offering meals that are close to the perfect digestive aperitif and the 
         pasta dishes are The pasta dishes are numerous and varied but all interesting. A restaurant that 
@@ -178,13 +185,13 @@
 
     $Murano = array(
         "Murano est une île située au nord de Venise, dans sa lagune. Si
-    cette île est connue, c’est majoritairement pour ses souffleurs de verre ayant une
-    renommée internationale.
-    Le musée du verre sur l'île de Murano est une des attractions privatisés du grand public
-    et une des plus célèbres à visiter lorsqu'on se rend à Venise. Il peut être un très bon
-    endroit pour découvrir à deux les beautés de la mise en forme du verre tout comme l'île
-    elle-même est un site touristique très beau et agréable à parcourir seul et encore plus
-    à plusieurs.",
+        cette île est connue, c’est majoritairement pour ses souffleurs de verre ayant une
+        renommée internationale.
+        Le musée du verre sur l'île de Murano est une des attractions privatisés du grand public
+        et une des plus célèbres à visiter lorsqu'on se rend à Venise. Il peut être un très bon
+        endroit pour découvrir à deux les beautés de la mise en forme du verre tout comme l'île
+        elle-même est un site touristique très beau et agréable à parcourir seul et encore plus
+        à plusieurs.",
         "Murano is an island located north of Venice, in its lagoon. If this island is known, 
         it is mainly for its glassblowers having an international glassblowers with an international reputation. 
         The glass museum on the island of Murano is one of the most popular attractions for the general public and one 
@@ -212,13 +219,38 @@
                 </div>
     </section>
 
-
     <div class="bg noir">
         <article>
             <?php
             echo "<h3>$bienvenue[$lang]</h3>";
             echo "<p> $bienvenueTexte[$lang]</p>"
             ?>
+        </article>
+    </div>
+    <div class="bg gris">
+        <article class="centre">
+            <h3><?= "$carteTitre[$lang]" ?></h3>
+            <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1uWcbtn34rnj9a0CH4u-XBaLzG_6oAKQ&ehbc=2E312F"
+                width="640" height="480"></iframe>
+            <div class="legende-carte">
+                <h3><?= "$carteLegende[$lang]" ?></h3>
+                <div>
+                    <img src="Images/Marco.png" alt="">
+                    <p><?= "$Marco[$lang]" ?></p>
+                </div>
+                <div>
+                    <img src="Images/DonnolaDodo.png" alt="">
+                    <p><?= "$Donnola[$lang]" ?></p>
+                </div>
+                <div>
+                    <img src="Images/Gufo.png" alt="">
+                    <p><?= "$Gufo[$lang]" ?></p>
+                </div>
+                <div>
+                    <img src="Images/LagunaOuvert.png" alt="">
+                    <p><?= "$Laguna[$lang]" ?></p>
+                </div>
+            </div>
         </article>
     </div>
 

@@ -57,7 +57,7 @@
             </div>
     </section>
 
-    <div class="bg noir">
+    <div class="bg noir shadow">
         <article class="centre">
             <?php 
             echo "<h3>$presentationTitre[$lang]</h3>";

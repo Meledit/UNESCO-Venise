@@ -145,7 +145,7 @@
                 ?>
     </section>
 
-    <div class="bgGallery milieu noir">
+    <div class="bgGallery milieu noir shadow">
         <article>
             <?php
             echo "<h3>$bienvenue[$lang]</h3>";
@@ -287,7 +287,7 @@
         </div>
     </div>
 
-    <div class="bg gris" id="MarcoPolo">
+    <div class="bg gris shadow" id="MarcoPolo">
         <div class="article image-avant">
             <div class="image-et-legende">
                 <img src="Images/Oeuvre/MarcoPolo.jpg" alt="image de Marco Polo">
@@ -360,7 +360,7 @@
         </div>
     </div>
 
-    <div class="bg gris" id="AntonioDaPonte">
+    <div class="bg gris shadow" id="AntonioDaPonte">
         <div class="article image-apres">
             <div class="zone-texte bordure-texte">
                 <h3> Antonio da Ponte : </h3>

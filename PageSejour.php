@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Venise</title>
+    <title>Venise démasquée</title>
 </head>
 
 <body>
@@ -101,14 +101,14 @@
 
     <div class="bg gris">
         <div class="widget bordure-texte">
-            <div class="zone image-apres">
+            <div class="zone image-avant">
+            <img src="Images/Sejours/LaFenice.jpg" alt="">
                 <div class="resume">
                     <?php
                     echo "<h3>$RomantiqueTitre[$lang]</h3>";
                     echo "<p> $Romantique[$lang]</p>"
                     ?>
                 </div>
-                <img src="Images/Sejours/LaFenice.jpg" alt="">
             </div>
             <a href="PageSejourRomantique.php">
                 <div class="voir"><?= "$BoutonAller[$lang]" ?></div>
