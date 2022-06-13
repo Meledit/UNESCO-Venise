@@ -29,7 +29,7 @@ $bienvenue = array(
 
 $TourismeTitre = array("Le Tourisme", "Tourism");
 $InondationTitre = array("Les Inondations", "The Floods");
-$RechauffementClimatiqueTitre = array("Le réchauffement climatique, quel lien ?", "Global warming, what is the link?");
+$RechauffementClimatiqueTitre = array("Le réchauffement climatique, quel lien ?", "Global warming, what is the link ?");
 $ProjetMoseTitre = array("Le projet Mose", "Mose project");
 
 $Tourisme = array(
@@ -86,7 +86,7 @@ $ProjetMose = array(
 ?>
 
 <section class="showcase">
-    <img src="Images/ImagesVeniseEnDanger/Background.jpg" alt="" class="imgBg">
+    <img src="Images/Inondations/Background.jpg" alt="" class="imgBg">
     <div class="overlay"></div>
 
     <div class="container">
@@ -100,7 +100,7 @@ $ProjetMose = array(
 </section>
 
 <div class="bg noir">
-    <article>
+    <article class="centre">
         <div class="texte-sans-titre"><?= "$bienvenue[$lang]" ?></div>
     </article>
 </div>
@@ -118,7 +118,7 @@ $ProjetMose = array(
         </div>
 
         <div class="image-et-legende">
-            <img src="Images/ImagesVeniseEnDanger/Tourisme.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Tourisme.jpg" alt="" class="imgBg">
         </div>
     </div>
 </div>
@@ -126,7 +126,7 @@ $ProjetMose = array(
 <div class="bg gris">
     <div class="article image-avant">
         <div class="image-et-legende">
-            <img src="Images/ImagesVeniseEnDanger/Inondation1.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Inondation1.jpg" alt="" class="imgBg">
         </div>
         <div class="zone-texte bordure-texte">
             <h3><?= "$InondationTitre[$lang]" ?></h3>
@@ -155,7 +155,7 @@ $ProjetMose = array(
             </p>
         </div>
         <div class="image-et-legende">
-            <img src="Images/ImagesVeniseEnDanger/Inondation2.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Inondation2.jpg" alt="" class="imgBg">
         </div>
     </div>
 </div>
@@ -167,7 +167,7 @@ $ProjetMose = array(
 <div class="bg gris">
     <div class="article image-avant">
         <div class="image-et-legende">
-            <img src="Images/ImagesVeniseEnDanger/ProjetMose.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/ProjetMose.jpg" alt="" class="imgBg">
         </div>
         <div class="zone-texte bordure-texte">
             <h3><?= "$ProjetMoseTitre[$lang]" ?></h3>
@@ -177,6 +177,9 @@ $ProjetMose = array(
         </div>
     </div>
 </div>
+<?php 
+    include("footer.php");
+?>
 </body>
 
 </html>

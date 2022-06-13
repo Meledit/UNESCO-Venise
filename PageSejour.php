@@ -15,20 +15,20 @@
     include("header.php");
 
     $venise = array("Venise démasquée", "Unmasking Venice");
-    $sousTitre = array("Découverte accompagnée de la ville Lumière", "Guided tour of the City of Lumières");
+    $sousTitre = array("Une ville à voir sous tous les angles", "A city to see from every angle");
     $bienvenue = array("Bienvenue sur la page des séjours", "Welcome to the stays page");
     $bienvenueTexte = array(
         "Ici vous retrouverez différents parcours vous accompagnant pour découvrir les différents thèmes de Venise dans vos voyages dans la ville du lion ailé. Bon séjour!",
         "Here you will find different itineraries to help you discover the different themes of Venice in your travels in the city of the winged lion. Enjoy your stay!"
     );
 
-    $titre = array("Nos parcours", "Our routes");
+    $titre = array("Nos parcours", "Our stays");
 
     $BoutonAller = array("Aller", "Go");
 
-    $GourmandTitre = array("Parcours Gourmand", "The Gourmet Route");
+    $GourmandTitre = array("Parcours Gourmand", "The Gourmet Stay");
     $RomantiqueTitre = array("Parcours Romantique", "Romantic Journey");
-    $IncontournablesTitre = array("Parcours des Incontournables", "The Must-See Route");
+    $IncontournablesTitre = array("Parcours des Incontournables", "The Must-See Stay");
 
     $Gourmand = array(
         "Un parcours de 2 jours permettant de découvrir toutes les spécialités culinaires
@@ -85,7 +85,7 @@
         </article>
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/Sejours/ElMagazen.jpg" alt="">
                 <div class="resume">
                     <?php
                     echo "<h3>$GourmandTitre[$lang]</h3>";
@@ -93,7 +93,7 @@
                     ?>
                 </div>
             </div>
-            <a href="">
+            <a href="PageSejourGourmand.php">
                 <div class="voir"><?= "$BoutonAller[$lang]" ?></div>
             </a>
         </div>
@@ -108,9 +108,9 @@
                     echo "<p> $Romantique[$lang]</p>"
                     ?>
                 </div>
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/Sejours/LaFenice.jpg" alt="">
             </div>
-            <a href="">
+            <a href="PageSejourRomantique.php">
                 <div class="voir"><?= "$BoutonAller[$lang]" ?></div>
             </a>
         </div>
@@ -119,7 +119,7 @@
     <div class="bg gris">
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/Sejours/PontDesSoupirs.jpg" alt="">
                 <div class="resume">
                     <?php
                     echo "<h3>$IncontournablesTitre[$lang]</h3>";
@@ -127,7 +127,7 @@
                     ?>
                 </div>
             </div>
-            <a href="">
+            <a href="PageSejourFamous.php">
                 <div class="voir"><?= "$BoutonAller[$lang]" ?></div>
             </a>
         </div>

@@ -502,7 +502,7 @@ article > iframe { /* carte */
     text-align: center;
 }
 
-.bg > .article > .zone-texte  p {
+.bg > .article > .zone-texte > p {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-indent: 30px;

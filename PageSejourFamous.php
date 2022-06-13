@@ -29,7 +29,7 @@
   $Plus = array("En savoir plus", "More");
   $Moins = array("Moins", "Less");
 
-  $titre = array("Parcours des Incontournables", "The Must-See Route");
+  $titre = array("Parcours des Incontournables", "The Must-See Stay");
 
   $PontRialto = array("Pont de Rialto", "Ponte di Rialto");
   $PalaisDoges = array("Palais des Doges", "Palazzo Ducale");
@@ -306,7 +306,7 @@
   ?>
   
   <section class="showcase">
-    <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+    <img src="Images/Sejours/PontDesSoupirs.jpg" alt="" class="imgBg">
     <div class="overlay"></div>
 
     <div class="container">
@@ -334,7 +334,7 @@
     <div class="timeline">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)" data-year="Ponte di Rialto">
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/PontDeRialto.jpg)" data-year="Ponte di Rialto">
           <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontRialto[$lang]</span>" ?>
           <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
           <p class="timeline-text">
@@ -342,7 +342,7 @@
           </p>
         </div>
       </div>
-      <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)" data-year="Palazzo Ducale">
+      <div class="swiper-slide" style="background-image: url(Images/Sejours/PalaisDesDoges.jpg)" data-year="Palazzo Ducale">
       <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PalaisDoges[$lang]</span>" ?>
       <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
       <p class="timeline-text">
@@ -353,7 +353,7 @@
       </p>
     </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)" data-year="Basilica di San Marco">
+  <div class="swiper-slide" style="background-image: url(Images/Sejours/Basilique.jpg)" data-year="Basilica di San Marco">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$BStMarc[$lang]</span>" ?>
   <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
   <p class="timeline-text">
@@ -364,7 +364,7 @@
   </p>
   </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14)" data-year="Piazza San Marco">
+  <div class="swiper-slide" style="background-image: url(Images/Sejours/PlaceSaintMarc.jpg)" data-year="Piazza San Marco">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$placeStMarc[$lang]</span>" ?>
   <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
   <p class="timeline-text">
@@ -372,7 +372,7 @@
   </p>
   </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Campanile di San Marco">
+  <div class="swiper-slide" style="background-image: url(Images/Sejours/Campanile.jpg)" data-year="Campanile di San Marco">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Campanile[$lang]</span>" ?>
       <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
       <p class="timeline-text">
@@ -387,7 +387,7 @@
       </p>
     </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15)" data-year="Ponte dei Sospiri">
+  <div class="swiper-slide" style="background-image: url(Images/Sejours/PontDesSoupirs.jpg)" data-year="Ponte dei Sospiri">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontSoupirs[$lang]</span>" ?>
   <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
   <p class="timeline-text">
@@ -395,7 +395,7 @@
   </p>
   </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Murano">
+  <div class="swiper-slide" style="background-image: url(Images/Sejours/Murano.jpg)" data-year="Murano">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Murano[$lang]</span>" ?>
   <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
   <p class="timeline-text">
@@ -406,7 +406,7 @@
   </p>
   </div>
   </div>
-  <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)" data-year="Burano">
+  <div class="swiper-slide" style="background-image: url(Images/Sejours/Burano.jpg)" data-year="Burano">
   <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Burano[$lang]</span>" ?>
       <h4 class="timeline-title"><?= "$troisiemejour[$lang]" ?></h4>
       <p class="timeline-text">

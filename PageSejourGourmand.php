@@ -31,7 +31,7 @@
         We will show you the best places to visit to eat like a king!"
     );
 
-    $titre = array("Parcours Gourmand", "The Gourmet Route");
+    $titre = array("Parcours Gourmand", "The Gourmet Stay");
 
     $BistrotDeVeniseTitre = array("Bistrot de Venise", "Venice Bistro");
     $GelatotecaSusoTitre = array("Gelatoteca Suso", "Gelatoteca Suso");
@@ -124,7 +124,7 @@
     </a>
 
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+        <img src="Images/Sejours/ElMagazen.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
@@ -154,7 +154,7 @@
     <div class="timeline">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)"
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/BistrotDeVenise.jpg)"
             data-year="Bistrot Venezia">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$BistrotDeVeniseTitre[$lang]" ?></span>
               <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
@@ -163,7 +163,7 @@
               </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=16)"
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/Gelatoteca.jpg)"
             data-year="Gelatoteca Suso">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$GelatotecaSusoTitre[$lang]" ?></span>
               <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
@@ -172,7 +172,7 @@
               </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)"
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/LeChatquirit.jpg)"
             data-year="Le Chat qui rit">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$LeChatquiritTitre[$lang]" ?></span>
               <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
@@ -181,7 +181,7 @@
               </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14)"
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/HarryBar.jpg)"
             data-year="Harry's Bar">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$HarrysBarTitre[$lang]" ?></span>
               <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
@@ -190,7 +190,7 @@
               </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15)"
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/RosaSalva.png)"
             data-year="Rosa Salva">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$RosaSalvaTitre[$lang]" ?></span>
               <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
@@ -199,7 +199,7 @@
               </p>
             </div>
           </div>
-          <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)"
+          <div class="swiper-slide" style="background-image: url(Images/Sejours/ElMagazen.jpg)"
             data-year="El Magazen">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$ElMagazenTitre[$lang]" ?></span>
               <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>

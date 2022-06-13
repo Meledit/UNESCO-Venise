@@ -40,7 +40,6 @@
     $CampanileStMarcTitre = array("Campanile de Saint Marc", "Campanile di san Marco");
     $ElMagazenTitre = array("El Magazen", "El Magazen");
     $MuranoTitre = array("Murano", "Murano");
-    $LeChatquiritTitre = array("Le Chat qui rit", "Le Chat qui rit");
 
     $premierjour = array("- Premier jour -", "- First day -");
     $deuxiemejour = array("- Deuxième jour -", "- Second day -");
@@ -193,18 +192,6 @@
         the beauties of glass shaping as well as the island itself is a very itself is a very beautiful and pleasant tourist site 
         to visit alone and even more so with several people."
     );
-
-    $LeChatquirit = array(
-        "A quelques pas de la Place St Marc, se trouve le restaurant “Le
-    chat qui rit”. De par sa décoration vous vous laisserez attirer dans ce restaurant, mais
-    plus que son ambiance chaleureuse, ce sera sa cuisine qui vous tiendra en haleine
-    inspiré des recettes traditionnelles vénitiennes avec les produits de la Lagune. Un des
-    incontournables à Venise si l’on cherche à tester le goût de cette ville.",
-        "Just a few steps from St. Mark's Square is the restaurant 'Le chat qui rit'. 
-        You will be drawn to this restaurant by its decoration, but more than its warm atmosphere, 
-        it will be its cuisine that will keep you on the edge of your seat, inspired by traditional Venetian recipes with the products of the Lagoon. 
-        A must in Venice if you want to try the taste of this city."
-    );
     ?>
 
     <a href="#" class="jump">
@@ -212,7 +199,7 @@
     </a>
 
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+        <img src="Images/Sejours/LaFenice.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
@@ -242,7 +229,7 @@
         <div class="timeline">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)" data-year="Canal Grande">
+                    <div class="swiper-slide" style="background-image: url(Images/Sejours/GrandCanal.jpg)" data-year="Canal Grande">
                     <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$GrandCanalTitre[$lang]" ?></span>
                         <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
                         <p class="timeline-text">
@@ -250,7 +237,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=11)" data-year="Ponte di Rialto">
+                <div class="swiper-slide" style="background-image: url(Images/Sejours/PontDeRialto.jpg)" data-year="Ponte di Rialto">
                 <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$PontDeRialtoTitre[$lang]" ?></span>
                     <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
                     <p class="timeline-text">
@@ -258,7 +245,7 @@
                     </p>
                 </div>
             </div>
-            <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)" data-year="Bistrot Venezia">
+            <div class="swiper-slide" style="background-image: url(Images/Sejours/BistrotDeVenise.jpg)" data-year="Bistrot Venezia">
             <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$BistrotDeVeniseTitre[$lang]" ?></span>
                 <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
                 <p class="timeline-text">
@@ -266,7 +253,7 @@
                 </p>
             </div>
         </div>
-        <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=14)" data-year="La Fenice">
+        <div class="swiper-slide" style="background-image: url(Images/Sejours/LaFenice.jpg)" data-year="La Fenice">
         <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$LaFeniceTitre[$lang]" ?></span>
             <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
             <p class="timeline-text">
@@ -274,7 +261,7 @@
             </p>
         </div>
     </div>
-    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=15)" data-year="Dorsoduro">
+    <div class="swiper-slide" style="background-image: url(Images/Sejours/Dorsoduro.jfif)" data-year="Dorsoduro">
     <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$DorsoduroTitre[$lang]" ?></span>
         <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
         <p class="timeline-text">
@@ -282,7 +269,7 @@
         </p>
     </div>
     </div>
-    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)" data-year="Piazza San Marco">
+    <div class="swiper-slide" style="background-image: url(Images/Sejours/PlaceSaintMarc.jpg)" data-year="Piazza San Marco">
     <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$PlaceStMarcTitre[$lang]" ?></span>
         <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
         <p class="timeline-text">
@@ -290,7 +277,7 @@
         </p>
     </div>
     </div>
-    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)" data-year="Campanile di San Marco">
+    <div class="swiper-slide" style="background-image: url(Images/Sejours/Campanile.jpg)" data-year="Campanile di San Marco">
     <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$CampanileStMarcTitre[$lang]" ?></span>
         <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
         <p class="timeline-text">
@@ -298,7 +285,7 @@
         </p>
     </div>
     </div>
-    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=12)" data-year="El Magazen">
+    <div class="swiper-slide" style="background-image: url(Images/Sejours/ElMagazen.jpg)" data-year="El Magazen">
     <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$ElMagazenTitre[$lang]" ?></span>
         <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
         <p class="timeline-text">
@@ -306,19 +293,11 @@
         </p>
     </div>
     </div>
-    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)" data-year="Murano">
+    <div class="swiper-slide" style="background-image: url(Images/Sejours/Murano.jpg)" data-year="Murano">
     <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$MuranoTitre[$lang]" ?></span>
         <h4 class="timeline-title"><?= "$troisiemejour[$lang]" ?></h4>
         <p class="timeline-text">
             <?= "$Murano[$lang]" ?>
-        </p>
-    </div>
-    </div>
-    <div class="swiper-slide" style="background-image: url(https://unsplash.it/1920/500?image=13)" data-year="Le Chat qui rit">
-    <div class="swiper-slide-content"><span class="timeline-lieu"><?= "$LeChatquiritTitre[$lang]" ?></span>
-        <h4 class="timeline-title"><?= "$troisiemejour[$lang]" ?></h4>
-        <p class="timeline-text">
-            <?= "$LeChatquirit[$lang]" ?>
         </p>
     </div>
     </div>
