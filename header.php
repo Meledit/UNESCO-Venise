@@ -82,14 +82,14 @@
                     echo "<a href=\"PageGastronomie.php\">$gastronomie[$lang]</a>";
                     ?>
 
-                    <?= "<a href=\"\">$architecture[$lang]</a>" ?>
-                    <?= "<a href=\"\">$evenement[$lang]</a>" ?>
-                    <?= "<a href=\"\">$oeuvres[$lang]</a>" ?>
+                    <?= "<a href=\"PageArchitecture.php\">$architecture[$lang]</a>" ?>
+                    <?= "<a href=\"PageEvenement.php\">$evenement[$lang]</a>" ?>
+                    <?= "<a href=\"PageOeuvre.php\">$oeuvres[$lang]</a>" ?>
                 </li>
                 <li>
                     <?php
                     echo "<h3>$sejours[$lang]</h3>";
-                    echo "<a href=\"\">$sejours[$lang]</a>";
+                    echo "<a href=\"PageSejour.php\">$sejours[$lang]</a>";
                     ?>
                 </li>
                 <li>
