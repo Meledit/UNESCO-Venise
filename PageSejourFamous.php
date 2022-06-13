@@ -9,6 +9,7 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
   <link rel="stylesheet" href="styleSejour.css">
   <link rel="stylesheet" href="style.css">
+  <title>Venise démasquée</title>
 </head>
 
 <body>
@@ -339,7 +340,7 @@
   <div class="bg gris">
         <article class="centre">
             <h3><?= "$carteTitre[$lang]" ?></h3>
-            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=10e37lMcDlTZxPesq9tDFjZrluzEZW0X6&ehbc=2E312F"
+            <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1tjOzk2Sy68lXNEYEt1WbcVhjTrDfASU&ehbc=2E312F"
                 width="640" height="480"></iframe>
             <div class="legende-carte">
                 <h3><?= "$carteLegende[$lang]" ?></h3>
