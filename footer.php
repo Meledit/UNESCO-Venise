@@ -21,6 +21,7 @@
     $mentionsLegales = array("Mentions légales","Legal information");
     $credits = array("Crédits","Credits");
   ?>
+  <div class="site-footer" style="height:60px;"></div>
   <div class="IMGFooter IMG-microscopique"><div class="overlayFooter"></div></div>
   <footer class="site-footer">
     <div class="containerBoot">
