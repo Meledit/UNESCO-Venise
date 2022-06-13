@@ -327,6 +327,7 @@
         echo "<h2>$sousTitre[$lang]</h2>";
         ?>
       </div>
+    </div>
   </section>
 
   <div class="bg noir">
