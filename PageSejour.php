@@ -55,7 +55,7 @@
     ?>
 
     <section class="showcase">
-        <video src="videos/backscreen.mov" muted loop autoplay></video>
+        <img src="Images/Sejours/bg.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
