@@ -43,6 +43,13 @@
     $premierjour = array("- Premier jour -", "- First day -");
     $deuxiemejour = array("- Deuxième jour -", "- Second day -");
 
+    $carteTitre = array("Un peu perdu ?", "A bit lost ?");
+    $carteLegende = array("Légende de la carte", "Map legend");
+    $Marco = array("Marco le lion, pour les lieux uniques", "Marco the lion, for unique places");
+    $Donnola = array("Donnola la belette, pour les restaurants et hotels", "Donnola the weasel, for restaurants and hotels");
+    $Gufo = array("Gufo le hibou, pour les monuments historiques", "Gufo the owl, for historical monuments");
+    $Laguna = array("Laguna le poulpe, pour les lieux aquatiques", "Laguna the octopus, for watery places");
+
     $BistrotDeVenise = array(
         "Restaurant axé sur tous les types de cuisines de Venise, de l’historique au classique et jusqu’au
         moderne ce qui vous permettra de tester en grands les différents types de plats présents dans Venise.
@@ -146,6 +153,32 @@
       </p>
     </article>
   </div>
+  <div class="bg gris">
+        <article class="centre">
+            <h3><?= "$carteTitre[$lang]" ?></h3>
+            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=10e37lMcDlTZxPesq9tDFjZrluzEZW0X6&ehbc=2E312F"
+                width="640" height="480"></iframe>
+            <div class="legende-carte">
+                <h3><?= "$carteLegende[$lang]" ?></h3>
+                <div>
+                    <img src="Images/Marco.png" alt="">
+                    <p><?= "$Marco[$lang]" ?></p>
+                </div>
+                <div>
+                    <img src="Images/DonnolaDodo.png" alt="">
+                    <p><?= "$Donnola[$lang]" ?></p>
+                </div>
+                <div>
+                    <img src="Images/Gufo.png" alt="">
+                    <p><?= "$Gufo[$lang]" ?></p>
+                </div>
+                <div>
+                    <img src="Images/LagunaOuvert.png" alt="">
+                    <p><?= "$Laguna[$lang]" ?></p>
+                </div>
+            </div>
+        </article>
+    </div>
 
   <div class="IMGparallax IMG1 IMG-microscopique"></div>
 
