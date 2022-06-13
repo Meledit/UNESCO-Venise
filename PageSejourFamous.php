@@ -29,7 +29,7 @@
   $Plus = array("En savoir plus", "More");
   $Moins = array("Moins", "Less");
 
-  $title = array("Parcours des Incontournables", "The Must-See Route");
+  $titre = array("Parcours des Incontournables", "The Must-See Route");
 
   $PontRialto = array("Pont de Rialto", "Ponte di Rialto");
   $PalaisDoges = array("Palais des Doges", "Palazzo Ducale");
@@ -304,6 +304,7 @@
     after visiting the island Murano."
   );
   ?>
+  
   <section class="showcase">
     <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
     <div class="overlay"></div>
@@ -328,9 +329,8 @@
 
   <div class="IMGparallax IMG1 IMG-microscopique"></div>
 
-  <!-- partial:index.partial.html -->
   <div class="container-timeline">
-    <?= "<h2 class=\"title\">$title[$lang]</h2>" ?>
+    <?= "<h2 class=\"title\">$titre[$lang]</h2>" ?>
     <div class="timeline">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -422,7 +422,6 @@
   </div>
   </div>
   </div>
-  <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
   <script src="./scriptSejour.js"></script>
 

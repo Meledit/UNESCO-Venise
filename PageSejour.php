@@ -22,7 +22,7 @@
         "Here you will find different itineraries to help you discover the different themes of Venice in your travels in the city of the winged lion. Enjoy your stay!"
     );
 
-    $title = array("Nos parcours", "Our routes");
+    $titre = array("Nos parcours", "Our routes");
 
     $BoutonAller = array("Aller", "Go");
 
@@ -54,7 +54,6 @@
     );
     ?>
 
-
     <section class="showcase">
         <video src="videos/backscreen.mov" muted loop autoplay></video>
         <div class="overlay"></div>
@@ -82,7 +81,7 @@
 
     <div class="bg gris">
         <article class="centre">
-            <h2><?= "$title[$lang]" ?></h2>
+            <h2><?= "$titre[$lang]" ?></h2>
         </article>
         <div class="widget bordure-texte">
             <div class="zone image-avant">
@@ -133,6 +132,11 @@
             </a>
         </div>
     </div>
+
+    <?php
+    include("footer.php");
+    ?>
+
 </body>
 
 </html>
