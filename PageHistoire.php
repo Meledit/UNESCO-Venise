@@ -558,6 +558,9 @@
     $sTitre10 = array("XIXème siècle", "XIXth century");
     $sTitre11 = array("XX siècle", "XXth century");
 
+    $plus = array("En savoir plus", "Know more");
+    $moins = array("Moins", "Know less");
+
     ?>
     <section class="showcase">
         <img src="Images/imgFondHistoire.jpg" alt="" class="imgBg">
@@ -657,7 +660,7 @@
         <script src="./scriptHistoire.js"></script>
     </div>
 
-    <div class="IMGparallax IMG1 IMG-microscopique"></div>
+    <div class="IMGparallax IMGHistoire1 IMG-microscopique"></div>
 
     <div class="bg gris" id="un">
         <article class="centre">
@@ -678,8 +681,8 @@
                 </div>
             </div>
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/creationDeVenise.png" alt="création de venise">
+                <p>Création de Venise</p>
             </div>
         </div>
     </div>
@@ -687,8 +690,8 @@
     <div class="bg gris">
         <div class="article image-avant">
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/migrationLagune.png" alt="migration">
+                <p>Migration vers la lagune</p>
             </div>
             <div class="zone-texte bordure-texte">
                 <h3><?= "$sTitre2[$lang]" ?></h3>
@@ -730,13 +733,13 @@
                 </p>
             </div>
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/developpementVenise.jpg" alt="">
+                <p>Developpement de Venise</p>
             </div>
         </div>
     </div>
 
-    <div class="IMGparallax IMG1 IMG-microscopique"></div>
+    <div class="IMGparallax IMGHistoire1 IMG-microscopique"></div>
 
     <div class="bg gris" id="deux">
         <article class="centre">
@@ -744,8 +747,8 @@
         </article>
         <div class="article image-avant">
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/expansionVenise.jpg" alt="">
+                <p>Expansion de Venise</p>
             </div>
             <div class="zone-texte bordure-texte">
                 <h3><?= "$sTitre4[$lang]" ?></h3>
@@ -782,8 +785,8 @@
                 </div>
             </div>
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/veniseNoirEtBlanc.jpg" alt="">
+                <p>Expansion de Venise</p>
             </div>
         </div>
     </div>
@@ -791,8 +794,8 @@
     <div class="bg gris">
         <div class="article image-avant">
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/veniseLaguneAvant.jpg" alt="">
+                <p>La lagune de Venise</p>
             </div>
             <div class="zone-texte bordure-texte">
                 <h3><?= "$sTitre6[$lang]" ?></h3>
@@ -816,7 +819,7 @@
         </div>
     </div>
 
-    <div class="IMGparallax IMG1 IMG-microscopique"></div>
+    <div class="IMGparallax IMGHistoire1 IMG-microscopique"></div>
 
     <div class="bg gris" id="trois">
         <article class="centre">
@@ -843,8 +846,8 @@
                 </div>
             </div>
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/venise16eme.jpg" alt="">
+                <p>Venise au 16ème siècle</p>
             </div>
         </div>
     </div>
@@ -852,8 +855,8 @@
     <div class="bg gris">
         <div class="article image-avant">
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/venise17eme.jpg" alt="">
+                <p>Venise au 17ème siècle</p>
             </div>
             <div class="zone-texte bordure-texte">
                 <h3><?= "$sTitre8[$lang]" ?></h3>
@@ -894,8 +897,8 @@
                 </p>
             </div>
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/veniseAu18emeSiecle.jpg" alt="">
+                <p>Venise au 18ème siècle</p>
             </div>
         </div>
     </div>
@@ -903,8 +906,8 @@
     <div class="bg gris">
         <div class="article image-avant">
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/venisePuissanceMaritime.jpg" alt="">
+                <p>Venise au 18ème siècle</p>
             </div>
             <div class="zone-texte bordure-texte">
                 <p>
@@ -932,8 +935,8 @@
                 </p>
             </div>
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masques Vénitiens</p>
+                <img src="Images/Histoire/venise19emeSiecle.jpg" alt="">
+                <p>Venise au 19ème siècle</p>
             </div>
         </div>
     </div>
@@ -941,8 +944,8 @@
     <div class="bg gris">
         <div class="article image-avant">
             <div class="image-et-legende">
-                <img src="Images/Architecture/SanDonato.jpg" alt="">
-                <p>Masque venitiens</p>
+                <img src="Images/Histoire/venise20emeSiecle.jpg" alt="">
+                <p>Venise au 20ème siècle</p>
             </div>
             <div class="zone-texte bordure-texte">
                 <h3><?= "$sTitre11[$lang]" ?></h3>

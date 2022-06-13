@@ -499,14 +499,14 @@ article>iframe {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.bg>.article {
+.bg > .article {
     display: flex;
     align-items: center;
     width: 90%;
     gap: 30px;
 }
 
-.bg>.article a {
+.bg > .article a {
     font-style: italic;
     color: rgb(220, 220, 220);
     cursor: pointer;
@@ -539,7 +539,7 @@ article>iframe {
     text-align: center;
 }
 
-.bg>.article>.zone-texte>p {
+.bg>.article>.zone-texte p {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-indent: 30px;
@@ -748,7 +748,11 @@ article>iframe {
 /* Les images parallax */
 
 .IMG1 {
-    background: url(images/Fond5.jpg);
+    background: url(Images/Fond5.jpg);
+}
+
+.IMGHistoire1 {
+    background: url(Images/Histoire/veniseAu18emeSiecle.jpg);
 }
 
 /* l'effet parallax */
