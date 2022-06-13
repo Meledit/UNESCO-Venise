@@ -672,11 +672,11 @@
                 <p>
                     <?= "$creation1[$lang]" ?>
                 </p>
-                <p><a onclick="plus('1')">En savoir plus</a></p>
+                <p><a onclick="plus('1')"><?= "$plus[$lang]" ?></a></p>
                 <div id="1" style="display: none;">
                     <p>
                         <?= "$creation2[$lang]" ?>
-                    <p><a onclick="moins('1')">Moins</a></p>
+                    <p><a onclick="moins('1')"><?= "$moins[$lang]" ?></a></p>
                     </p>
                 </div>
             </div>
@@ -704,11 +704,11 @@
                 <p>
                     <?= "$migration3[$lang]" ?>
                 </p>
-                <p><a onclick="plus('2')">En savoir plus</a></p>
+                <p><a onclick="plus('2')"><?= "$plus[$lang]" ?></a></p>
                 <div id="2" style="display: none;">
                     <p>
                         <?= "$migration4[$lang]" ?>
-                    <p><a onclick="moins('2')">Moins</a></p>
+                    <p><a onclick="moins('2')"><?= "$moins[$lang]" ?></a></p>
                     </p>
                 </div>
             </div>
@@ -758,12 +758,12 @@
                 <p>
                     <?= "$expansion2[$lang]" ?>
                 </p>
-                <p><a onclick="plus('3')">En savoir plus</a></p>
+                <p><a onclick="plus('3')"><?= "$plus[$lang]" ?></a></p>
                 <div id="3" style="display: none;">
                     <p>
                         <?= "$expansion3[$lang]" ?>
                     </p>
-                    <p><a onclick="moins('3')">Moins</a></p>
+                    <p><a onclick="moins('3')"><?= "$moins[$lang]" ?></a></p>
                 </div>
             </div>
         </div>
@@ -776,12 +776,12 @@
                 <p>
                     <?= "$expansionC1[$lang]" ?>
                 </p>
-                <p><a onclick="plus('4')">En savoir plus</a></p>
+                <p><a onclick="plus('4')"><?= "$plus[$lang]" ?></a></p>
                 <div id="4" style="display: none;">
                     <p>
                         <?= "$expansionC2[$lang]" ?>
                     </p>
-                    <p><a onclick="moins('4')">Moins</a></p>
+                    <p><a onclick="moins('4')"><?= "$moins[$lang]" ?></a></p>
                 </div>
             </div>
             <div class="image-et-legende">
@@ -805,7 +805,7 @@
                 <p>
                     <?= "$XV2[$lang]" ?>
                 </p>
-                <p><a onclick="plus('5')">En savoir plus</a></p>
+                <p><a onclick="plus('5')"><?= "$plus[$lang]" ?></a></p>
                 <div id="5" style="display: none;">
                     <p>
                         <?= "$XV3[$lang]" ?>
@@ -813,7 +813,7 @@
                     <p>
                         <?= "$XV4[$lang]" ?>
                     </p>
-                    <p><a onclick="moins('5')">Moins</a></p>
+                    <p><a onclick="moins('5')"><?= "$moins[$lang]" ?></a></p>
                 </div>
             </div>
         </div>
@@ -834,7 +834,7 @@
                 <p>
                     <?= "$XVI2[$lang]" ?>
                 </p>
-                <p><a onclick="plus('6')">En savoir plus</a></p>
+                <p><a onclick="plus('6')"><?= "$plus[$lang]" ?></a></p>
                 <div id="6" style="display: none;">
                     <p>
                         <?= "$XVI3[$lang]" ?>
@@ -842,7 +842,7 @@
                     <p>
                         <?= "$XVI4[$lang]" ?>
                     </p>
-                    <p><a onclick="moins('6')">Moins</a></p>
+                    <p><a onclick="moins('6')"><?= "$moins[$lang]" ?></a></p>
                 </div>
             </div>
             <div class="image-et-legende">
@@ -958,11 +958,11 @@
                 <p>
                     <?= "$XX3[$lang]" ?>
                 </p>
-                <p><a onclick="plus('7')">En savoir plus</a></p>
+                <p><a onclick="plus('7')"><?= "$plus[$lang]" ?></a></p>
                 <div id="7" style="display: none;">
                     <p>
                         <?= "$XX4[$lang]" ?>
-                    <p><a onclick="moins('7')">Moins</a></p>
+                    <p><a onclick="moins('7')"><?= "$moins[$lang]" ?></a></p>
                     </p>
                 </div>
             </div>
