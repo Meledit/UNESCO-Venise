@@ -31,9 +31,9 @@
     include("header.php");
 
     $venise = array("Venise démasquée", "Unmasking Venice");
-    $sousTitre = array("Une ville aux milles et une saveurs", "A city of a thousand and one flavours");
+    $sousTitre = array("L'essor d'une puissance maritime", "The rise of a maritime power");
     $saviezvous = array("Le saviez-vous ?", "Did you know ?");
-    $bienvenue = array("Venise, ses quatre forces&nbsp;...", "Venice, it's four strenths&nbsp;...");
+    $bienvenue = array("Venise et son histoire", "Venice and its history");
     $bienvenueTexte = array(
         "Curieux de l'histoire de Venise ? Vous vous demandez comment cette ville manifique est venu à naitre ? Vous êtes 
     au bon endroit ! Ici vous pourrez découvrir tout sur les quatre plus grandes époques de Venise.",
@@ -560,7 +560,7 @@
 
     ?>
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+        <img src="Images/imgFondHistoire.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
@@ -661,7 +661,7 @@
 
     <div class="bg gris" id="un">
         <article class="centre">
-            <h2><?= "$itre1[$lang]" ?></h2>
+            <h2><?= "$titre1[$lang]" ?></h2>
         </article>
         <div class="article image-apres">
             <div class="zone-texte bordure-texte">
@@ -965,6 +965,9 @@
             </div>
         </div>
     </div>
+    <?php 
+        include("footer.php");
+    ?>
 </body>
 
 </html>

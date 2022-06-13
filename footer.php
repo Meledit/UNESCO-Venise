@@ -21,7 +21,7 @@
     $mentionsLegales = array("Mentions légales","Legal information");
     $credits = array("Crédits","Credits");
   ?>
-
+  <div class="IMGFooter IMG-microscopique"><div class="overlayFooter"></div></div>
   <footer class="site-footer">
     <div class="containerBoot">
       <div class="row">
@@ -46,8 +46,8 @@
           <ul class="footer-links">
             <?php
               echo "<li><a href=\"PageQuiSommesNous.php\">$quiSommesNous[$lang]</a></li>";
-              echo "<li><a href=\"http://scanfcode.com/contact/\">$mentionsLegales[$lang]</a></li>";
-              echo "<li><a href=\"http://scanfcode.com/contribute-at-scanfcode/\">$credits[$lang]</a></li>";
+              echo "<li><a href=\"PageMentionsLegales.php\">$mentionsLegales[$lang]</a></li>";
+              echo "<li><a href=\"PageCredits.php\">$credits[$lang]</a></li>";
             
             
             ?>
@@ -67,7 +67,7 @@
           <ul class="social-icons">
             <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100075325530865"><i class="fa fa-facebook"><img class="img-footer" src="Images/facebook.png"></i></a></li>
             <li><a class="twitter" href="https://twitter.com/VeniseDemasquee?s=20&t=SDNtG42mdJ1FZtjYTw_ixQ"><i class="fa fa-twitter"><img class="img-footer" src="Images/logoTwitter.png"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"><img class="img-footer" src="Images/logoInsta.png"></i></a></li>
+            <li><a class="dribbble" href="https://www.instagram.com/unescovenise/"><i class="fa fa-dribbble"><img class="img-footer" src="Images/logoInsta.png"></i></a></li>
           </ul>
         </div>
       </div>

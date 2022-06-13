@@ -22,6 +22,21 @@
   color:white;
 }
 
+.IMGFooter {
+  background: url(images/Masque2.jpg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlayFooter{
+  background:rgba(51, 51, 51, 0.5);
+  mix-blend-mode: multiply;
+  width:100%;
+  height:100%;
+  z-index: 2;
+}
+
 .site-footer {
   background-color: var(--clr-footer);
   font-family: Dyno;

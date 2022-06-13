@@ -11,8 +11,14 @@
 <body>
     <?php
         include("header.php");
-        $aller = array("Aller","Go to");
+
+        $veniseTitre=array("Venise démasquée","Unmasking Venice");
+        $veniseSousTitre=array("Une ville pleine de culture","A city full of culture");
+        $aller = array("Aller","Go");
         $presentationTitre = array("Venise, ses quatre forces&nbsp;...","Venice, its four forces&nbsp;...");
+        $presentation = array("Venise possède une grande richesse culturelle, en effet elle se démarque à l'aide de sa riche gastronomie, 
+        son architecture unique, ses différents événements ainsi que des ses œuvres et des ses personnalités.","Venice has a great cultural diversity, 
+        in fact it stands out thanks to its rich gastronomy, its unique architecture, its various events and its works and personalities.");
     
         $profondeur = array("Pour aller plus en profondeur","To go into more detail");
         $saGastronomie = array("Sa Gastronomie","Its Gastronomy");
@@ -26,12 +32,12 @@
         architecturaux unique à travers les différents édifices de Venise.","Venice is home to many different architectural styles from different 
         eras. Come and discover these unique architectural styles through the different buildings of Venice.");
     
-        $sesEvenement = array("Ses Événements","Its events");
+        $sesEvenement = array("Ses Événements","Its Events");
         $evenement1 = array("Découvrez Venise, la ville de la fête avec ses différents événements durant l'année qui vous révelera la vie intérieur 
         de la ville italienne.","Discover Venice, the city of celebrations with its various events during the year that will reveal the inner life 
         of the Italian city.");
 
-        $sesOeuvres = array("Ses Personnalités et Oeuvres","Its personalities and arts");
+        $sesOeuvres = array("Ses Personnalités et Oeuvres","Its Personalities and Arts");
         $oeuvre1 = array("Venise à été le berceau de nombreux artistes et inventeurs, mais elle à aussi inspiré de nombreuses oeuvres internationales. 
         Venez découvrir ceux qui ont tirés leurs inspirations de Venise, ainsi que la riche histoire de cette ville.","Venice has been the home of many 
         artists and inventors, but it has also inspired many international works. Come and discover those who have drawn their inspiration from Venice, 
@@ -39,13 +45,15 @@
     
     ?>
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+        <img src="Images/Gastronomie/Fond3.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
             <div class="text">
-                <h1>Venise démasquée</h1>
-                <h2>La ville du lion ailé vous révèle tous ses secrets</h2>
+                <?php
+                echo "<h1>$veniseTitre</h1>";
+                echo "<h2>$veniseSousTitre</h2>";
+                ?>
             </div>
     </section>
 
@@ -53,15 +61,8 @@
         <article class="centre">
             <?php 
             echo "<h3>$presentationTitre[$lang]</h3>";
+            echo "<p>$presentation[$lang]</p>";
             ?>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Aliquid atque exercitationem ea voluptate, delectus quasi
-                eaque tempore eveniet cupiditate praesentium.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nam ab voluptates nihil 
-                est quas nobis maxime quam fugiat aut at.
-            </p>
         </article>
     </div>
 
@@ -73,7 +74,7 @@
         </article>
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Gastronomie/Fond2.jpg" alt="">
+                <img src="Images/Gastronomie/Tiramisu3.jpg" alt="">
                 <div class="resume">
                     <?php 
                         echo "<h3>$saGastronomie[$lang]</h3>";

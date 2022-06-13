@@ -5863,14 +5863,15 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
   bottom: 1.25rem;
-  left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  padding-left:3rem;
+  padding-right:3rem;
   color: #fff;
+  width:100%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.5);
 }
 .carousel-caption > h5 {
   color: #f7af3e;
@@ -5879,7 +5880,7 @@ textarea.form-control-lg {
 }
 
 .carousel-caption > p > b{
-  color: #f7af3e;
+  color: white;
   font-size: 1.5em;
   text-shadow: 0px 0px 15px black;
   

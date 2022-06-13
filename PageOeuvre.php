@@ -19,9 +19,9 @@
     include("header.php");
 
     $venise = array("Venise démasquée", "Unmasking Venice");
-    $sousTitre = array("Une ville aux milles et une saveurs", "A city at the heart of culture");
+    $sousTitre = array("Une ville au coeur de la culture", "A city at the heart of culture");
     $saviezvous = array("Le saviez-vous ?", "Did you know ?");
-    $bienvenue = array("Bienvenue sur la page Oeuvres et Personalités&nbsp;!!", "Welcome to the Arts and Personalities page&nbsp;!");
+    $bienvenue = array("Bienvenue sur la page Oeuvres et Personalités&nbsp;!", "Welcome to the Arts and Personalities page&nbsp;!");
     $bienvenueTexte = array("Ici vous retrouverez des informations et anecdotes sur les artistes, oeuvres et inventeurs de Venise, ainsi que sur Venise elle-même !
         Pour accéder directement à la partie de votre choix, cliquer sur l'image la concernant dans la mosaique ci-dessous.", "Here you will be able to discover information and anecdotes about the artists, arts and discoverers of Venice, as well as about Venice itself!
         To go directly to the part of your choice, click on the image in the mosaic below.");
