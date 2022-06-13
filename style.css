@@ -384,13 +384,14 @@ header>label>img {
     background-size: 100%;
 }
 
-.news {
-    background-position: 0 66.666667%;
+.quizz {
+    background-position: 0 100%;
     background-size: 100%;
 }
 
 .ticket {
-    background-position: 0 100%;
+    
+    background-position: 0 66.666667%;
     background-size: 100%;
 }
 
