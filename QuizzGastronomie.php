@@ -28,7 +28,7 @@
     </section>
 
     <form action="" method="POST">
-        <div class="bg noir">
+        <div class="bg noir shadow">
             <article class="centre">
                 <h3>Bienvenue sur la page gastronomie&nbsp;!</h3>
                 <p>

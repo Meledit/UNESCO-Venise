@@ -131,7 +131,7 @@
     </section>
 
 
-    <div class="bgGallery milieu noir">
+    <div class="bgGallery milieu noir shadow">
         <article>
             <?php
             echo "<h3>$bienvenue[$lang]</h3>";
@@ -218,7 +218,7 @@
         </div>
     </div>
 
-    <div class="bg gris" id="Viandes">
+    <div class="bg gris shadow" id="Viandes">
         <div class="article image-apres">
             <div class="zone-texte bordure-texte">
                 <?php
@@ -284,7 +284,7 @@
         </div>
     </div>
 
-    <div class="bg gris" id="Cocktails">
+    <div class="bg gris shadow" id="Cocktails">
         <div class="article image-apres">
             <div class="zone-texte  bordure-texte">
                 <?php
