@@ -142,6 +142,8 @@
                     echo "<h2>$sousTitre[$lang]</h2>";
                     ?>
                 </div>
+            </div>
+        </div>  
     </section>
 
 
