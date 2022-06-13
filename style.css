@@ -410,10 +410,11 @@ header>label>img {
     align-items: center;
     justify-content: space-evenly;
     padding: 5vh 5vw 7vh 5vw;
+    z-index: 99;
 }
 
 .gris {
-    background: gray;
+    background: grey;
 }
 
 .noir {
