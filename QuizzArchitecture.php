@@ -489,54 +489,59 @@
         </div>
 
         
+        <?php
+        $fini = array("J'ai fini !", "I'm done !");
+        ?>
         <div class="bg gris">
-            <input type="submit" value="J'ai fini !" class="valider">
+            <?= "<input type=\"submit\" value=\"$fini[$lang]\" class=\"valider\"> " ?>
 
-            <?php 
-                if (isset($_GET["question1"]) && isset($_GET["question2"])) { 
-                    $points = 0;
-                    $size = count($_GET);
-                    foreach ($_GET as $value) {
-                        $points += $value;
-                    }
-
-                    if ($points >= ($size * 0.75)) {
-                        echo
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Bravo ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";
-
-                    } else if ($points >= ($size * 0.5) && $points < ($size * 0.75)) {
-                        echo 
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Bien ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";
-
-                    } else if ($points >= ($size * 0.25) && $points < ($size * 0.5)) {
-                        echo 
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Peu mieux faire ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";
-
-                    } else {
-                        echo 
-                        "
-                        <div class='score bordure-texte'>
-                            <h3>Dommage ! Votre score est de ...</h3>
-                            <p>$points"." / "."$size</p>
-                        </div>
-                        ";  
-                    }
+            <?php
+            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"])) {
+                $points = 0;
+                $size = count($_POST);
+                foreach ($_POST as $value) {
+                    $points += $value;
                 }
+
+                $score1 = array("Bravo ! Votre score est de ...", "Well done! Your score is ...");
+                $score2 = array("Bien ! Votre score est de ...", "Good! Your score is ...");
+                $score3 = array("Peut mieux faire ! Votre score est de ...", "You can do better ! Your score is ...");
+                $score4 = array("Dommage ! Votre score est de ...", "Too bad! Your score is ...");
+                if ($points >= ($size * 0.75)) {
+
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                            <h3>$score1[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                } else if ($points >= ($size * 0.5) && $points < ($size * 0.75)) {
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                        <h3>$score2[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                } else if ($points >= ($size * 0.25) && $points < ($size * 0.5)) {
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                        <h3>$score3[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                } else {
+                    echo
+                    "
+                        <div class='score bordure-texte'>
+                        <h3>$score4[$lang]</h3>
+                            <p>$points" . " / " . "$size</p>
+                        </div>
+                        ";
+                }
+            }
             ?>
         </div>
 
