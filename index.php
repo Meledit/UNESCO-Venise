@@ -187,7 +187,7 @@
     <div class="bg gris">
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/Architecture/PontiDiRialto.jpg" alt="">
                 <div class="resume">
                     <?php
                     echo "<h3>$rialto[$lang]</h3>";
