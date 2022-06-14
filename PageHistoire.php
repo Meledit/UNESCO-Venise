@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
-    <link rel="stylesheet" href="./styleHistoire.css">
+    <link rel="stylesheet" href="Style/styleHistoire.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
     <title>Venise Démasquée</title>
 </head>
@@ -657,7 +657,7 @@
         <!-- partial -->
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js'></script>
-        <script src="./scriptHistoire.js"></script>
+        <script src="Script/scriptHistoire.js"></script>
     </div>
 
     <div class="IMGparallax IMGHistoire1 IMG-microscopique"></div>
