@@ -13,7 +13,7 @@
 
 <body>
     <?php
-    include("header.php")
+    include("header.php");
 
     $venise = array("Venise démasquée", "Unmasking Venice");
     $sousTitre = array("La ville de la fête en action", "The party city in action");
