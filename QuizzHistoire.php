@@ -113,23 +113,23 @@
                             }
                             ?>
                         </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
         <div class="bg gris">
             <div class="zone-question">
                 <?php
                 $q2 = array(
-                    "Le Fegato alla Veneziana est accompagné d'oignons, mais dans sa recette originale, qu'est ce qui remplaçait les oignons ?",
-                    "Fegato alla Veneziana comes with onions, but in the original recipe, what replaced the onions ?"
+                    "Dans quelle région se situe Venise ?",
+                    "In which region is Venice located?"
                 );
-                $q2_1 = array("Des olives", "Olives");
-                $q2_2 = array("Des figues", "Figs");
-                $q2_3 = array("Des petits pois", "Peas");
-                $q2_4 = array("Des carrottes", "Carrots");
+                $q2_1 = array("La Sicile", "Sicily");
+                $q2_2 = array("La Vénétie", "Veneto");
+                $q2_3 = array("La Sardaigne", "Sardinia");
+                $q2_4 = array("La Lombardie", "Lombardy");
 
                 echo "<h3>$q2[$lang]</h3>";
                 ?>
@@ -217,13 +217,13 @@
             <div class="zone-question">
                 <?php
                 $q3 = array(
-                    "Que sont les Bigolis, spécialité de la Vénétie, région d'Italie où se trouve Venise ?",
-                    "What are Bigolis, a speciality of the Veneto region of Italy, where Venice is located ?"
+                    "Comment se nommait la personne qui gouvernait Venise ?",
+                    "What was called the person who governed Venice ?"
                 );
-                $q3_1 = array("Des petits biscuits aux agrumes.", "Small citrus biscuits.");
-                $q3_2 = array("Des spaghettis épaisses à base de blé complet.", "Thick spaghetti made from wholegrain wheat.");
-                $q3_3 = array("Un plat à base de fruits de mer et d'encre de seiche.", "A seafood and squid ink dish.");
-                $q3_4 = array("Des pâtes ressemblant à des bigoudis.", "Pasta that looks like curlers.");
+                $q3_1 = array("L'empereur", "The emperor");
+                $q3_2 = array("Le doge", "The doge");
+                $q3_3 = array("Le pape", "The Pope");
+                $q3_4 = array("Le président", "The president");
 
                 echo "<h3>$q3[$lang]</h3>";
                 ?>
@@ -311,13 +311,13 @@
             <div class="zone-question">
                 <?php
                 $q4 = array(
-                    "Les baicolis sont des petits gâteaux originaires de Venise. A quelles occasions étaient-ils principalement mangés ? ",
-                    "Baicolis are small cakes from Venice. On what occasions were they mainly eaten?"
+                    "Où se sont regrouper les petites communanutés de Venise au VIIème siècle ?",
+                    "Where did the small communities of Venice gather in the 7th century?"
                 );
-                $q4_1 = array("Ils étaient dégustés pendant la période du Carnaval.", "They were eaten during the Carnival period.");
-                $q4_2 = array("Ils accompagnaient les marins durant leurs voyages.", "They accompanied the sailors on their travels.");
-                $q4_3 = array("Ils accompagnaient principalement les mariages, les naissances.", "They mainly accompanied weddings and births.");
-                $q4_4 = array("Ils étaient dégustés pour tout les goûters.", "They were used for all the snacks.");
+                $q4_1 = array("Murano", "Murano");
+                $q4_2 = array("Rialto", "Rialto");
+                $q4_3 = array("Burano", "Burano");
+                $q4_4 = array("Rome", "Rome");
 
                 echo "<h3>$q4[$lang]</h3>";
                 ?>
@@ -405,10 +405,10 @@
             <div class="zone-question">
                 <?php
                 $q5 = array(
-                    "Comment est cuite la viande du Lampredotto ? ",
-                    "How is the Lampredotto meat cooked ?"
+                    "Pourquoi Venise a-t-elle du pouvoir ?",
+                    "Why does Venice have power?"
                 );
-                $q5_1 = array("Elle est cuite longuement à l'eau", "It is boiled for a long time in water");
+                $q5_1 = array("C'est une ville ", "It is boiled for a long time in water");
                 $q5_2 = array("Elle est frite", "It is fried");
                 $q5_3 = array("Elle est cuite au four", "It is cooked in the oven");
 
