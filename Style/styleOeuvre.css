@@ -1,9 +1,9 @@
 .IMG {
-    background: url(Images/Oeuvre/LaMortDeLaVierge.jpg);
+    background: url(../Images/Oeuvre/LaMortDeLaVierge.jpg);
 }
 
 .IMG2 {
-    background: url(Images/Oeuvre/MiracleDelPonte.jpg);
+    background: url(../Images/Oeuvre/MiracleDelPonte.jpg);
 }
 
 .bgGallery {
