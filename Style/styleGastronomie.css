@@ -228,8 +228,7 @@
 @media screen and (max-width: 35rem) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
-        gap: .25rem;
-        border:1px solid white;
+        gap: 0.25rem;
     }
 
     .gallery__item {

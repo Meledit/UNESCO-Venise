@@ -23,7 +23,7 @@
 }
 
 .IMGFooter {
-  background: url(Images/Masque2.jpg);
+  background: url(../Images/Masque2.jpg);
   background-position:center;
   background-repeat: no-repeat;
   background-size: cover;
