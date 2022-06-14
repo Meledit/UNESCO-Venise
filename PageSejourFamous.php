@@ -397,9 +397,15 @@
           <p class="timeline-text">
             <?= "$PalaisDoges1[$lang]" ?>
           </p>
-          <p>
-            <?= "$PalaisDoges2[$lang]" ?>
-          </p>
+          <p><a onclick="plus('2')"><?= "$Plus[$lang]" ?></a></p>
+          <div id="2" style="display: none;">
+            <p>
+            <p>
+              <?= "$PalaisDoges2[$lang]" ?>
+            </p>
+            <p><a onclick="moins('2')"><?= "$Moins[$lang]" ?></a></p>
+            </p>
+          </div>
         </div>
       </div>
       <div class="swiper-slide" style="background-image: url(Images/Sejours/Basilique.jpg)" data-year="Basilica di San Marco">
@@ -408,9 +414,15 @@
         <p class="timeline-text">
           <?= "$BStMarc1[$lang]" ?>
         </p>
-        <p class="timeline-text">
-          <?= "$BStMarc2[$lang]" ?>
-        </p>
+        <p><a onclick="plus('3')"><?= "$Plus[$lang]" ?></a></p>
+        <div id="3" style="display: none;">
+          <p>
+          <p>
+            <?= "$BStMarc2[$lang]" ?>
+          </p>
+          <p><a onclick="moins('3')"><?= "$Moins[$lang]" ?></a></p>
+          </p>
+        </div>
       </div>
     </div>
     <div class="swiper-slide" style="background-image: url(Images/Sejours/PlaceSaintMarc.jpg)" data-year="Piazza San Marco">
@@ -450,9 +462,15 @@
     <p class="timeline-text">
       <?= "$Murano1[$lang]" ?>
     </p>
-    <p class="timeline-text">
-      <?= "$Murano2[$lang]" ?>
-    </p>
+    <p><a onclick="plus('4')"><?= "$Plus[$lang]" ?></a></p>
+    <div id="4" style="display: none;">
+      <p>
+      <p>
+        <?= "$Murano2[$lang]" ?>
+      </p>
+      <p><a onclick="moins('4')"><?= "$Moins[$lang]" ?></a></p>
+      </p>
+    </div>
   </div>
   </div>
   <div class="swiper-slide" style="background-image: url(Images/Sejours/Burano.jpg)" data-year="Burano">
@@ -461,9 +479,15 @@
     <p class="timeline-text">
       <?= "$Burano1[$lang]" ?>
     </p>
-    <p class="timeline-text">
-      <?= "$Burano2[$lang]" ?>
-    </p>
+    <p><a onclick="plus('5')"><?= "$Plus[$lang]" ?></a></p>
+    <div id="5" style="display: none;">
+      <p>
+      <p>
+        <?= "$Burano2[$lang]" ?>
+      </p>
+      <p><a onclick="moins('5')"><?= "$Moins[$lang]" ?></a></p>
+      </p>
+    </div>
   </div>
   </div>
   </div>
