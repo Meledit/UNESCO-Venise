@@ -94,7 +94,7 @@
                 </li>
                 <li>
                     <?= "<h3>$quizz[$lang]</h3>" ?>
-                    <?= "<a href=\"\">$quizz2[$lang]</a>" ?>
+                    <?= "<a href=\"PageQuizz.php\">$quizz2[$lang]</a>" ?>
                 </li>
                 <li>
                     <?php

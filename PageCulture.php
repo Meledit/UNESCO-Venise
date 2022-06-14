@@ -51,8 +51,8 @@
         <div class="container">
             <div class="text">
                 <?php
-                echo "<h1>$veniseTitre</h1>";
-                echo "<h2>$veniseSousTitre</h2>";
+                echo "<h1>$veniseTitre[$lang]</h1>";
+                echo "<h2>$veniseSousTitre[$lang]</h2>";
                 ?>
             </div>
     </section>

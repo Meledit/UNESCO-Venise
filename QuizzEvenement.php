@@ -39,7 +39,7 @@
 
     <form action="" method="POST">
 
-    <div class="bg gris">
+    <div class="bg noir">
         <article>
         <?php
             echo "<h3>$bienvenue[$lang]</h3>";

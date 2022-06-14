@@ -80,7 +80,7 @@
                     </a>
                 </div>
                 <div class="button">
-                    <a href="PageType.html">
+                    <a href="PageQuizz.php">
                         <img class="picto quizz" alt=""
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
                             <?= "$boutonQuizz[$lang]"?>
@@ -168,7 +168,7 @@
     <div class="bg gris">
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/Sejours/LaFenice.jpg" alt="">
                 <div class="resume">
                     <?php
                         echo "<h3>$romantique[$lang]</h3>";
