@@ -547,6 +547,12 @@ article>iframe {
     text-indent: 30px;
 }
 
+
+.bg > .article > .zone-texte > .zone-saviez-vous > p {
+    font-size: 1.1em;
+    margin-bottom: 0px;
+}
+
 .bg>.article>.zone-images {
     width: 50%;
     max-width: 500px;

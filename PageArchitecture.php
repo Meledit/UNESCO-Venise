@@ -14,11 +14,6 @@
 </head>
 
 <body>
-
-
-
-
-
     <?php
     include("header.php");
     $venise = array("Venise démasquée", "Unmasking Venice");
@@ -326,33 +321,6 @@
     );
 
     ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="showcase">
 
         <img src="Images/Architecture/Venise1Fond.jpg" alt="" class="imgBg">
@@ -473,7 +441,6 @@
                             echo "<p>$s1Article1Saviezvous[$lang]</p>";
                             ?>
                         </div>
-
                     </div>
                 </div>
 
