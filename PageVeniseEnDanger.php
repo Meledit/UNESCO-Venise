@@ -118,7 +118,7 @@
         </div>
 
         <div class="image-et-legende">
-            <img src="Images/Inondations/Tourisme.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Tourisme.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
     </div>
 </div>
@@ -126,7 +126,7 @@
 <div class="bg gris">
     <div class="article image-avant">
         <div class="image-et-legende">
-            <img src="Images/Inondations/Inondation1.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Inondation1.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
         <div class="zone-texte bordure-texte">
             <h3><?= "$InondationTitre[$lang]" ?></h3>
@@ -155,7 +155,7 @@
             </p>
         </div>
         <div class="image-et-legende">
-            <img src="Images/Inondations/Inondation2.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Inondation2.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
     </div>
 </div>
@@ -167,7 +167,7 @@
 <div class="bg gris">
     <div class="article image-avant">
         <div class="image-et-legende">
-            <img src="Images/Inondations/ProjetMose.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/ProjetMose.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
         <div class="zone-texte bordure-texte">
             <h3><?= "$ProjetMoseTitre[$lang]" ?></h3>

@@ -534,6 +534,51 @@
         financial waves »"
     );
 
+    $Inondation1 = array(
+        "Venise est une ville particulièrement exposée aux inondations, qui correspondent à des pics de marée particulièrement prononcés et présents entre l'automne et le printemps. 
+            Ces pics sont liés à un phénomène qui impacte de plus en plus la reine de l’Adriatique : il s’agit du phénomène d’Acqua Alta.",
+        "Venice is a city particularly exposed to flooding, which corresponds to particularly pronounced tidal peaks that occur between autumn and spring. 
+            These peaks are linked to a phenomenon that is increasingly affecting the Queen of the Adriatic: the Acqua Alta phenomenon."
+    );
+
+    $Inondation2 = array(
+        "Acqua Alta: phénomène périodique de Venise se produisant lors de la montée de la mer Adriatique d’un cran ce qui provoque des inondations à Venise.",
+        "Acqua Alta: a periodic phenomenon in Venice that occurs when the Adriatic Sea rises a notch, causing flooding in Venice."
+    );
+
+    $Inondation3 = array(
+        "L’Acqua Alta est devenu une habitude pour les habitants de Venise, qui voient ce phénomène se produire une vingtaine de fois par an. 
+            Les inondations sont particulièrement visibles à la place St Marc où plusieurs zones de la ville sont inondées lors de ces montées.",
+        "Acqua Alta has become a habit for the inhabitants of Venice, who see this phenomenon occur about twenty times a year. 
+            The flooding is particularly noticeable in St Mark's Square, where several areas of the city are inundated during these rises."
+    );
+
+    $RechauffementClimatique = array(
+        "Ce phénomène risque malheureusement de se produire de plus en plus souvent et d’évoluer bien plus vite dans les années à venir. 
+            En effet, suite à l’augmentation du réchauffement climatique de plus en plus important qui participe à la montée des mers et océans 
+            du Monde en provoquant la fonte des glaciers, Venise se trouve indéniablement touchée elle aussi fortement de par sa situation géographique délicate.",
+        "Unfortunately, this phenomenon is likely to occur more and more often and to evolve much more rapidly in the years to come. 
+            Indeed, following the increase in global warming, which is contributing to the rise of the world's seas and oceans by causing the melting of glaciers, 
+            Venice is undeniably also strongly affected by this phenomenon. 
+            and oceans by causing glaciers to melt, Venice is undeniably also strongly affected by its delicate geographical situation."
+    );
+
+    $Question = array(
+        "Quelles solutions envisagées face aux inondations ?",
+        "What solutions are being considered for flooding ?"
+    );
+
+    $ProjetMose = array(
+        "Afin de protéger Venise, le projet Mose, encouragé par l’Unesco, a été conçu en 1984 et lancé en 2003. 
+            Le projet Mose a pour but de protéger les villes situées aux entrées de la lagune, 
+            il est constitué de 78 digues capables de s’élever lorsque le niveau de la mer monte trop. Ce projet ambitieux n’est toujours pas inauguré à l’heure actuelle 
+            suite aux nombreux scandales et problèmes ayant eu lieu en 2016, retardant son inauguration.",
+        "In order to protect Venice, the Mose project, promoted by UNESCO, was conceived in 1984 and launched in 2003. 
+            The Mose project aims to protect the cities located at the entrances to the lagoon, 
+            It consists of 78 dykes capable of rising when the sea level rises too much. This ambitious project has still not been inaugurated 
+            following the numerous scandals and problems that occurred in 2016, delaying its inauguration."
+    );
+
     $Inter = array("je suis intéressé !", "I want to know more !");
     $epoques = array("Les grandes époques de Venise", "The great eras of Venice");
     $V_IX_siecle = array("V - IX siècle", "V - IX century");
@@ -968,8 +1013,63 @@
             </div>
         </div>
     </div>
-    <?php 
-        include("footer.php");
+
+    <div class="bg gris">
+        <div class="article image-avant">
+            <div class="image-et-legende">
+                <img src="Images/Inondations/Inondation1.jpg" alt="Image de venise innondée" class="imgBg">
+            </div>
+            <div class="zone-texte bordure-texte">
+                <h3><?= "$InondationTitre[$lang]" ?></h3>
+                <p>
+                    <?= "$Inondation1[$lang]" ?>
+                </p>
+                <p>
+                    <?= "$Inondation2[$lang]" ?>
+                </p>
+                <p>
+                    <?= "$Inondation3[$lang]" ?>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="IMGparallax inondation IMG-petite">
+    </div>
+
+    <div class="bg gris">
+        <div class="article image-après">
+            <div class="zone-texte bordure-texte">
+                <h3><?= "$RechauffementClimatiqueTitre[$lang]" ?></h3>
+                <p>
+                    <?= "$RechauffementClimatique[$lang]" ?>
+                </p>
+            </div>
+            <div class="image-et-legende">
+                <img src="Images/Inondations/Inondation2.jpg" alt="Image de venise innondée" class="imgBg">
+            </div>
+        </div>
+    </div>
+    <div class="bg gris">
+        <article>
+            <div class="texte-sans-titre"><?= "$Question[$lang]" ?></div>
+        </article>
+    </div>
+    <div class="bg gris">
+        <div class="article image-avant">
+            <div class="image-et-legende">
+                <img src="Images/Inondations/ProjetMose.jpg" alt="Image de venise innondée" class="imgBg">
+            </div>
+            <div class="zone-texte bordure-texte">
+                <h3><?= "$ProjetMoseTitre[$lang]" ?></h3>
+                <p>
+                    <?= "$ProjetMose[$lang]" ?>
+                </p>
+            </div>
+        </div>
+    </div>
+    <?php
+    include("footer.php");
     ?>
 </body>
 
