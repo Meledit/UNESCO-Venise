@@ -10,7 +10,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="./styleHistoire.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Histoire</title>
+    <title>Venise Démasquée</title>
 </head>
 
 <body>

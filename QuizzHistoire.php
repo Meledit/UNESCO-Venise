@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleQuizz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Venise démasquée</title>
+    <title>Venise Démasquée</title>
 </head>
 
 <body>

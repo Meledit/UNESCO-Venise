@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title> Venise </title>
+    <title> Venise Démasquée </title>
 </head>
 
 <body>
