@@ -37,8 +37,8 @@
         <div class="col-xs-6 col-md-3">
           <?= "<h6>$partenaires[$lang]</h6>" ?>
           <ul class="footer-links">
-            <li><a href="http://scanfcode.com/category/c-language/">Unesco</a></li>
-            <li><a href="http://scanfcode.com/category/front-end-development/">UGE</a></li>
+            <li><a href="https://www.unesco.org/fr">Unesco</a></li>
+            <li><a href="https://www.univ-gustave-eiffel.fr/">UGE</a></li>
           </ul>
         </div>
 
@@ -48,7 +48,7 @@
             <?php
               echo "<li><a href=\"PageQuiSommesNous.php\">$quiSommesNous[$lang]</a></li>";
               echo "<li><a href=\"Mentions.php\">$mentionsLegales[$lang]</a></li>";
-              echo "<li><a href=\"PageCredits.php\">$credits[$lang]</a></li>";
+              echo "<li><a href=\"Credits.php\">$credits[$lang]</a></li>";
             
             
             ?>
