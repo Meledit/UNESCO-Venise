@@ -83,7 +83,7 @@
         vénitiennes avec les produits de la Lagune. Un des incontournables à Venise si l’on cherche à tester le
         goût de cette ville.",
 
-        "Just a few steps from St. Mark's Square is the restaurant 'Le chat qui rit'. From
+        "Just a few steps from St. Mark's Square is the restaurant \"Le chat qui rit\". From
         decoration you will be attracted to this restaurant, but more than its warm atmosphere
         but more than its warm atmosphere, it will be its cuisine that will keep you in suspense, inspired by traditional Venetian recipes
         with the products of the Lagoon. A must in Venice if you want to test the

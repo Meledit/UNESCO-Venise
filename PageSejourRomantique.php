@@ -108,7 +108,7 @@
 
     $LaFenice = array(
         "Théâtre datant du XVIIIe siècle, il est l’un des plus vieux
-        théâtres et un des plus prestigieux. Surnommé 'Le Phénix' en français, il possède un nom
+        théâtres et un des plus prestigieux. Surnommé \"Le Phénix\" en français, il possède un nom
         collant parfaitement à ses origines, né d’un incendie en 1836 et reconstruit après un
         autre le 29 Janvier 1996. Il renaît en 2001 après de nombreux travaux afin de lui
         redonner son luxe d’antan. Il a plusieurs fois donné des premières mondiales comme Blue
@@ -118,7 +118,7 @@
         magnifique et dans un style luxueux et romantique.",
 
         "The theatre dates from the 18th century and is one of the oldest and most theatres and one of 
-        the most prestigious. nicknamed 'Le Phénix' in French, it has a name that fits perfectly with its origins, 
+        the most prestigious. nicknamed \"Le Phénix\" in French, it has a name that fits perfectly with its origins, 
         born of a fire in 1836 and rebuilt after another one on 29 January rebuilt on 29 January 1996. 
         It was reborn in 2001 after extensive work to restore its former its former luxury. 
         It has given several world premieres such as Blue Lady, Carolyn Carlson's ballet in 1983 and Igor Stravinsky's opera 
@@ -147,7 +147,7 @@
         1177, mais ce n'est que 100 ans plus tard que cette place a été pavée.
         La place St Marc est liée à l'histoire de la Basilique St Marc située en face et fait
         partie d'une des places les plus belles à Venise souvent visitées. Napoléon Bonaparte la
-        définissait même comme étant « Le plus beau salon d'Europe ». Un endroit charmant et
+        définissait même comme étant \"Le plus beau salon d'Europe\". Un endroit charmant et
         très beau pour un rendez-vous dehors.",
         "St Mark's Square, named after the evangelist and Christian patron of Venice, St Mark is 
         located on the banks of the Grand Canal and is the heart of the city of Venice. 
@@ -155,7 +155,7 @@
         Its construction began in the 9th century and the square adopted its present size and shape in 1177, 
         but it was not until 100 years later that the square was paved. St Mark's Square is linked to the history of 
         St Mark's Basilica opposite and is part of one of the and is one of the most beautiful squares in Venice often visited. 
-        Napoleon Bonaparte even Napoleon Bonaparte even defined it as 'the most beautiful salon in Europe'. 
+        Napoleon Bonaparte even Napoleon Bonaparte even defined it as \"the most beautiful salon in Europe\". 
         A charming and A charming and beautiful place for a meeting outside."
     );
 
