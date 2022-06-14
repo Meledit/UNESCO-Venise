@@ -143,7 +143,7 @@
             <div class="gallery">
                 <div class="gallery__item gallery__item--1">
                     <a href="#Poissons" class="gallery__link">
-                        <img src="Images/Gastronomie/Fritto_misto3(pas libre).jpg" class="gallery__image" />
+                        <img src="Images/Gastronomie/Fritto_misto3.jpg" class="gallery__image" />
                         <div class="gallery__overlay">
                             <?= "<span>$poisson[$lang]</span>" ?>
                         </div>
@@ -204,7 +204,7 @@
                     <p>Pesce Al Forno</p>
                 </div>
                 <div class="image-et-legende">
-                    <img src="Images/Gastronomie/fritto_misto2(pas libre).jpg" alt="image de fritures">
+                    <img src="Images/Gastronomie/fritto_misto2.jpg" alt="image de fritures">
                     <p>Fritto Misto</p>
                 </div>
             </div>
