@@ -22,7 +22,8 @@
     $sousTitre = array("La ville de la fête en action", "The party city in action");
     $saviezvous = array("Le saviez-vous ?", "Did you know ?");
     $bienvenue = array("Bienvenue sur la page Evenemment&nbsp;!", "Welcome to the Events page&nbsp;!");
-    $bienvenueTexte = array("Venise est une ville très vivante et propose de nombreux évènements tout au long de l'année", "Venice is a very lively city and offers many events throughout the year");
+    $bienvenueTexte = array("Venise est une ville très vivante et propose tout au long de l'année une pluralité d'évènements. Découvrez tous ses évènements en choisissant
+    le mois de l'année avec les étiquettes de mois.", "Venice is a very lively city and offers a variety of events throughout the year. Discover all its events by choosing the month of the year with the month labels.");
     $enSavoirPlus = array("En savoir plus", "Read more");
     $enSavoirMoins = array("Moins", "Less");
 
@@ -214,7 +215,7 @@
                 ?>
     </section>
 
-    <div class="bg gris">
+    <div class="bg noir">
         <article>
             <?php
             echo "<h3>$bienvenue[$lang]</h3>";
@@ -247,6 +248,7 @@
     </div>
 
     <div class="IMGparallax IMG2 IMG-petite"></div>
+
     <div class="bg gris" id="JanvierMars">
         <div class="article image-apres">
             <div class="zone-texte bordure-texte">
@@ -361,7 +363,7 @@
         </div>
     </div>
 
-    <div class="IMGparallax IMG2 IMG-petite"></div>
+    <div class="IMGparallax IMG3 IMG-petite"></div>
 
     <div class="bg gris" id="Aout">
         <div class="article image-apres">

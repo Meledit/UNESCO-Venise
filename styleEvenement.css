@@ -122,6 +122,15 @@
     border-radius: 3px;
 }
 
+.IMG2{
+    background:url(Images/ImagesEvenement/EvenementParallax1.jpg)
+}
+
+.IMG3{
+    background:url(Images/ImagesEvenement/EvenementParallax2.jpg)
+}
+
+
 @media (max-width: 750px) {
 
     .menu-mois {
