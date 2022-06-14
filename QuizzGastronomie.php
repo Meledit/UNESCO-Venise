@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleQuizz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Quizz Gastronomie</title>
+    <title>Venise Démasquée</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     If you are ready, you can answer the questions below. Good luck to you!");
     ?>
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+        <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
