@@ -47,7 +47,7 @@
           <ul class="footer-links">
             <?php
               echo "<li><a href=\"PageQuiSommesNous.php\">$quiSommesNous[$lang]</a></li>";
-              echo "<li><a href=\"PageMentionsLegales.php\">$mentionsLegales[$lang]</a></li>";
+              echo "<li><a href=\"Mentions.php\">$mentionsLegales[$lang]</a></li>";
               echo "<li><a href=\"PageCredits.php\">$credits[$lang]</a></li>";
             
             

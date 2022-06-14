@@ -36,8 +36,10 @@
     $voir = array("Voir","See");
     $carnaval = array("Le Carnaval de Venise","The Venice Carnival");
     $carnavalTexte = array("blabla carnaval","blabla carnaval");
-    $romantique = array("Des vacances à deux ?????","Des vacances à deux ?????");
-    $romantiqueTexte = array("smack","smack");
+    $romantique = array("Un voyage à deux","A journey together");
+    $romantiqueTexte = array("Pour ceux qui viennent en couple ou lune de miel, nous vous proposons un séjour
+    pour découvrir le côté romantique de Venise.","For those who come as a couple or on honeymoon, we propose a stay
+    to discover the romantic side of Venice.");
     $rialto=array("Le pont de Rialto","The Rialto Bridge");
     $rialtoTexte=array("pont","pont");
     ?>
@@ -196,9 +198,9 @@
             </a>
         </div>
     </div>
-    <div class="IMGFooter IMG-microscopique">
-        <div class="overlayFooter"></div>
-    </div>
+    <?php
+        include("footer.php");
+    ?>
 </body>
 
 </html>
