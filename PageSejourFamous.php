@@ -140,9 +140,9 @@
     en
     l'honneur des douzes apôtres de Constantinople, qui deviendra la basilique St Marc. C’est ainsi qu’en
     1060, le doge Domenico Contarini décide de reconstruire la basilique. Les ingénieurs venus construire
-    cette basilique venaient de Constantinople et avaient pour but de bâtir un 'superbe temple singulier
+    cette basilique venaient de Constantinople et avaient pour but de bâtir un \"superbe temple singulier
     et
-    rare'.
+    rare\".
     La nouvelle église a été construite à l'emplacement de l'église Saint-Théodore et de la chapelle
     Saint-Marc en reprenant un plan en croix grecque s'inspirant de l'église des Saints-Apôtres de
     Byzance.
@@ -154,9 +154,9 @@
     in
     in honor of the twelve apostles of Constantinople, which will become the Basilica of St. Mark. Thus, in
     1060, the doge Domenico Contarini decided to rebuild the basilica. The engineers who came to build
-    this basilica came from Constantinople and had for goal to build a 'superb singular temple
+    this basilica came from Constantinople and had for goal to build a \"superb singular temple
     and
-    rare'.
+    rare\".
     The new church was built on the site of the church of St. Theodore and the chapel of St. Mark
     The new church was built on the site of the church of St. Theodore and the chapel of St. Mark with a Greek cross plan inspired by the church of the Holy Apostles in
     Byzantium.
@@ -172,8 +172,8 @@
     Sa construction débute au IXe siècle et la place adopte sa taille et forme actuelle en 1177, mais ce
     n'est que 100 ans plus tard que cette place a été pavée.
     La place St Marc est liée à l'histoire de la Basilique St Marc située en face et fait partie d'une des
-    places les plus belles à Venise souvent visitées. Napoléon Bonaparte la définissait même comme étant «
-    Le plus beau salon d'Europe ».",
+    places les plus belles à Venise souvent visitées. Napoléon Bonaparte la définissait même comme étant \"
+    Le plus beau salon d'Europe\".",
 
     "St. Mark's Square, named after the evangelist, Christian protector of Venice,
     St. Mark's is located on the banks of the Grand Canal and is the heart of the city of Venice. This square was
@@ -181,15 +181,15 @@
     Its construction began in the ninth century and the square adopted its current size and shape in 1177, but it was not until 100 years later that the
     100 years later it was paved.
     St. Mark's square is linked to the history of St. Mark's Basilica located in front of it and is part of one of the
-    the most beautiful squares in Venice often visited. Napoleon Bonaparte even defined it as '
-    The most beautiful salon in Europe'."
+    the most beautiful squares in Venice often visited. Napoleon Bonaparte even defined it as \"
+    The most beautiful salon in Europe\"."
   );
 
   $PontSoupirs1 = array(
     "Le pont des soupirs est un des nombreux ponts présents à Venise mais surtout un des lieux touristiques
     les plus célèbres. Sa construction débute en 1602 et a pour objectif de relier le Palais des doges où
     les prisonniers sont jugés à la nouvelle prison (achevée en 1604) par Antonio Contin. Il a été surnommé
-    le “sarcophage qui s’envole” par André Suarès en raison de sa structure. Le pont était totalement fermé
+    le \"sarcophage qui s’envole\" par André Suarès en raison de sa structure. Le pont était totalement fermé
     avec un toi et des murs épais afin d’éviter d’entendre les cris et lamentations des détenus enfermés et
     d’éviter toute tentative de fuite, ou de suicide..
     Il possède deux couloirs qui avaient pour objectif que pour aller dans un bâtiment ou l’autre, on devait
@@ -199,7 +199,7 @@
     "he Bridge of Sighs is one of the many bridges present in Venice but above all one of the most
     most famous tourist sites. Its construction began in 1602 and its purpose was to connect the Palace of the Doges where the prisoners were
     prisoners are judged to the new prison (completed in 1604) by Antonio Contin. It was nicknamed
-    the 'sarcophagus that flies' by André Suarès because of its structure. The bridge was totally closed
+    the \"sarcophagus that flies\" by André Suarès because of its structure. The bridge was totally closed
     and thick walls in order to avoid hearing the cries and lamentations of the locked inmates and to prevent any
     and to avoid any attempt of escape or suicide.
     It has two corridors that had as objective that to go to one building or the other, one had to
@@ -224,7 +224,7 @@
     for its internationally renowned glassblowers.
     Indeed, the history of glassblowers began in 1201, when the Senate of Venice wrote and voted a decree
     and voted a decree obliging the glassmakers of Venice to install their furnaces on the island of Murano following
-    fires declared at the departure of the glassmakers' furnaces.
+    fires declared at the departure of the glassmakers furnaces.
     The houses of the Venetians being at that time in wood, there was a concern on the risks
     incurred. In addition, the condition of working on an island allowed to protect the secret of the
     manufacture of glass to the other powers.
