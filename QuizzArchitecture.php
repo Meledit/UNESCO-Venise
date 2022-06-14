@@ -18,36 +18,39 @@
     $venise = array("Venise démasquée", "Unmasking Venice");
     $sousTitre = array("La ville aux diverses styles", "The party city in action");
     $bienvenue = array("Bienvenue sur le Quizz Architecture&nbsp;!", "Welcome to the Architecture Quiz&nbsp;!");
-    $bienvenueTexte = array("Ici vous pourrez tester vos connaissances liées à la page Architecture.
+    $bienvenueTexte = array(
+        "Ici vous pourrez tester vos connaissances liées à la page Architecture.
     Nous vous conseillons fortement de lire la page Architecture avant de vous lancer dans le quizz.
     Si vous êtes prêts, vous pouvez répondre en question ci-dessous.
-     Bonne chance à vous !", "Here you can test your knowledge related to the Architecture page.
+     Bonne chance à vous !",
+        "Here you can test your knowledge related to the Architecture page.
      We strongly advise you to read the Architecture page before taking the quiz.
-     If you are ready, you can answer the questions below. Good luck to you!");
+     If you are ready, you can answer the questions below. Good luck to you!"
+    );
     ?>
 
     <section class="showcase">
-        
 
-    <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
-    <div class="overlay"></div>
 
-    <div class="container">
-        <div class="text">
-        <?php
-            echo "<h1>$venise[$lang]</h1>";
-            echo "<h2>$sousTitre[$lang]</h2>";
-            ?>
+        <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
+        <div class="overlay"></div>
+
+        <div class="container">
+            <div class="text">
+                <?php
+                echo "<h1>$venise[$lang]</h1>";
+                echo "<h2>$sousTitre[$lang]</h2>";
+                ?>
     </section>
 
     <form action="" method="POST">
 
-    <div class="bg noir">
+        <div class="bg noir">
             <article>
-            <?php
-            echo "<h3>$bienvenue[$lang]</h3>";
-            echo "<p>$bienvenueTexte[$lang]</p>";
-            ?>
+                <?php
+                echo "<h3>$bienvenue[$lang]</h3>";
+                echo "<p>$bienvenueTexte[$lang]</p>";
+                ?>
             </article>
         </div>
 
@@ -145,7 +148,7 @@
         </div>
 
 
-        
+
         <div class="bg gris">
             <div class="zone-question">
                 <?php
@@ -241,7 +244,7 @@
         </div>
 
 
-        
+
         <div class="bg gris">
             <div class="zone-question">
                 <?php
@@ -336,7 +339,7 @@
             </div>
         </div>
 
-                
+
         <div class="bg gris">
             <div class="zone-question">
                 <?php
@@ -431,7 +434,7 @@
             </div>
         </div>
 
-               
+
         <div class="bg gris">
             <div class="zone-question">
                 <?php
@@ -507,7 +510,7 @@
             </div>
         </div>
 
-        
+
         <?php
         $fini = array("J'ai fini !", "I'm done !");
         ?>
@@ -568,10 +571,8 @@
     </form>
 
     <?php
-        include("footer.php");
-        ?>
-    </body>
+    include("footer.php");
+    ?>
+</body>
 
-    </html>
-
-    
+</html>

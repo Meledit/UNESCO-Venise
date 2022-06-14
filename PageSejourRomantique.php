@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
     <link rel="stylesheet" href="Style/styleSejour.css">
     <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
     <title>Venise Démasquée</title>
 </head>
 

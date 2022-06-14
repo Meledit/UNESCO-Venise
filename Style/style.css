@@ -369,7 +369,7 @@ header>label>img {
 }
 
 .button:hover>a>.picto {
-    background-image: url('Images/SpriteB.png');
+    background-image: url('../Images/SpriteB.png');
 }
 
 /* Sprites */
@@ -398,7 +398,7 @@ header>label>img {
 .picto {
     width: 80%;
     background-size: 100%;
-    background-image: url('Images/SpriteB.png');
+    background-image: url('../Images/SpriteB.png');
 }
 
 /* -------------------- Bandeau de contenu ----------------------- */
@@ -437,6 +437,10 @@ article {
 
 article>p {
     text-indent: 30px;
+}
+
+article > a {
+    color: var(--clr-secondaire);
 }
 
 article>h3 {
@@ -548,7 +552,7 @@ article>iframe {
 }
 
 
-.bg > .article > .zone-texte > .zone-saviez-vous > p {
+.bg > .article > .zone-texte > .zone-saviez-vous > .saviez-vous > p {
     font-size: 1.1em;
     margin-bottom: 0px;
 }

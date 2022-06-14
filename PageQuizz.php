@@ -40,7 +40,7 @@
     
     ?>
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond3.jpg" alt="" class="imgBg">
+        <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">

@@ -18,12 +18,15 @@
     $venise = array("Venise démasquée", "Unmasking Venice");
     $sousTitre = array("Une ville aux milles et une saveurs", "A city of a thousand and one flavours");
 
-    $quizzGastronomie =array("Bienvenue sur le quizz de la page Gastronomie&nbsp;!","Welcome to the Gastronomy page quiz&nbsp;!");
-    $quizzGastronomieTexte =array("Ici vous pourrez tester vos connaissances liées à la page Gastronomie.
-    Nous vous conseillons fortement de lire la page <a href=\"PageGastronomie.php\">Gastronomie </a>avant de vous lancer dans le quizz.
-    Si vous êtes prêts, vous pouvez répondre en question ci-dessous. Bonne chance à vous !","Here you can test your knowledge related to the Gastronomy page.
-    We strongly advise you to read the <a href=\"PageGastronomy.php\">Gastronomy</a> page before taking the quiz.
-    If you are ready, you can answer the questions below. Good luck to you!");
+    $quizzGastronomie = array("Bienvenue sur le quizz de la page Gastronomie&nbsp;!", "Welcome to the Gastronomy page quiz&nbsp;!");
+    $quizzGastronomieTexte = array(
+        "Ici vous pourrez tester vos connaissances liées à la page Gastronomie.
+    Nous vous conseillons fortement de lire la page Gastronomie avant de vous lancer dans le quizz.
+    Si vous êtes prêts, vous pouvez répondre en question ci-dessous. Bonne chance à vous !",
+        "Here you can test your knowledge related to the Gastronomy page.
+    We strongly advise you to read the Gastronomy page before taking the quiz.
+    If you are ready, you can answer the questions below. Good luck to you!"
+    );
     ?>
     <section class="showcase">
         <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
@@ -31,7 +34,7 @@
 
         <div class="container">
             <div class="text">
-            <?php
+                <?php
                 echo "<h1>$venise[$lang]</h1>";
                 echo "<h2>$sousTitre[$lang]</h2>";
                 ?>
@@ -43,11 +46,11 @@
         <div class="bg noir shadow">
             <article class="centre">
                 <?php
-                    echo"<h3>$quizzGastronomie[$lang]</h3>";
-                    echo "<p>$quizzGastronomieTexte[$lang]</p>"
+                echo "<h3>$quizzGastronomie[$lang]</h3>";
+                echo "<p>$quizzGastronomieTexte[$lang]</p>"
                 ?>
                 <p>
-                    
+
                 </p>
             </article>
         </div>

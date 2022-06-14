@@ -13,7 +13,20 @@
 
 <body>
     <?php
-    include("header.php")
+    include("header.php");
+
+    $veniseTitre = array("Venise démasquée", "Unmasking Venice");
+    $veniseSousTitre = array("Une ville historique", "A historical city");
+
+    $titreBienvenue = array("Vous pensez tout savoir sur l'histoire de Venise&nbsp;?", "You think you know everything about the history of Venice?");
+    $bienvenue = array(
+        "Ici vous retrouverez plusieurs questions pour tester vos
+    connaissances sur l'histoire de la ville lumière. Vous pouvez vous aidez si vous
+    le souhaitez de la page histoire.",
+        "Ici vous retrouverez plusieurs questions pour tester vos
+    connaissances sur l'histoire de la ville lumière. Vous pouvez vous aidez si vous the history page if you wish."
+    );
+
     ?>
     <section class="showcase">
         <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
@@ -21,8 +34,8 @@
 
         <div class="container">
             <div class="text">
-                <h1>Venise démasquée</h1>
-                <h2>Une ville historique</h2>
+                <h1><?= "$veniseTitre[$lang]" ?></h1>
+                <h2><?= "$veniseSousTitre[$lang]" ?></h2>
             </div>
         </div>
     </section>
@@ -30,11 +43,9 @@
     <form action="" method="POST">
         <div class="bg noir shadow">
             <article class="centre">
-                <h3>Vous pensez tout savoir sur l'histoire de Venise&nbsp;?</h3>
+                <h3><?= "$titreBienvenue[$lang]" ?></h3>
                 <p>
-                    Ici vous retrouverez plusieurs questions pour tester vos
-                    connaissances sur l'histoire de la ville lumière. Vous pouvez vous aidez si vous
-                    le souhaitez de <a href="PageHistoire.php">la page histoire.</a>
+                    <?= "$bienvenue[$lang]" ?>
                 </p>
             </article>
         </div>

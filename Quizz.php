@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/style.css">
     <link rel="stylesheet" href="Style/styleQuizz.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
     <title>Venise Démasquée</title>
 </head>
+
 <body>
-<?php
+    <?php
     include("header.php");
     ?>
     <section class="showcase">
@@ -27,10 +30,10 @@
             <article class="centre">
                 <h3>Bienvenue sur la page gastronomie&nbsp;!</h3>
                 <p>
-                    Ici vous retrouverez des informations 
+                    Ici vous retrouverez des informations
                     concernant la gastronomie variée de Venise.
-                    Si vous souhaitez accéder à une partie 
-                    précise de sa gastronomie, cliquer sur une 
+                    Si vous souhaitez accéder à une partie
+                    précise de sa gastronomie, cliquer sur une
                     image de la mosaique qui la concerne.
                 </p>
             </article>
@@ -45,8 +48,8 @@
                     <img src="images/Arancini1.jpg" alt="">
                     <div class="reponses">
                         <div class="reponse">
-                        <!-- name = questionX, id = questionX_numrep --> 
-                        <?php 
+                            <!-- name = questionX, id = questionX_numrep -->
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -54,17 +57,17 @@
                                 <label for='question1_1' class='bonne'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question1' id='question1_1' value='1' required>
                                 <label for='question1_1'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
 
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -72,17 +75,17 @@
                                 <label for='question1_2' class='mauvaise'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question1' id='question1_2' value='0'>
                                 <label for='question1_2'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
 
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -90,17 +93,17 @@
                                 <label for='question1_3' class='mauvaise'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question1' id='question1_3' value='0'>
                                 <label for='question1_3'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
 
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -108,13 +111,13 @@
                                 <label for='question1_4' class='mauvaise'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question1' id='question1_4' value='0'>
                                 <label for='question1_4'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -128,7 +131,7 @@
                     <img src="images/Arancini1.jpg" alt="">
                     <div class="reponses">
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -136,17 +139,17 @@
                                 <label for='question2_1' class='bonne'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question2' id='question2_1' value='1' required>
                                 <label for='question2_1'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
 
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -154,17 +157,17 @@
                                 <label for='question2_2' class='mauvaise'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question2' id='question2_2' value='0'>
                                 <label for='question2_2'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
 
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -172,17 +175,17 @@
                                 <label for='question2_3' class='mauvaise'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question2' id='question2_3' value='0'>
                                 <label for='question2_3'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
 
                         <div class="reponse">
-                        <?php 
+                            <?php
                             if (isset($_GET["question1"]) && isset($_GET["question2"])) {
                                 echo
                                 "
@@ -190,13 +193,13 @@
                                 <label for='question2_4' class='mauvaise'>Reponse numero 1</label>
                                 ";
                             } else {
-                                echo 
+                                echo
                                 "
                                 <input type='radio' name='question2' id='question2_4' value='0'>
                                 <label for='question2_4'>Reponse numero 1</label>
                                 ";
                             }
-                        ?>
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -258,10 +261,11 @@
             ?>
         </div>
 
-        
+
     </form>
     <?php
     include("footer.php");
     ?>
 </body>
+
 </html>

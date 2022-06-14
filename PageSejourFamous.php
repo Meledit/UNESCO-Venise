@@ -8,6 +8,7 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
   <link rel="stylesheet" href="Style/styleSejour.css">
   <link rel="stylesheet" href="Style/Style/style.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
   <title>Venise Démasquée</title>
 </head>
 
@@ -41,8 +42,8 @@
     of the Italian city."
   );
 
-  $Plus = array("En savoir plus", "More");
-  $Moins = array("Moins", "Less");
+  $Plus = array("En savoir plus", "Know more");
+  $Moins = array("Moins", "Know less");
 
   $titre = array("Parcours des Incontournables", "The Must-See Stay");
 
@@ -426,7 +427,7 @@
     <p class="timeline-text">
       <?= "$Campanile1[$lang]" ?>
     <p><a onclick="plus('1')"><?= "$Plus[$lang]" ?></a></p>
-    <div id="2" style="display: none;">
+    <div id="1" style="display: none;">
       <p>
         <?= "$Campanile2[$lang]" ?>
       <p><a onclick="moins('1')"><?= "$Moins[$lang]" ?></a></p>
