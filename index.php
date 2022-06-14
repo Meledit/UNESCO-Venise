@@ -35,7 +35,8 @@
     $naissanceVeniseTexte=array("Début de l'histoire","Début de l'histoire");
     $voir = array("Voir","See");
     $carnaval = array("Le Carnaval de Venise","The Venice Carnival");
-    $carnavalTexte = array("blabla carnaval","blabla carnaval");
+    $carnavalTexte = array("Envie de découvrir l'évènement incontournable de Venise
+     qu'est le Carnaval de Venise ? ","Would you like to discover the unmissable event of Venice, the Venice Carnival? ");
     $romantique = array("Un voyage à deux","A journey together");
     $romantiqueTexte = array("Pour ceux qui viennent en couple ou lune de miel, nous vous proposons un séjour
     pour découvrir le côté romantique de Venise.","For those who come as a couple or on honeymoon, we propose a stay
@@ -129,7 +130,7 @@
 
     <div class="bg gris">
         <article class="centre">
-            <?= "<h2>$recommandation[$lang]</h2>"?>
+            <?= "<h2>$recommandations[$lang]</h2>"?>
         </article>
         <div class="widget bordure-texte">
             <div class="zone image-avant">
@@ -150,7 +151,7 @@
     <div class="bg gris">
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/ImagesEvenement/masqueAvecRose.jpg" alt="">
                 <div class="resume">
                     <?php
                         echo "<h3>$carnaval[$lang]</h3>";
