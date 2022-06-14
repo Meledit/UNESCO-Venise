@@ -14,25 +14,44 @@
 <body>
     <?php
     include("header.php")
+
+    $venise = array("Venise démasquée", "Unmasking Venice");
+    $sousTitre = array("La ville aux diverses styles", "The party city in action");
+    $bienvenue = array("Bienvenue sur le Quizz Architecture&nbsp;!", "Welcome to the Architecture Quiz&nbsp;!");
+    $bienvenueTexte = array("Ici vous pourrez tester vos connaissances liées à la page Architecture.
+    Nous vous conseillons fortement de lire la page Architecture avant de vous lancer dans le quizz.
+    Si vous êtes prêts, vous pouvez répondre en question ci-dessous.
+     Bonne chance à vous !", "Here you can test your knowledge related to the Architecture page.
+     We strongly advise you to read the Architecture page before taking the quiz.
+     If you are ready, you can answer the questions below. Good luck to you!");
     ?>
+
     <section class="showcase">
+        
 
     <img src="Images/Architecture/Venise1Fond.jpg" alt="" class="imgBg">
     <div class="overlay"></div>
 
     <div class="container">
         <div class="text">
-            <h1>Venise</h1>
-            <h2>La ville aux diverses style</h2>
+        <?php
+            echo "<h1>$venise[$lang]</h1>";
+            echo "<h2>$sousTitre[$lang]</h2>";
+            ?>
     </section>
 
     <form action="" method="POST">
 
     <div class="bg gris">
             <article>
-                <h3>Venise est une ville regroupant des styles architecturaux de différentes époques</h3>
+            <?php
+            echo "<h3>$bienvenue[$lang]</h3>";
+            echo "<p>$bienvenueTexte[$lang]</p>";
+            ?>
             </article>
         </div>
+
+        <div class="IMGparallax IMGArchitecture IMG-petite"></div>
 
         <div class="bg gris">
             <div class="zone-question">

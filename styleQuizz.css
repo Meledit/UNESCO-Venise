@@ -26,6 +26,18 @@
     align-items: center;
 }
 
+.IMGGastronomie {
+    background: url(Images/Gastronomie/Fond3.jpg);
+}
+
+.IMGEvenement{
+    background:url(Images/ImagesEvenement/FondEvenement.jpg)
+}
+
+.IMGArchitecture{
+    background:url(Images/Architecture/Venise1Fond.jpg)
+}
+
 .question {
     display: flex;
     gap: 30px;
