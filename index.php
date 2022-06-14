@@ -139,7 +139,7 @@
                 <img src="Images/Histoire/creationDeVenise.png" alt="création de Venise">
                 <div class="resume">
                     <?php
-                    echo "<h3>$naissanceVenise[$lang]</3>";
+                    echo "<h3>$naissanceVenise[$lang]</h3>";
                     echo "<p>$naissanceVeniseTexte[$lang]</p>";
                     ?>
                 </div>
