@@ -14,6 +14,16 @@
 <body>
     <?php
     include("header.php")
+
+    $venise = array("Venise démasquée", "Unmasking Venice");
+    $sousTitre = array("La ville de la fête en action", "The party city in action");
+    $bienvenue = array("Bienvenue sur le Quizz Evenemment&nbsp;!", "Welcome to the Events Quiz&nbsp;!");
+    $bienvenueTexte = array("Ici vous pourrez tester vos connaissances liées à la page Evenement.
+    Nous vous conseillons fortement de lire la page Evenement avant de vous lancer dans le quizz.
+    Si vous êtes prêts, vous pouvez répondre en question ci-dessous.
+    Bonne chance à vous !", "Here you can test your knowledge of the Events page.
+    We strongly advise you to read the Events page before taking the quiz.
+    If you are ready, you can answer the questions below. Good luck to you!");
     ?>
 
     <section class="showcase">
@@ -21,20 +31,24 @@
             <div class="overlay"></div>
                 <div class="container">
                     <div class="text">
-                    <h1>Venise en action</h1>
-                    <h2>La ville de la fête</h2>
+                    <?php
+                        echo "<h1>$venise[$lang]</h1>";
+                        echo "<h2>$sousTitre[$lang]</h2>";
+                    ?>
     </section>
 
     <form action="" method="POST">
 
     <div class="bg gris">
         <article>
-
-        <h3>Bienvenue sur la page Evenemment&nbsp;!</h3>
-        <p>Venise est une ville très vivante et propose de nombreux évènements tout au long de l'année</p>
-
+        <?php
+            echo "<h3>$bienvenue[$lang]</h3>";
+            echo "<p>$bienvenueTexte[$lang]</p>";
+            ?>
         </article>
     </div>
+
+    <div class="IMGparallax IMGEvenement IMG-petite"></div>
 
     <div class="bg gris">
             <div class="zone-question">
