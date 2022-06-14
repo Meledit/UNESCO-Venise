@@ -37,8 +37,8 @@
     $bienvenue = array("Bienvenue sur la page Evenemment&nbsp;!", "Welcome to the Events page&nbsp;!");
     $bienvenueTexte = array("Venise est une ville très vivante et propose tout au long de l'année une pluralité d'évènements. Découvrez tous ses évènements en choisissant
     le mois de l'année avec les étiquettes de mois.", "Venice is a very lively city and offers a variety of events throughout the year. Discover all its events by choosing the month of the year with the month labels.");
-    $enSavoirPlus = array("En savoir plus", "Read more");
-    $enSavoirMoins = array("Moins", "Less");
+    $enSavoirPlus = array("En savoir plus", "Know more");
+    $enSavoirMoins = array("Moins", "Know less");
 
     $janvierMars = array("Janvier / Mars : Le Carnaval de Venise", "January / March: The Venice Carnival");
     $mai = array("Mai : La Vogalonga de Venise", "May: The Venice Vogalonga");

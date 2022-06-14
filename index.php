@@ -13,37 +13,42 @@
 <body>
     <?php
     include("header.php");
-    $venise = array("Venise démasquée","Unmasking Venice");
-    $veniseSousTitre = array("La ville du lion ailé vous révèle tous ses secrets","The city of the winged lionreveal all its secrets to you");
+    $venise = array("Venise démasquée", "Unmasking Venice");
+    $veniseSousTitre = array("La ville du lion ailé vous révèle tous ses secrets", "The city of the winged lion reveals all its secrets");
     $carteLegende = array("Légende de la carte", "Map legend");
     $Marco = array("Marco le lion, pour les lieux uniques", "Marco the lion, for unique places");
     $Donnola = array("Donnola la belette, pour les restaurants et hotels", "Donnola the weasel, for restaurants and hotels");
-    $Gufo = array("Gufo le hibou, pour les monuments historiques", "Gufo the owl, for historical monuments");  
-    $Laguna = array("Laguna le poulpe, pour les lieux aquatiques", "Laguna the octopus, for watery places");   
-    $boutonHistoire = array("Histoire","History");
-    $boutonCulture = array("Culture","Culture");
-    $boutonSejour=  array("Séjours","Stays");
-    $boutonQuizz = array("Quizz","Quiz");
-    $introTitre = array("Venise un patrimoine unique&nbsp;!","Venice a unique patrimony&nbsp;!");
+    $Gufo = array("Gufo le hibou, pour les monuments historiques", "Gufo the owl, for historical monuments");
+    $Laguna = array("Laguna le poulpe, pour les lieux aquatiques", "Laguna the octopus, for watery places");
+    $boutonHistoire = array("Histoire", "History");
+    $boutonCulture = array("Culture", "Culture");
+    $boutonSejour =  array("Séjours", "Stays");
+    $boutonQuizz = array("Quizz", "Quiz");
+    $introTitre = array("Venise un patrimoine unique&nbsp;!", "Venice a unique patrimony&nbsp;!");
     $intro = array("Venez découvrir Venise à travers toutes ses facettes ; son Histoire, sa riche gastronomie, son unique architecture, la
     pluralité de ses événements, ses fameuses œuvres et personalités... Découvrez nos propositions de séjour à Venise et venez vous tester sur nos différents quizz sur la
-    Culture de Venise.","Come and discover Venice through all its facets; its history, its rich gastronomy, its unique architecture, the variety of its events, its famous arts and personalities... Discover our suggestions for your stay in Venice and test yourself on our different quizzes on the
+    Culture de Venise.", "Come and discover Venice through all its facets; its history, its rich gastronomy, its unique architecture, the variety of its events, its famous arts and personalities... Discover our suggestions for your stay in Venice and test yourself on our different quizzes on the
     Culture of Venice.");
-    $carteTitre = array("Un peu perdu ?","A bit lost?");
-    $recommandations = array("Nos recommandations","Our suggestions");
-    $naissanceVenise = array("La naissance de Venise","The birth of Venice");
-    $naissanceVeniseTexte=array("Début de l'histoire","Début de l'histoire");
-    $voir = array("Voir","See");
-    $carnaval = array("Le Carnaval de Venise","The Venice Carnival");
+    $carteTitre = array("Un peu perdu ?", "A bit lost?");
+    $recommandations = array("Nos recommandations", "Our suggestions");
+    $naissanceVenise = array("La naissance de Venise", "The birth of Venice");
+
+    $naissanceVeniseTexte = array(
+        "Venise est une ville très connue, son histoire l'est un peu moins et surtout sa naissance. Ici, vous trouverez tt ce qu'il y a à savoir sur la naissance de cette ville mythique !",
+        "Venice is a very well known city, its history is a little less known and especially its birth. Here, you will find everything you need to know about the birth of this mythical city !"
+    );
+
+    $voir = array("Voir", "See");
+    $carnaval = array("Le Carnaval de Venise", "The Venice Carnival");
     $carnavalTexte = array("Envie de découvrir l'évènement incontournable de Venise
-     qu'est le Carnaval de Venise ? ","Would you like to discover the unmissable event of Venice, the Venice Carnival? ");
-    $romantique = array("Un voyage à deux","A journey together");
+     qu'est le Carnaval de Venise ? ", "Would you like to discover the unmissable event of Venice, the Venice Carnival? ");
+    $romantique = array("Un voyage à deux", "A journey together");
     $romantiqueTexte = array("Pour ceux qui viennent en couple ou lune de miel, nous vous proposons un séjour
-    pour découvrir le côté romantique de Venise.","For those who come as a couple or on honeymoon, we propose a stay
+    pour découvrir le côté romantique de Venise.", "For those who come as a couple or on honeymoon, we propose a stay
     to discover the romantic side of Venice.");
-    $rialto=array("Le pont de Rialto","The Rialto Bridge");
-    $rialtoTexte=array("Le pont de Rialto, symbole de Venise, connu à travers le monde, cet édifice n'est pas a ratée, 
-    il va vous étonner avec son architecture maintenue par plus de 6000 pilotis.","The Rialto Bridge, the symbol of Venice, 
+    $rialto = array("Le pont de Rialto", "The Rialto Bridge");
+    $rialtoTexte = array("Le pont de Rialto, symbole de Venise, connu à travers le monde, cet édifice n'est pas a ratée, 
+    il va vous étonner avec son architecture maintenue par plus de 6000 pilotis.", "The Rialto Bridge, the symbol of Venice, 
     known throughout the world, is not to be missed, it will amaze you with its architecture held up by more than 6000 piles.");
     ?>
     <section class="showcase">
@@ -53,7 +58,7 @@
 
         <div class="container">
             <div class="text">
-                <?php 
+                <?php
                 echo "<h1> $venise[$lang]</h1>";
                 echo "<h2> $veniseSousTitre[$lang]</h2>";
                 ?>
@@ -62,30 +67,26 @@
             <div class="buttons">
                 <div class="button">
                     <a href="PageHistoire.php">
-                        <img class="picto livre" alt=""
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                        <?= "$boutonHistoire[$lang]"?>
+                        <img class="picto livre" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
+                        <?= "$boutonHistoire[$lang]" ?>
                     </a>
                 </div>
                 <div class="button">
                     <a href="PageCulture.php">
-                        <img class="picto masque" alt=""
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                            <?= "$boutonCulture[$lang]"?>
+                        <img class="picto masque" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
+                        <?= "$boutonCulture[$lang]" ?>
                     </a>
                 </div>
                 <div class="button">
                     <a href="PageSejour.php">
-                        <img class="picto ticket" alt=""
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                            <?= "$boutonSejour[$lang]"?>
+                        <img class="picto ticket" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
+                        <?= "$boutonSejour[$lang]" ?>
                     </a>
                 </div>
                 <div class="button">
                     <a href="PageQuizz.php">
-                        <img class="picto quizz" alt=""
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
-                            <?= "$boutonQuizz[$lang]"?>
+                        <img class="picto quizz" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIAAQMAAADOtka5AAAAA1BMVEX///+nxBvIAAAAAXRSTlMAQObYZgAAADZJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfBuCAAABY3VQpAAAAABJRU5ErkJggg==">
+                        <?= "$boutonQuizz[$lang]" ?>
                     </a>
                 </div>
             </div>
@@ -103,26 +104,25 @@
 
     <div class="bg gris">
         <article class="centre">
-            <?="<h3>$carteTitre[$lang]</h3>" ?>
-            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=10e37lMcDlTZxPesq9tDFjZrluzEZW0X6&ehbc=2E312F"
-                width="640" height="480"></iframe>
+            <?= "<h3>$carteTitre[$lang]</h3>" ?>
+            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=10e37lMcDlTZxPesq9tDFjZrluzEZW0X6&ehbc=2E312F" width="640" height="480"></iframe>
             <div class="legende-carte">
-                <?= "<h3>$carteLegende[$lang]</h3>"?>
+                <?= "<h3>$carteLegende[$lang]</h3>" ?>
                 <div>
                     <img src="Images/Marco.png" alt="">
-                    <?= "<p>$Marco[$lang]</p>"?>
+                    <?= "<p>$Marco[$lang]</p>" ?>
                 </div>
                 <div>
                     <img src="Images/DonnolaDodo.png" alt="">
-                    <?= "<p>$Donnola[$lang]</p>"?>
+                    <?= "<p>$Donnola[$lang]</p>" ?>
                 </div>
                 <div>
                     <img src="Images/Gufo.png" alt="">
-                    <?= "<p>$Gufo[$lang]</p>"?>
+                    <?= "<p>$Gufo[$lang]</p>" ?>
                 </div>
                 <div>
                     <img src="Images/LagunaOuvert.png" alt="">
-                    <?= "<p>$Laguna[$lang]</p>"?>
+                    <?= "<p>$Laguna[$lang]</p>" ?>
                 </div>
             </div>
         </article>
@@ -132,20 +132,20 @@
 
     <div class="bg gris">
         <article class="centre">
-            <?= "<h2>$recommandations[$lang]</h2>"?>
+            <?= "<h2>$recommandations[$lang]</h2>" ?>
         </article>
         <div class="widget bordure-texte">
             <div class="zone image-avant">
-                <img src="Images/Arancini1.jpg" alt="">
+                <img src="Images/Histoire/creationDeVenise.png" alt="création de Venise">
                 <div class="resume">
                     <?php
-                        echo "<h3>$naissanceVenise[$lang]</3>";
-                        echo "<p>$naissanceVeniseTexte[$lang]</p>";
+                    echo "<h3>$naissanceVenise[$lang]</h3>";
+                    echo "<p>$naissanceVeniseTexte[$lang]</p>";
                     ?>
                 </div>
             </div>
             <a href="PageHistoire.php#un">
-                <?= "<div class=\"voir\">$voir[$lang]</div>"?>
+                <?= "<div class=\"voir\">$voir[$lang]</div>" ?>
             </a>
         </div>
     </div>
@@ -156,13 +156,13 @@
                 <img src="Images/ImagesEvenement/masqueAvecRose.jpg" alt="">
                 <div class="resume">
                     <?php
-                        echo "<h3>$carnaval[$lang]</h3>";
-                        echo "<p>$carnavalTexte[$lang]</p>";
+                    echo "<h3>$carnaval[$lang]</h3>";
+                    echo "<p>$carnavalTexte[$lang]</p>";
                     ?>
                 </div>
             </div>
             <a href="PageEvenement.php#JanvierMars">
-                <?= "<div class=\"voir\">$voir[$lang]</div>"?>
+                <?= "<div class=\"voir\">$voir[$lang]</div>" ?>
             </a>
         </div>
     </div>
@@ -173,13 +173,13 @@
                 <img src="Images/Sejours/LaFenice.jpg" alt="">
                 <div class="resume">
                     <?php
-                        echo "<h3>$romantique[$lang]</h3>";
-                        echo "<p>$romantiqueTexte[$lang]</p>";
+                    echo "<h3>$romantique[$lang]</h3>";
+                    echo "<p>$romantiqueTexte[$lang]</p>";
                     ?>
                 </div>
             </div>
             <a href="PageSejourRomantique.php">
-                <?= "<div class=\"voir\">$voir[$lang]</div>"?>
+                <?= "<div class=\"voir\">$voir[$lang]</div>" ?>
             </a>
         </div>
     </div>
@@ -189,20 +189,20 @@
             <div class="zone image-avant">
                 <img src="Images/Arancini1.jpg" alt="">
                 <div class="resume">
-                <?php
-                        echo "<h3>$rialto[$lang]</h3>";
-                        echo "<p>$rialtoTexte[$lang]</p>";
+                    <?php
+                    echo "<h3>$rialto[$lang]</h3>";
+                    echo "<p>$rialtoTexte[$lang]</p>";
                     ?>
                 </div>
 
             </div>
             <a href="PageArchitecture.php#PonteDiRialto">
-                <?= "<div class=\"voir\">$voir[$lang]</div>"?>
+                <?= "<div class=\"voir\">$voir[$lang]</div>" ?>
             </a>
         </div>
     </div>
     <?php
-        include("footer.php");
+    include("footer.php");
     ?>
 </body>
 

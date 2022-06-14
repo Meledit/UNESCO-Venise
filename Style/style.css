@@ -12,9 +12,9 @@
 
 @font-face {
     font-family: Dyno;
-    src: url(polices/Dyno_Regular.ttf);
+    src: url(../polices/Dyno_Regular.ttf);
     font-family: Cicle;
-    src: url(polices/Cicle_Fina.ttf);
+    src: url(../polices/Cicle_Fina.ttf);
 }
 
 /* Variables */
@@ -390,7 +390,7 @@ header>label>img {
 }
 
 .ticket {
-    
+
     background-position: 0 66.666667%;
     background-size: 100%;
 }
@@ -472,7 +472,7 @@ article>iframe {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
-    background-color:var(--clr-fond-secondaire);
+    background-color: var(--clr-fond-secondaire);
     padding: 15px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     border-radius: 5px;
@@ -501,14 +501,14 @@ article>iframe {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
-.bg > .article {
+.bg>.article {
     display: flex;
     align-items: center;
     width: 90%;
     gap: 30px;
 }
 
-.bg > .article a {
+.bg>.article a {
     font-style: italic;
     color: rgb(220, 220, 220);
     cursor: pointer;
@@ -541,7 +541,7 @@ article>iframe {
     text-align: center;
 }
 
-.bg>.article>.zone-texte p {
+.bg >.article >.zone-texte p {
     font-size: 1.5em;
     margin-bottom: 15px;
     text-indent: 30px;
@@ -617,12 +617,14 @@ article>iframe {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .saviez-vous {
     width: 60%;
     max-width: 400px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    margin: 0;
 }
 
 .saviez-vous>.titre {
@@ -633,11 +635,13 @@ article>iframe {
     align-items: center;
     gap: 15px;
     border-radius: 5px 5px 0px 0px;
+    margin: 0;
 }
 
 .saviez-vous>.titre>img {
     width: 55px;
     aspect-ratio: 1;
+    margin: 0;
 }
 
 .saviez-vous>p {
@@ -646,6 +650,7 @@ article>iframe {
     background-color: #666565;
     min-height: 75px;
     border-radius: 0px 0px 5px 5px;
+    margin: 0;
 }
 
 /* widgets (les liens sur la page d'accueil) */
@@ -750,11 +755,11 @@ article>iframe {
 /* Les images parallax */
 
 .IMG1 {
-    background: url(Images/Fond5.jpg);
+    background: url(../Images/Fond5.jpg);
 }
 
 .IMGHistoire1 {
-    background: url(Images/Histoire/veniseAu18emeSiecle.jpg);
+    background: url(../Images/Histoire/veniseAu18emeSiecle.jpg);
 }
 
 /* l'effet parallax */
@@ -863,21 +868,29 @@ article>iframe {
         text-align: center;
     }
 
-    .widget>.zone>.resume>p {
+    .widget > .zone > .resume > p {
         font-size: 1em;
     }
 
-    .widget>.image-avant {
+    .widget > .image-avant {
         flex-direction: column-reverse;
     }
 
     .saviez-vous {
         width: 100%;
     }
+
+    .saviez-vous > p {
+        font-size: 1.1em;
+        padding: 10px;
+        background-color: #666565;
+        min-height: 75px;
+        border-radius: 0px 0px 5px 5px;
+    }
 }
 
 @media (max-width: 1200px) {
-    .bg>.article {
+    .bg > .article {
         flex-direction: column-reverse;
         gap: 30px;
     }
@@ -929,7 +942,7 @@ article>iframe {
 }
 
 @media (max-width: 500px) {
-    
+
     .legende-carte {
         width: 100%;
     }
@@ -943,7 +956,7 @@ article>iframe {
         font-size: 0.5em;
     }
 
-    .bg > .article {
+    .bg>.article {
         width: 100%;
     }
 
