@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleQuizz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title> Quizz Evenement </title>
+    <title> Venise Démasquée</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
     ?>
 
     <section class="showcase">
-        <img src="Images/ImagesEvenement/FondEvenement.jpg" alt="" class="imgBg">
+        <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
             <div class="overlay"></div>
                 <div class="container">
                     <div class="text">

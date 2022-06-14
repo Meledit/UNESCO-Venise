@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleQuizz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title> Quizz Architecture </title>
+    <title> Venise Démasquée </title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
     <section class="showcase">
         
 
-    <img src="Images/Architecture/Venise1Fond.jpg" alt="" class="imgBg">
+    <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
     <div class="overlay"></div>
 
     <div class="container">

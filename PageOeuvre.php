@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="Image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Venise Oeuvre et Personalités</title>
+    <title>Venise Démasquées</title>
 </head>
 
 <body>
