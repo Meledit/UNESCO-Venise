@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.IMGGastronomie {
+    background: url(Images/Gastronomie/Fond3.jpg);
+}
+
 .question {
     display: flex;
     gap: 30px;

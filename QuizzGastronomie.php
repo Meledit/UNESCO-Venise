@@ -13,7 +13,17 @@
 
 <body>
     <?php
-    include("header.php")
+    include("header.php");
+
+    $venise = array("Venise démasquée", "Unmasking Venice");
+    $sousTitre = array("Une ville aux milles et une saveurs", "A city of a thousand and one flavours");
+
+    $quizzGastronomie =array("Bienvenue sur le quizz de la page Gastronomie&nbsp;!","Welcome to the Gastronomy page quiz&nbsp;!");
+    $quizzGastronomieTexte =array("Ici vous pourrez tester vos connaissances liées à la page Gastronomie.
+    Nous vous conseillons fortement de lire la page <a href=\"PageGastronomie.php\">Gastronomie </a>avant de vous lancer dans le quizz.
+    Si vous êtes prêts, vous pouvez répondre en question ci-dessous. Bonne chance à vous !","Here you can test your knowledge related to the Gastronomy page.
+    We strongly advise you to read the <a href=\"PageGastronomy.php\">Gastronomy</a> page before taking the quiz.
+    If you are ready, you can answer the questions below. Good luck to you!");
     ?>
     <section class="showcase">
         <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
@@ -21,8 +31,10 @@
 
         <div class="container">
             <div class="text">
-                <h1>Venise démasquée</h1>
-                <h2>Une ville aux milles et une saveurs</h2>
+            <?php
+                echo "<h1>$venise[$lang]</h1>";
+                echo "<h2>$sousTitre[$lang]</h2>";
+                ?>
             </div>
         </div>
     </section>
@@ -30,18 +42,17 @@
     <form action="" method="POST">
         <div class="bg noir shadow">
             <article class="centre">
-                <h3>Bienvenue sur la page gastronomie&nbsp;!</h3>
+                <?php
+                    echo"<h3>$quizzGastronomie[$lang]</h3>";
+                    echo "<p>$quizzGastronomieTexte[$lang]</p>"
+                ?>
                 <p>
-                    Ici vous retrouverez des informations
-                    concernant la gastronomie variée de Venise.
-                    Si vous souhaitez accéder à une partie
-                    précise de sa gastronomie, cliquer sur une
-                    image de la mosaique qui la concerne.
+                    
                 </p>
             </article>
         </div>
 
-        <div class="IMGparallax IMG1 IMG-microscopique"></div>
+        <div class="IMGparallax IMGGastronomie IMG-microscopique"></div>
 
         <div class="bg gris">
             <div class="zone-question">
