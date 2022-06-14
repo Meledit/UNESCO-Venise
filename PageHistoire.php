@@ -1034,7 +1034,7 @@
         </div>
     </div>
 
-    <div class="IMGparallax inondation IMG-petite">
+    <div class="IMGparallax IMGHistoire1 IMG-microscopique">
     </div>
 
     <div class="bg gris">

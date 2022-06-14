@@ -55,7 +55,7 @@
     ?>
 
     <section class="showcase">
-        <img src="Images/Sejours/bg.jpg" alt="" class="imgBg">
+        <img src="Images/VeniseVuDuCiel.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
