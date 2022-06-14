@@ -3,16 +3,27 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Séjour culte</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
-  <link rel="stylesheet" href="styleSejour.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Venise démasquée</title>
+  <link rel="stylesheet" href="Style/styleSejour.css">
+  <link rel="stylesheet" href="Style/Style/style.css">
+  <title>Venise Démasquée</title>
 </head>
 
 <body>
+  <!-- Bouton en savoir plus -->
+  <script>
+    function plus(s) {
+      var toto = document.getElementById(s);
+      toto.style.display = "block";
+    }
+
+    function moins(s) {
+      var toto = document.getElementById(s);
+      toto.style.display = "none";
+    }
+  </script>
 
   <?php
   include("header.php");
@@ -24,7 +35,7 @@
   $bienvenueTexte = array(
     "Venise est une ville ancienne avec une histoire riche et profonde.
     Découvrez pendant ce parcours les lieux, monuments et sites les plus connus
-    de la ville italienne.", 
+    de la ville italienne.",
     "Venice is an ancient city with a rich and deep history.
     Discover during this tour the most famous places, monuments and sites of the Italian
     of the Italian city."
@@ -220,7 +231,7 @@
     fours et ateliers et en conservant leurs secrets de génération en génération. Il en subsistait une
     centaine dans les années 2000.",
 
-      "Murano is an island located north of Venice, in its lagoon. If this island is known, it is
+    "Murano is an island located north of Venice, in its lagoon. If this island is known, it is
     for its internationally renowned glassblowers.
     Indeed, the history of glassblowers began in 1201, when the Senate of Venice wrote and voted a decree
     and voted a decree obliging the glassmakers of Venice to install their furnaces on the island of Murano following
@@ -248,7 +259,7 @@
     fidèles à l’heure de la prière. Située sur le côté de la place St Marc et de la basilique St Marc, elle
     mesure 98,6 mètres de haut.",
 
-      "The campanile tower of St. Mark's is a tower housing bells to ring them to call the faithful at prayer time.
+    "The campanile tower of St. Mark's is a tower housing bells to ring them to call the faithful at prayer time.
     the faithful at the hour of prayer. Located on the side of St. Mark's square and St. Mark's basilica, it
     measures 98.6 meters high."
   );
@@ -269,7 +280,7 @@
     Luigi Zandomeneghi pour nous retrouver avec la tour bien connu aujourd’hui des touristes étant
     présente sur la place St Marc, lieu déjà très prisé.",
 
-      "Its initial construction began in the ninth century during the reign of Doge Pietro Tribuno and was completed
+    "Its initial construction began in the ninth century during the reign of Doge Pietro Tribuno and was completed
     in the It was completed in the 12th century under the reign of Domenico Morosini and its initial purpose was to serve as a watchtower.
     The base of the bell tower was the loggetta, the barracks for the guards of the Doge's Palace.
     It was in 1489 that its history was disrupted by a fire causing damage including the destruction
@@ -315,7 +326,7 @@
     after visiting the island Murano."
   );
   ?>
-  
+
   <section class="showcase">
     <img src="Images/Sejours/PontDesSoupirs.jpg" alt="" class="imgBg">
     <div class="overlay"></div>
@@ -339,31 +350,30 @@
     </article>
   </div>
   <div class="bg gris">
-        <article class="centre">
-            <h3><?= "$carteTitre[$lang]" ?></h3>
-            <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1tjOzk2Sy68lXNEYEt1WbcVhjTrDfASU&ehbc=2E312F"
-                width="640" height="480"></iframe>
-            <div class="legende-carte">
-                <h3><?= "$carteLegende[$lang]" ?></h3>
-                <div>
-                    <img src="Images/Marco.png" alt="">
-                    <p><?= "$Marco[$lang]" ?></p>
-                </div>
-                <div>
-                    <img src="Images/DonnolaDodo.png" alt="">
-                    <p><?= "$Donnola[$lang]" ?></p>
-                </div>
-                <div>
-                    <img src="Images/Gufo.png" alt="">
-                    <p><?= "$Gufo[$lang]" ?></p>
-                </div>
-                <div>
-                    <img src="Images/LagunaOuvert.png" alt="">
-                    <p><?= "$Laguna[$lang]" ?></p>
-                </div>
-            </div>
-        </article>
-    </div>
+    <article class="centre">
+      <h3><?= "$carteTitre[$lang]" ?></h3>
+      <iframe src="https://www.google.com/maps/d/u/2/embed?mid=1tjOzk2Sy68lXNEYEt1WbcVhjTrDfASU&ehbc=2E312F" width="640" height="480"></iframe>
+      <div class="legende-carte">
+        <h3><?= "$carteLegende[$lang]" ?></h3>
+        <div>
+          <img src="Images/Marco.png" alt="">
+          <p><?= "$Marco[$lang]" ?></p>
+        </div>
+        <div>
+          <img src="Images/DonnolaDodo.png" alt="">
+          <p><?= "$Donnola[$lang]" ?></p>
+        </div>
+        <div>
+          <img src="Images/Gufo.png" alt="">
+          <p><?= "$Gufo[$lang]" ?></p>
+        </div>
+        <div>
+          <img src="Images/LagunaOuvert.png" alt="">
+          <p><?= "$Laguna[$lang]" ?></p>
+        </div>
+      </div>
+    </article>
+  </div>
 
   <div class="IMGparallax IMG1 IMG-microscopique"></div>
 
@@ -373,87 +383,87 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide" style="background-image: url(Images/Sejours/PontDeRialto.jpg)" data-year="Ponte di Rialto">
-          <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontRialto[$lang]</span>" ?>
+            <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontRialto[$lang]</span>" ?>
+            <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
+            <p class="timeline-text">
+              <?= "$PontRialto1[$lang]" ?>
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image: url(Images/Sejours/PalaisDesDoges.jpg)" data-year="Palazzo Ducale">
+          <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PalaisDoges[$lang]</span>" ?>
           <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
           <p class="timeline-text">
-            <?= "$PontRialto1[$lang]" ?>
+            <?= "$PalaisDoges1[$lang]" ?>
+          </p>
+          <p>
+            <?= "$PalaisDoges2[$lang]" ?>
           </p>
         </div>
       </div>
-      <div class="swiper-slide" style="background-image: url(Images/Sejours/PalaisDesDoges.jpg)" data-year="Palazzo Ducale">
-      <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PalaisDoges[$lang]</span>" ?>
+      <div class="swiper-slide" style="background-image: url(Images/Sejours/Basilique.jpg)" data-year="Basilica di San Marco">
+        <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$BStMarc[$lang]</span>" ?>
+        <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
+        <p class="timeline-text">
+          <?= "$BStMarc1[$lang]" ?>
+        </p>
+        <p class="timeline-text">
+          <?= "$BStMarc2[$lang]" ?>
+        </p>
+      </div>
+    </div>
+    <div class="swiper-slide" style="background-image: url(Images/Sejours/PlaceSaintMarc.jpg)" data-year="Piazza San Marco">
+      <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$placeStMarc[$lang]</span>" ?>
       <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
       <p class="timeline-text">
-        <?= "$PalaisDoges1[$lang]" ?>
-      </p>
-      <p>
-        <?= "$PalaisDoges2[$lang]" ?>
+        <?= "$placeStMarc1[$lang]" ?>
       </p>
     </div>
-  </div>
-  <div class="swiper-slide" style="background-image: url(Images/Sejours/Basilique.jpg)" data-year="Basilica di San Marco">
-  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$BStMarc[$lang]</span>" ?>
-  <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
-  <p class="timeline-text">
-    <?= "$BStMarc1[$lang]" ?>
-  </p>
-  <p class="timeline-text">
-    <?= "$BStMarc2[$lang]" ?>
-  </p>
-  </div>
-  </div>
-  <div class="swiper-slide" style="background-image: url(Images/Sejours/PlaceSaintMarc.jpg)" data-year="Piazza San Marco">
-  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$placeStMarc[$lang]</span>" ?>
-  <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
-  <p class="timeline-text">
-    <?= "$placeStMarc1[$lang]" ?>
-  </p>
-  </div>
   </div>
   <div class="swiper-slide" style="background-image: url(Images/Sejours/Campanile.jpg)" data-year="Campanile di San Marco">
-  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Campanile[$lang]</span>" ?>
-      <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
-      <p class="timeline-text">
-        <?= "$Campanile1[$lang]" ?>
-        <input type="radio" id="savoirPlus" name="savoirPlusMai">
-        <?= "<label for=\"savoirPlus\">$Plus[$lang]</label>" ?>
-        <span>
-          <?= "$Campanile2[$lang]" ?>
-          <input type="radio" id="savoirMoins" name="savoirPlusMai">
-          <?= "<label for=\"savoirMoins\">$Moins[$lang]</label>" ?>
-        </span>
+    <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Campanile[$lang]</span>" ?>
+    <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
+    <p class="timeline-text">
+      <?= "$Campanile1[$lang]" ?>
+    <p><a onclick="plus('1')"><?= "$Plus[$lang]" ?></a></p>
+    <div id="2" style="display: none;">
+      <p>
+        <?= "$Campanile2[$lang]" ?>
+      <p><a onclick="moins('1')"><?= "$Moins[$lang]" ?></a></p>
       </p>
     </div>
+    </p>
+  </div>
   </div>
   <div class="swiper-slide" style="background-image: url(Images/Sejours/PontDesSoupirs.jpg)" data-year="Ponte dei Sospiri">
-  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontSoupirs[$lang]</span>" ?>
-  <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
-  <p class="timeline-text">
-    <?= "$PontSoupirs1[$lang]" ?>
-  </p>
+    <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$PontSoupirs[$lang]</span>" ?>
+    <h4 class="timeline-title"><?= "$premierjour[$lang]" ?></h4>
+    <p class="timeline-text">
+      <?= "$PontSoupirs1[$lang]" ?>
+    </p>
   </div>
   </div>
   <div class="swiper-slide" style="background-image: url(Images/Sejours/Murano.jpg)" data-year="Murano">
-  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Murano[$lang]</span>" ?>
-  <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
-  <p class="timeline-text">
-    <?= "$Murano1[$lang]" ?>
-  </p>
-  <p class="timeline-text">
-    <?= "$Murano2[$lang]" ?>
-  </p>
+    <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Murano[$lang]</span>" ?>
+    <h4 class="timeline-title"><?= "$deuxiemejour[$lang]" ?></h4>
+    <p class="timeline-text">
+      <?= "$Murano1[$lang]" ?>
+    </p>
+    <p class="timeline-text">
+      <?= "$Murano2[$lang]" ?>
+    </p>
   </div>
   </div>
   <div class="swiper-slide" style="background-image: url(Images/Sejours/Burano.jpg)" data-year="Burano">
-  <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Burano[$lang]</span>" ?>
-      <h4 class="timeline-title"><?= "$troisiemejour[$lang]" ?></h4>
-      <p class="timeline-text">
-        <?= "$Burano1[$lang]" ?>
-      </p>
-      <p class="timeline-text">
-        <?= "$Burano2[$lang]" ?>
-      </p>
-    </div>
+    <?= "<div class=\"swiper-slide-content\"><span class=\"timeline-lieu\">$Burano[$lang]</span>" ?>
+    <h4 class="timeline-title"><?= "$troisiemejour[$lang]" ?></h4>
+    <p class="timeline-text">
+      <?= "$Burano1[$lang]" ?>
+    </p>
+    <p class="timeline-text">
+      <?= "$Burano2[$lang]" ?>
+    </p>
+  </div>
   </div>
   </div>
   <div class="swiper-pagination"></div>
@@ -461,7 +471,7 @@
   </div>
   </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
-  <script src="./scriptSejour.js"></script>
+  <script src="Script/scriptSejour.js"></script>
 
   <?php
   include("footer.php");

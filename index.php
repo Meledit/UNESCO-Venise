@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
     <title>Venise démasquée</title>
 </head>
@@ -42,7 +42,9 @@
     pour découvrir le côté romantique de Venise.","For those who come as a couple or on honeymoon, we propose a stay
     to discover the romantic side of Venice.");
     $rialto=array("Le pont de Rialto","The Rialto Bridge");
-    $rialtoTexte=array("pont","pont");
+    $rialtoTexte=array("Le pont de Rialto, symbole de Venise, connu à travers le monde, cet édifice n'est pas a ratée, 
+    il va vous étonner avec son architecture maintenue par plus de 6000 pilotis.","The Rialto Bridge, the symbol of Venice, 
+    known throughout the world, is not to be missed, it will amaze you with its architecture held up by more than 6000 piles.");
     ?>
     <section class="showcase">
 
@@ -194,7 +196,7 @@
                 </div>
 
             </div>
-            <a href="PageArchitecture.php#pontDeRialto">
+            <a href="PageArchitecture.php#PonteDiRialto">
                 <?= "<div class=\"voir\">$voir[$lang]</div>"?>
             </a>
         </div>

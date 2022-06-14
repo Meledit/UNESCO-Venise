@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleQuizz.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="stylesheet" href="Style/styleQuizz.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Venise démasquée</title>
+    <title>Venise Démasquée</title>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     include("header.php")
     ?>
     <section class="showcase">
-        <img src="Images/Gastronomie/Fond2.jpg" alt="" class="imgBg">
+        <img src="Images/QuizzBg.jpg" alt="" class="imgBg">
         <div class="overlay"></div>
 
         <div class="container">
@@ -57,12 +57,12 @@
                 echo "<h3>$q1[$lang]</h3>";
                 ?>
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Carpaccio1.jpg" alt="">
+                    <img src="Images/Histoire/veniseLaguneAvant.jpg" alt="Background de quizz">
                     <div class="reponses">
                         <div class="reponse">
                             <!-- name = questionX, id = questionX_numrep -->
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question1' id='question1_1' value='1' required>
@@ -80,7 +80,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question1' id='question1_2' value='0'>
@@ -98,7 +98,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question1' id='question1_3' value='0'>
@@ -135,11 +135,11 @@
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Fegatto1(ALLEKO).jpg" alt="">
+                    <img src="Images/Histoire/Venetie.jpg" alt="Vénétie">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question2' id='question2_1' value='0' required>
@@ -157,7 +157,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question2' id='question2_2' value='1'>
@@ -175,7 +175,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question2' id='question2_3' value='0'>
@@ -193,7 +193,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question2' id='question2_4' value='0'>
@@ -229,11 +229,11 @@
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Fond3.jpg" alt="">
+                    <img src="Images/Histoire/Doge.jpg" alt="Doge de Venise">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question3' id='question3_1' value='0' required>
@@ -251,7 +251,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question3' id='question3_2' value='1' >
@@ -269,7 +269,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question3' id='question3_3' value='0'>
@@ -287,7 +287,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question3' id='question3_4' value='0'>
@@ -323,11 +323,11 @@
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Baicoli.jpg" alt="">
+                    <img src="Images/Histoire/Rialto.jpg" alt="Rialto">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question4' id='question4_1' value='0'required>
@@ -345,7 +345,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question4' id='question4_2' value='1'>
@@ -363,7 +363,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question4' id='question4_3' value='0'>
@@ -381,7 +381,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question4' id='question4_4' value='0'>
@@ -408,19 +408,19 @@
                     "Pourquoi Venise a-t-elle du pouvoir ?",
                     "Why does Venice have power?"
                 );
-                $q5_1 = array("C'est une ville ", "It is boiled for a long time in water");
-                $q5_2 = array("Elle est frite", "It is fried");
-                $q5_3 = array("Elle est cuite au four", "It is cooked in the oven");
+                $q5_1 = array("C'est une ville centrale dans le commerce maritime", "It is a central city in the maritime trade");
+                $q5_2 = array("C'est une ville centrale dans l'agriculture de l'Italie", "It is a central city in the agriculture of Italy");
+                $q5_3 = array("C'est une ville militaire importante", "It is an important military city");
 
                 echo "<h3>$q5[$lang]</h3>";
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Lampredotto4(FrancescoVignali).jpg" alt="">
+                    <img src="Images/Histoire/venise20emeSiecle.jpg" alt="Venise au 20ème siècle">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question5' id='question5_1' value='1'required>
@@ -438,7 +438,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question5' id='question5_2' value='0'>
@@ -456,7 +456,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question5' id='question5_3' value='0'>
@@ -480,23 +480,23 @@
             <div class="zone-question">
                 <?php
                 $q6 = array(
-                    "De quoi est composé le tour des Arancini, partie que l'on fait frire ensuite ? ",
-                    "What is the round of the Arancini made of, the part that is fried afterwards ?"
+                    "Venise était une ...",
+                    "Vense was a ..."
                 );
-                $q6_1 = array("De semoule", "Of semolina");
-                $q6_2 = array("De riz", "Of rice");
-                $q6_3 = array("De pain", "Of bread");
-                $q6_4 = array("De Maïs", "Of corn");
+                $q6_1 = array("République démocratique", "Democratic Republic");
+                $q6_3 = array("République aristocratique", "Aristocratic Republic");
+                $q6_2 = array("République constitutionnelle", "Constitutional Republic");
+                $q6_4 = array("Monarchie", "Monarchy");
 
                 echo "<h3>$q6[$lang]</h3>";
                 ?>
 
                 <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Arancini3.jpg" alt="">
+                    <img src="Images/Histoire/veniseAujourdhui.jpg" alt="Venise aujourd'hui">
                     <div class="reponses">
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question6' id='question6_1' value='0' required>
@@ -514,16 +514,16 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
-                                <input type='radio' name='question6' id='question6_2' value='1'>
-                                <label for='question6_2' class='bonne'>$q6_2[$lang]</label>
+                                <input type='radio' name='question6' id='question6_2' value='0'>
+                                <label for='question6_2' class='mauvaise'>$q6_2[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question6' id='question6_2' value='1'>
+                                <input type='radio' name='question6' id='question6_2' value='0'>
                                 <label for='question6_2'>$q6_2[$lang]</label>
                                 ";
                             }
@@ -532,16 +532,16 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
-                                <input type='radio' name='question6' id='question6_3' value='0'>
-                                <label for='question6_3' class='mauvaise'>$q6_3[$lang]</label>
+                                <input type='radio' name='question6' id='question6_3' value='1'>
+                                <label for='question6_3' class='bonne'>$q6_3[$lang]</label>
                                 ";
                             } else {
                                 echo
                                 "
-                                <input type='radio' name='question6' id='question6_3' value='0'>
+                                <input type='radio' name='question6' id='question6_3' value='1'>
                                 <label for='question6_3'>$q6_3[$lang]</label>
                                 ";
                             }
@@ -550,7 +550,7 @@
 
                         <div class="reponse">
                             <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                                 echo
                                 "
                                 <input type='radio' name='question6' id='question6_4' value='0'>
@@ -570,193 +570,6 @@
             </div>
         </div>
 
-        <div class="bg gris">
-            <div class="zone-question">
-                <?php
-                $q7 = array(
-                    "Quel ingrédient n'est pas dans le recette Tiramisu originel ? ",
-                    "Which ingredient is not in the original Tiramisu recipe ?"
-                );
-                $q7_1 = array("Le Mascarpone", "Mascarpone");
-                $q7_2 = array("Le Café", "Coffee");
-                $q7_3 = array("Le Cacao", "Cocoa");
-                $q7_4 = array("La Vanille", "Vanilla");
-
-                echo "<h3>$q7[$lang]</h3>";
-                ?>
-
-                <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Tiramisu4.jpg" alt="">
-                    <div class="reponses">
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_1' value='1' class='mauvaise' required>
-                                <label for='question7_1' class='mauvaise'>$q7_1[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_1' value='1' required>
-                                <label for='question7_1'>$q7_1[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_2' value='0' class='mauvaise'>
-                                <label for='question7_2' class='mauvaise'>$q7_2[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_2' value='0'>
-                                <label for='question7_2'>$q7_2[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_3' value='0' class='mauvaise'>
-                                <label for='question7_3' class='mauvaise'>$q7_3[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_3' value='0'>
-                                <label for='question7_3'>$q7_3[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_4' value='1'>
-                                <label for='question7_4' class='bonne'>$q7_4[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question7' id='question7_4' value='1'>
-                                <label for='question7_4'>$q7_4[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg gris">
-            <div class="zone-question">
-                <?php
-                $q8 = array(
-                    "Quel ingrédient manque t-il dans la Piadina pour faire une vraie pâte à pain ? ",
-                    "What ingredient is missing in the Piadina to make a real bread dough ? "
-                );
-                $q8_1 = array("De l'eau", "Water");
-                $q8_2 = array("De la farine", "Flour");
-                $q8_3 = array("De la levure", "Yeast");
-                $q8_4 = array("Du sel", "Salt");
-
-                echo "<h3>$q8[$lang]</h3>";
-                ?>
-
-                <div class="question bordure-texte">
-                    <img src="Images/Gastronomie/Piadina1(Ekaterina Fedulyeva).jpg" alt="">
-                    <div class="reponses">
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_1' value='0' required>
-                                <label for='question8_1' class='mauvaise'>$q8_1[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_1' value='0' required>
-                                <label for='question8_1'>$q8_1[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_2' value='0'>
-                                <label for='question8_2' class='mauvaise'>$q8_2[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_2' value='0'>
-                                <label for='question8_2'>$q8_2[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_3' value='1'>
-                                <label for='question8_3' class='bonne'>$q8_3[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_3' value='1'>
-                                <label for='question8_3'>$q8_3[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-
-                        <div class="reponse">
-                            <?php
-                            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_4' value='0'>
-                                <label for='question8_4' class='mauvaise'>$q8_4[$lang]</label>
-                                ";
-                            } else {
-                                echo
-                                "
-                                <input type='radio' name='question8' id='question8_4' value='0'>
-                                <label for='question8_4'>$q8_4[$lang]</label>
-                                ";
-                            }
-                            ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <?php
         $fini = array("J'ai fini !", "I'm done !");
         ?>
@@ -764,7 +577,7 @@
             <?= "<input type=\"submit\" value=\"$fini[$lang]\" class=\"valider\"> " ?>
 
             <?php
-            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"]) && isset($_POST["question7"]) && isset($_POST["question8"])) {
+            if (isset($_POST["question1"]) && isset($_POST["question2"]) && isset($_POST["question3"]) && isset($_POST["question4"]) && isset($_POST["question5"]) && isset($_POST["question6"])) {
                 $points = 0;
                 $size = count($_POST);
                 foreach ($_POST as $value) {

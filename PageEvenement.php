@@ -5,13 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleEvenement.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/styleEvenement.css">
+    <link rel="stylesheet" href="Style/style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title> Venise </title>
+    <title> Venise Démasquée </title>
 </head>
 
 <body>
+
+    <!-- Bouton en savoir plus -->
+    <script>
+        function plus(s) {
+            var toto = document.getElementById(s);
+            toto.style.display = "block";
+        }
+
+        function moins(s) {
+            var toto = document.getElementById(s);
+            toto.style.display = "none";
+        }
+    </script>
 
     <?php
     include("header.php");
@@ -300,15 +313,13 @@
                 echo "<p>$mai3[$lang]</p>";
                 echo "<p>$mai4[$lang]</p>";
                 ?>
-                <input type="radio" id="savoirPlus" name="savoirPlusMai">
-                <?= "<label for=\"savoirPlus\">$enSavoirPlus[$lang]</label>" ?>
-                <span>
-                    <?php
-                    echo "$mai5[$lang]";
-                    ?>
-                    <input type="radio" id="savoirMoins" name="savoirPlusMai">
-                    <?= "<label for=\"savoirMoins\">$enSavoirMoins[$lang]</label>" ?>
-                </span>
+                <p><a onclick="plus('1')"><?= "$enSavoirPlus[$lang]" ?></a></p>
+                <div id="1" style="display: none;">
+                    <p>
+                        <?= "$mai5[$lang]" ?>
+                    <p><a onclick="moins('1')"><?= "$enSavoirMoins[$lang]" ?></a></p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

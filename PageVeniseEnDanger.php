@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleHistoire.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style/styleHistoire.css">
+    <link rel="stylesheet" href="Style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/png" sizes="16x16" href="Images/eye-mask.png">
-    <title>Venise démasquée</title>
+    <title>Venise Démasquée</title>
 </head>
 <?php
     include("header.php");
@@ -118,7 +118,7 @@
         </div>
 
         <div class="image-et-legende">
-            <img src="Images/Inondations/Tourisme.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Tourisme.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
     </div>
 </div>
@@ -126,7 +126,7 @@
 <div class="bg gris">
     <div class="article image-avant">
         <div class="image-et-legende">
-            <img src="Images/Inondations/Inondation1.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Inondation1.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
         <div class="zone-texte bordure-texte">
             <h3><?= "$InondationTitre[$lang]" ?></h3>
@@ -155,7 +155,7 @@
             </p>
         </div>
         <div class="image-et-legende">
-            <img src="Images/Inondations/Inondation2.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/Inondation2.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
     </div>
 </div>
@@ -167,7 +167,7 @@
 <div class="bg gris">
     <div class="article image-avant">
         <div class="image-et-legende">
-            <img src="Images/Inondations/ProjetMose.jpg" alt="" class="imgBg">
+            <img src="Images/Inondations/ProjetMose.jpg" alt="Image de venise innondée" class="imgBg">
         </div>
         <div class="zone-texte bordure-texte">
             <h3><?= "$ProjetMoseTitre[$lang]" ?></h3>
