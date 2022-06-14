@@ -247,7 +247,7 @@
         </div>
     </div>
 
-    <div class="IMGparallax IMG2 IMG-petite"></div>
+    <div class="IMGparallax IMG3 IMG-petite"></div>
 
     <div class="bg gris" id="JanvierMars">
         <div class="article image-apres">
@@ -363,7 +363,7 @@
         </div>
     </div>
 
-    <div class="IMGparallax IMG3 IMG-petite"></div>
+    <div class="IMGparallax IMG4 IMG-petite"></div>
 
     <div class="bg gris" id="Aout">
         <div class="article image-apres">
