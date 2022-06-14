@@ -54,7 +54,7 @@
         "Les masques vénitiens ont été utilisés pour dissimuler l'identité de personnes impliquées dans des activités manifestement illégales.",
         "Venetian masks were used to conceal the identity of people involved in blatantly illegal activities."
     );
-    $janvierMarsLegende = array("Masques Vénitiens", "Venetian masks");
+    $janvierMarsLegende = array("Carnaval de Venise", "Carnevale di Venezia");
 
     $mai1 = array("La Vogalonga est une régate comme forme de protestation contre le mouvement ondulatoire qui menacede détruire la ville lagunaire.", "The Vogalonga is a regatta as a form of protest against the wave movement that threatens to destroy the lagoon city.
         to destroy the lagoon city.");
@@ -276,7 +276,7 @@
 
             </div>
             <div class="image-et-legende">
-                <img src="Images/ImagesEvenement/masqueAvecRose.jpg" alt="">
+                <img src="Images/ImagesEvenement/Carnaval-Venise.jpg" alt="">
                 <?php
                 echo "<p>$janvierMarsLegende[$lang]</p>";
                 ?>
