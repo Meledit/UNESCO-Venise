@@ -13,6 +13,7 @@
 
 <body>
     <?php
+        include("header.php");
         $venise = array("Venise démasquée","Unmasking Venice");
         $veniseSousTitre = array("Une équipe avant tout","A team first");
         
@@ -116,7 +117,7 @@
             <div class="zone-widget">
                 <div class="voir">
                     <div class="widget">
-                        <?="<a href=\"\" target=\"_blank\">$voirPortfolio[$lang]</a>" ?>
+                        <?="<a href=\"https://etudiant.u-pem.fr/~kyrian.poulain/Portfolio/\" target=\"_blank\">$voirPortfolio[$lang]</a>" ?>
                     </div>
                 </div>
 
@@ -170,7 +171,7 @@
                     <div class="logo-widget github"><img src="Images/github.png"></div>
                 </a>
                 <div class="voir">
-                    <?= "<div class=\"widget\"><a href=\"https://perso-etudiant.u-pem.fr/~lucas.leveque/Portfolio/\" target=\"_blank\">$texteLucas[$lang]</a></div>" ?>
+                    <?= "<div class=\"widget\"><a href=\"https://perso-etudiant.u-pem.fr/~lucas.leveque/Portfolio/\" target=\"_blank\">$voirPortfolio[$lang]</a></div>" ?>
                 </div>
                 <a href="https://www.linkedin.com/in/lucas-leveque-a1ba27228/" target="_blank">
                     <div class="logo-widget linkedin"><img src="Images/linkedin.png"></div>
@@ -179,6 +180,9 @@
             </div>
         </div>
     </div>
+    <?php 
+    include("footer.php");
+    ?>
 </body>
 
 </html>
