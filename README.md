@@ -15,11 +15,10 @@ The UNESCO-Venise website dedicated to Venice offers the following features and 
 ## Technologies Used
 UNESCO-Venise incorporates the following technologies:
 
-HTML: Provides the structure and layout of the website.
-CSS: Handles the styling and visual presentation of the website.
-JavaScript: Enhances the website's interactivity and dynamic features.
-PHP: Facilitates server-side processing and data handling.
-MySQL: Stores and retrieves data related to quizzes and user interactions.
+* HTML: Provides the structure and layout of the website.
+* CSS: Handles the styling and visual presentation of the website.
+* JavaScript: Enhances the website's interactivity and dynamic features.
+* PHP: Facilitates server-side processing and data handling.
 
 ## Team Members
 UNESCO-Venise was developed by a team of five individuals. Each member contributed their skills and expertise in design, development, content creation, and project management to bring this website to fruition.
