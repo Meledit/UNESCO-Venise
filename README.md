@@ -1,6 +1,6 @@
 
 # UNESCO-Venise
-The UNESCO-Venise is a collaborative endeavor undertaken by a team of five individuals in partnership with UNESCO. The objective of this project is to create a website that showcases and promotes a city with UNESCO cultural heritage. In this case, the focus is on the city of Venice. The website provides a comprehensive platform featuring pages dedicated to history, culture, travel recommendations, places to visit, and quizzes. It is available in both English and French languages.
+UNESCO-Venise is a collaborative endeavor undertaken by a team of five individuals in partnership with UNESCO. The objective of this project is to create a website that showcases and promotes a city with UNESCO cultural heritage. In this case, the focus is on the city of Venice. The website provides a comprehensive platform featuring pages dedicated to history, culture, travel recommendations, places to visit, and quizzes. It is available in both English and French languages.
 
 ## Features
 The UNESCO-Venise website dedicated to Venice offers the following features and sections:
@@ -13,7 +13,7 @@ The UNESCO-Venise website dedicated to Venice offers the following features and 
 * Bilingual Support: The website is available in both English and French, allowing users to toggle between the two languages based on their preference.
 
 ## Technologies Used
-The UNESCO-Venise incorporates the following technologies:
+UNESCO-Venise incorporates the following technologies:
 
 HTML: Provides the structure and layout of the website.
 CSS: Handles the styling and visual presentation of the website.
@@ -22,7 +22,7 @@ PHP: Facilitates server-side processing and data handling.
 MySQL: Stores and retrieves data related to quizzes and user interactions.
 
 ## Team Members
-The UNESCO-Venise - Venice was developed by a team of five individuals. Each member contributed their skills and expertise in design, development, content creation, and project management to bring this website to fruition.
+UNESCO-Venise was developed by a team of five individuals. Each member contributed their skills and expertise in design, development, content creation, and project management to bring this website to fruition.
 
 IDRISSI Nidal : Project manager, designer, frontend developper
 MOTUEL Valentin :
