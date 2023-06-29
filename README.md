@@ -5,12 +5,12 @@ UNESCO-Venise is a collaborative endeavor undertaken by a team of five individua
 ## Features
 The UNESCO-Venise website dedicated to Venice offers the following features and sections:
 
-* History: This section provides a detailed overview of the historical significance of Venice, including key events, architectural marvels, and notable cultural heritage sites.
-* Culture: Here, visitors can immerse themselves in the rich cultural heritage of Venice. The section highlights traditional art forms, festivals, music, literature, and culinary delights that are unique to the city.
-* Travel Recommendations: This page serves as a guide for travelers, providing suggestions and recommendations for exploring Venice. It includes insights into must-visit attractions, hidden gems, local cuisine, transportation options, and practical tips for a memorable visit.
-* Places to Visit: This section offers an extensive list of notable places within Venice that visitors should consider including in their itineraries. Each listing provides a brief description, historical background, and photographs to pique interest.
-* Quizzes: The website features interactive quizzes to engage users and test their knowledge about Venice's cultural heritage, history, and landmarks. Users can challenge themselves with multiple-choice questions and receive immediate feedback on their answers.
-* Bilingual Support: The website is available in both English and French, allowing users to toggle between the two languages based on their preference.
+* **History** : This section provides a detailed overview of the historical significance of Venice, including key events, architectural marvels, and notable cultural heritage sites.
+* **Culture**: Here, visitors can immerse themselves in the rich cultural heritage of Venice. The section highlights traditional art forms, festivals, music, literature, and culinary delights that are unique to the city.
+* **Travel Recommendations** : This page serves as a guide for travelers, providing suggestions and recommendations for exploring Venice. It includes insights into must-visit attractions, hidden gems, local cuisine, transportation options, and practical tips for a memorable visit.
+* **Places to Visit** : This section offers an extensive list of notable places within Venice that visitors should consider including in their itineraries. Each listing provides a brief description, historical background, and photographs to pique interest.
+* **Quizzes** : The website features interactive quizzes to engage users and test their knowledge about Venice's cultural heritage, history, and landmarks. Users can challenge themselves with multiple-choice questions and receive immediate feedback on their answers.
+* **Bilingual Support** : The website is available in both English and French, allowing users to toggle between the two languages based on their preference.
 
 ## Technologies Used
 UNESCO-Venise incorporates the following technologies:
