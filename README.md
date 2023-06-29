@@ -23,11 +23,11 @@ UNESCO-Venise incorporates the following technologies:
 ## Team Members
 UNESCO-Venise was developed by a team of five individuals. Each member contributed their skills and expertise in design, development, content creation, and project management to bring this website to fruition.
 
-* IDRISSI Nidal : Project manager, designer, frontend developper
-* MOTUEL Valentin :
-* VILLA Alessandro :
-* POULAIN Kyrian :
-* LEVEQUE Lucas :
+* [IDRISSI Nidal](https://github.com/Meledit/ "Nidal") : Project manager, designer, frontend developper
+* [MOTUEL Valentin](https://github.com/Newvall/ "Valentin") : 
+* [VILLA Alessandro](https://github.com/Aless77/ "Alessandro") :
+* [POULAIN Kyrian](https://github.com/ "Kyrian") :
+* [LEVEQUE Lucas](https://github.com/Liixray/ "Lucas") : Frontend Developper, project coordinator, writter, 
 
 ## Getting Started
 To explore the UNESCO-Venise website, simply visit the website URL (https://etudiant.u-pem.fr/~lucas.leveque/UNESCO-Venise/) in your preferred web browser. No additional setup or installation is required.
