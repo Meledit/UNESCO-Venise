@@ -26,7 +26,7 @@ UNESCO-Venise was developed by a team of five individuals. Each member contribut
 * [IDRISSI Nidal](https://github.com/Meledit/ "Nidal") : Project manager, designer, frontend developper
 * [MOTUEL Valentin](https://github.com/Newvall/ "Valentin") : 
 * [VILLA Alessandro](https://github.com/Aless77/ "Alessandro") :
-* [POULAIN Kyrian](https://github.com/ "Kyrian") :
+* [POULAIN Kyrian](https://github.com/KlayyMore "Kyrian") :
 * [LEVEQUE Lucas](https://github.com/Liixray/ "Lucas") : Frontend Developper, project coordinator, writter, 
 
 ## Getting Started
